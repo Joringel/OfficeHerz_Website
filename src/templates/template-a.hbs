@@ -1,7 +1,8 @@
 {{#extend "blank" htmlclass="" bodyclass=""}}
 	{{#content "head"}}
 		<title>{{title}} - {{data "project.title"}}</title>
-		<link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
+		<link rel="stylesheet" href="{{@root.baseurl}}/assets/toolkit/styles/toolkit.css">
+		{{!-- <link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css"> --}}
 	{{/content}}
 	{{#content "body"}}
 		{{#embed "patterns.organism.header.header-pattern" header-class="sticky-top"}}
