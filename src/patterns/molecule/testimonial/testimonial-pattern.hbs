@@ -1,0 +1,24 @@
+---
+name: Testimonial pattern
+hidden: true
+---
+
+<div class="testimonial {{testimonial-class}}">
+	<div class="testimonial-header">
+		{{#block "testimonial-header"}}
+			Header
+		{{/block}}
+	</div>
+	<div class="testimonial-body">
+		{{#block "testimonial-body"}}
+			Body
+		{{/block}}
+	</div>
+	{{#if (content "testimonial-footer")}}
+		<div class="testimonial-footer">
+			{{#block "testimonial-footer"}}
+				Footer
+			{{/block}}
+		</div>
+	{{/if}}
+</div>

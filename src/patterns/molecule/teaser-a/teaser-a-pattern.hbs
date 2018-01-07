@@ -1,0 +1,35 @@
+---
+name: Teaser A Pattern
+teaser-a-image-path: /images/placeholder-ratio.jpg
+hidden: true
+---
+<a href="#">
+	<div class="teaser-a {{teaser-a-class}}" style="background-image:url('{{teaser-a-image-path}}')">
+		<div class="teaser-wrapper">
+			<div class="teaser-header">
+				{{#block "teaser-header"}}
+					<h3>
+						{{#block "teaser-headline"}}
+							Headline
+						{{/block}}
+					</h3>
+				{{/block}}
+			</div>
+			{{#if (content "teaser-body")}}
+				<div class="teaser-body">
+					{{#block "teaser-body"}}
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+					{{/block}}
+				</div>
+			{{/if}}
+			{{#if (content "teaser-footer")}}
+				<div class="teaser-footer">
+					{{#block "teaser-footer"}}
+						{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn more" button-start-tag="span"}}
+						{{/embed}}
+					{{/block}}
+				</div>
+			{{/if}}
+		</div>
+	</div>
+</a>

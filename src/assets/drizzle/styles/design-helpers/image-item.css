@@ -1,0 +1,37 @@
+.image-item{
+    position: relative;
+    background: var(--color-grey-dark);
+    display: table;
+    width: 100%;
+    & .image-container{
+        width: 100%;
+        display: table-cell;
+        text-align: center;
+        & img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+    & .image-detail{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: calc(var(--space) * .5);
+        font-family: var(--Font-family-sans-serif);
+        font-size: 14px;
+        & table{
+            background: color(#fff a(80%));
+            width: 100%;
+            & tr{
+                & td{
+                    &:first-child{
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+---
+name: Alert Pattern
+hidden: true
+---
+
+
+<div class="alert {{alert-class}}">
+  {{#if removable}}
+    <button type="button" class="close" data-dismiss="alert">×</button>
+  {{/if}}
+  <strong>
+    {{#block "alert-message"}}
+        Alert title
+    {{/block}}
+  </strong>
+    {{#block "alert-description"}}
+        Additional notes taking place here
+    {{/block}}
+</div>

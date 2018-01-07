@@ -1,0 +1,143 @@
+/*----------------------------------------------------------------
+------------------------------------------------------------------
+IMPORT FONTS
+------------------------------------------------------------------
+----------------------------------------------------------------*/
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+/*----------------------------------------------------------------
+------------------------------------------------------------------
+FONT SETUP
+------------------------------------------------------------------
+----------------------------------------------------------------*/
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-serif: 'Georgia', serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif; //----BASE FONT COLOR
+$body-color: $brand-primary-75; //-----FONT Sizes
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-lg: 1.25rem;
+$font-size-md: 1.125rem;
+$font-size-sm: 0.875rem;
+$font-size-xs: 0.75rem; //-----FONT WEIGHTS
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-base: $font-weight-normal; //-----LINE HEIGHT
+$line-height-base: 1.7;
+/*----------------------------------------------------------------
+------------------------------------------------------------------
+HEADLINE SETUP
+------------------------------------------------------------------
+----------------------------------------------------------------*/
+//-----Basic headline setup
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: $font-weight-light;
+$headings-line-height: 1.2;
+$headings-color: inherit; //-----Sizes for default Healdines
+
+$font-size-h1: 1.75rem; //28px
+$font-size-sm-h1: $font-size-h1;
+$font-size-md-h1: 3rem; //38px
+$font-size-lg-h1: $font-size-md-h1;
+$font-size-xl-h1: $font-size-md-h1;
+
+$font-size-h2: 1.5rem; //24px
+$font-size-sm-h2: $font-size-h2;
+$font-size-md-h2: 2.5rem; //40px
+$font-size-lg-h2: $font-size-md-h2;
+$font-size-xl-h2: $font-size-md-h2;
+
+
+$font-size-h3: 1.75rem; //28px
+$font-size-h4: 1.375rem; //22px
+$font-size-h5: 1rem; //16px
+$font-size-h6: 0.875rem; //14px
+//-----Headline Margin
+$headings-margin-bottom: ($spacer / 2);
+/*----------------------------------------------------------------
+------------------------------------------------------------------
+DISPLAY HEADLINE SETUP
+------------------------------------------------------------------
+----------------------------------------------------------------*/
+//----- Line height for Display fonts
+$display-line-height: 1; //----- Display Headline Size
+$display1-size: 6rem;
+$display2-size: 5.5rem;
+$display3-size: 4.5rem;
+$display4-size: 3.5rem; //----- Display Headline weight
+$display1-weight: $font-weight-light;
+$display2-weight: $font-weight-light;
+$display3-weight: $font-weight-light;
+$display4-weight: $font-weight-light;
+/*----------------------------------------------------------------
+------------------------------------------------------------------
+Special typo settings
+------------------------------------------------------------------
+----------------------------------------------------------------*/
+//----- Lead Paragraphs
+$lead-font-size: 1.25rem;
+$lead-font-weight: 300; //---- Small Text
+$small-font-size: 80%; //--- Muted Text, for disabled status maybe
+$text-muted: $gray-light;
+$abbr-border-color: $gray-light;
+$blockquote-small-color: $gray-light;
+$blockquote-font-size: ($font-size-base \* 1.25);
+$blockquote-border-color: $gray-lighter;
+$blockquote-border-width: 0.25rem;
+$hr-border-color: rgba($black,.1);
+$hr-border-width: $border-width;
+$mark-padding: 0.2em;
+$dt-font-weight: $font-weight-bold;
+$kbd-box-shadow: inset 0 -.1rem 0 rgba($black,.25);
+$nested-kbd-font-weight: $font-weight-bold;
+$list-inline-padding: 5px; //--- Linked Text
+$link-color: $brand-primary !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: none !default;
+/*----------------------------------------------------------------
+------------------------------------------------------------------
+ADDED CLASSES
+For default Bootstrap Typo-Classes look at:
+https://v4-alpha.getbootstrap.com/utilities/typography/
+------------------------------------------------------------------
+----------------------------------------------------------------*/
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.katana{
+
+	h1,.h1{
+		font-weight: $font-weight-light;
+	}
+
+	h2,.h2,
+	h3,.h3,
+	h4,.h4{
+	}
+
+	h5,.h5,
+	h6,.h6{
+		font-weight: $font-weight-bold;
+	}
+
+
+
+
+
+
+    @include media-breakpoint-up(md){
+		h1,.h1{
+			font-size: $font-size-md-h1;
+		}
+
+		h2,.h2{
+			font-size: $font-size-md-h2;
+		}
+	}
+
+
+}

@@ -1,0 +1,734 @@
+---
+title: Landingpage
+notes: Landingpage for 3D printing
+layout: template-a
+labels:
+	- demo
+styles:
+	- toolkit
+---
+
+{{#content "stage"}}
+	{{#embed "patterns.organism.stage.stage-pattern" stage-class="" stage-image-path=(data 'images.stage-6')}}
+		{{#content "stage-image"}}
+		{{/content}}
+		{{#content "stage-header"}}
+			{{#embed "patterns.atom.headline.headline-pattern" headline-size="1"}}
+				{{#content "headline"}}
+					Take 3D printing to the next level
+				{{/content}}
+			{{/embed}}
+		{{/content}}
+		{{#content "stage-body"}}
+			Having a precise and reliable 3D printer is no longer enough.
+		{{/content}}
+		{{#content "stage-footer"}}
+			{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn more" button-link="#" button-start-tag="a"}}
+			{{/embed}}
+		{{/content}}
+	{{/embed}}
+{{/content}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12 mb-6">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									The 3D printing environment is changing
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0 text-center"}}
+								{{#content "paragraph"}}
+									In the life cycle of a technology, there‘s always a gap to bridge between the initial enthusiasm of hobbyist and the mass market. 3D printing has reached this crucial point, maturing into a technology that is accessible to consumers.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 mb-6">
+					{{#embed "patterns.molecule.timeline.timeline-pattern"}}
+						{{#content "timeline-body"}}
+							{{#embed "patterns.molecule.timeline._timeline-item-pattern" timeline-img-path=(data 'images.timeline-1')}}
+								{{#content "timeline-item-title"}}
+									SLA-1
+								{{/content}}
+								{{#content "timeline-item-subline"}}
+									1987
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.timeline._timeline-item-pattern" timeline-img-path=(data 'images.timeline-2')}}
+								{{#content "timeline-item-title"}}
+									DIY Printer
+								{{/content}}
+								{{#content "timeline-item-subline"}}
+									2004
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.timeline._timeline-item-pattern" timeline-img-path=(data 'images.timeline-3')}}
+								{{#content "timeline-item-title"}}
+									Witbox Go!
+								{{/content}}
+								{{#content "timeline-item-subline"}}
+									2017
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 offset-md-1">
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0 text-center"}}
+						{{#content "paragraph"}}
+							While early adopters are willing to accept some technological flaws, end-consumers want a perfect product that’s easy to use. The result is an increasing demand for small, dynamic, and energy-efficient 3D printers that have silent motors and can operate for hours on a desk unnoticed. Trinamic has developed a family of products which not only meets these demands, but also ensures easier development for future generations.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									3D Printer Noise is still a Problem
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-6 text-center"}}
+								{{#content "paragraph"}}
+									These are just a few of the complaints on the RepRap forum, one of many used by the 3D printing community to discuss 3d printing and to find the best solutions for silent motor control:
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 mb-6">
+					{{#embed "patterns.molecule.cite-cloud.cite-cloud-pattern"}}
+						{{#content "cite-cloud-body"}}
+							{{#embed "patterns.molecule.cite-cloud._cite-cloud-item-pattern"}}
+								{{#content "cite-cloud-item-body"}}
+									"When printing at low speeds the whole thing vibrates and makes noise."
+								{{/content}}
+								{{#content "cite-cloud-item-footer"}}
+									the_digital_dentist – <a href="#">RepRap Forum</a>
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.cite-cloud._cite-cloud-item-pattern"}}
+								{{#content "cite-cloud-item-body"}}
+									"Every decent sized stepper I've seen always makes noise."
+								{{/content}}
+								{{#content "cite-cloud-item-footer"}}
+									cdru – <a href="#">RepRap Forum</a>
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.cite-cloud._cite-cloud-item-pattern"}}
+								{{#content "cite-cloud-item-body"}}
+									"I hadn't anticipated that they would be so noisy, is this normal?"
+								{{/content}}
+								{{#content "cite-cloud-item-footer"}}
+									plankton – <a href="#">RepRap Forum</a>
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.cite-cloud._cite-cloud-item-pattern"}}
+								{{#content "cite-cloud-item-body"}}
+									"3D printers are loud to the point it make them hard to be in the same room with while doing anything productive."
+								{{/content}}
+								{{#content "cite-cloud-item-footer"}}
+									Trexation – <a href="#">RepRap Forum</a>
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.cite-cloud._cite-cloud-item-pattern"}}
+								{{#content "cite-cloud-item-body"}}
+									"I already managed to reduce the noice by finetuning stepper currents though according to my neighbour it's still to loud."
+								{{/content}}
+								{{#content "cite-cloud-item-footer"}}
+									BackEMF – <a href="#">RepRap Forum</a>
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0 text-center"}}
+						{{#content "paragraph"}}
+							Most drivers controlling motors of 3D printers have a distorted current sine wave, generating an audible “humming” noise. Trinamic’s solutions minimize current fluctuation, resulting in a cleaner and smoother sine wave. Silent 3D printing motors don’t only lead to fewer complaints, they also lead to better 3D printers.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row mb-2">
+				<div class="col-md-4">
+					{{#embed "patterns.molecule.teaser-f.teaser-f-pattern" teaser-f-image-path=(data 'images.landing-7') teaser-f-image-width="180"}}
+						{{#content "teaser-headline"}}
+								Silent printers
+						{{/content}}
+						{{#content "teaser-body"}}
+							Whether it's at home or at work, people prefer silent motors over noisy ones
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-md-4">
+					{{#embed "patterns.molecule.teaser-f.teaser-f-pattern" teaser-f-image-path=(data 'images.landing-8') teaser-f-image-width="180"}}
+						{{#content "teaser-headline"}}
+							Smooth operation
+						{{/content}}
+						{{#content "teaser-body"}}
+							A current loop closer to a perfect sine wave allows for smoother motion control.
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-md-4">
+					{{#embed "patterns.molecule.teaser-f.teaser-f-pattern" teaser-f-image-path=(data 'images.landing-9') teaser-f-image-width="180"}}
+						{{#content "teaser-headline"}}
+							Precise positioning
+						{{/content}}
+						{{#content "teaser-body"}}
+							Less vibrations and improved control over the axes result in a more precise print.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-md-10 offset-md-1">
+					<img class="hidden-sm-down img-fluid" src="/images/_landing/trinamic-klammer-md-up.svg" alt="">
+					<img class="hidden-md-up img-fluid" src="/images/_landing/trinamic-klammer-mobil.svg" alt="">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="3" headline-class="text-center"}}
+						{{#content "headline"}}
+							Better printing Results and happy customers
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									Trinamic has the 3D printing solutions for the future
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-6 text-center"}}
+								{{#content "paragraph"}}
+									Trinamic's compact drivers and leading-edge technology enable 3D printers to be silent and small, while at the same time reducing cost of ownership.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6 mb-4 mb-md-0">
+					{{#embed "patterns.atom.badge.badge-pattern" badge-class="badge--size-xl badge-circle badge-warning badge--absolute-left" badge-label="Giveaway!"}}
+					{{/embed}}
+					{{#embed "patterns.atom.image.image-pattern" image-path=(data 'images.landing-10')}}
+					{{/embed}}
+				</div>
+				<div class="col-md-6">
+					{{#embed "patterns.molecule.testimonial.testimonial-pattern"}}
+						{{#content "testimonial-header"}}
+							{{#embed "patterns.atom.avatar.avatar-pattern" avatar-class="avatar--md" avatar-image-path=(data 'images.landing-11')}}
+							{{/embed}}
+						{{/content}}
+						{{#content "testimonial-body"}}
+							{{#embed "patterns.atom.blockquote.blockquote-pattern" blockquote-cite="www.trinamic.com"}}
+								{{#content "blockquote-body"}}
+									"Using Trinamic motor drivers in our Witbox Go! 3D printer was a key technical upgrade that helped us reach important project goals. The result is a cleaner and less intrusive product that will change the way 3D printers are perceived in the future."
+								{{/content}}
+								{{#content "blockquote-cite"}}
+									Jon Goitia, 3D Product Technical Director at <a href="#">BQ</a>
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+						{{#content "testimonial-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read the whole stroy" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class="section--bg-brand-primary"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 py-2 py-sm-4 py-md-4">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-left align-items-md-center justify-content-md-between flex-md-row"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2 mb-md-0"}}
+								{{#content "headline"}}
+									Win 1 of 3 brand new Witbox go!
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Win now" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									Innovative technologies - easy to use
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0"}}
+								{{#content "paragraph"}}
+									Not only the market is changing – design processes are changing as well. Engineers deal with increasing time pressure, smaller teams and smaller budgets while meeting higher and higher demands. Trinamic’s innovative plug-and-play solutions meet these new challenges.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-class="teaser-a--type-a" teaser-a-image-path=(data 'images.landing-5')}}
+						{{#content "teaser-headline"}}
+							StallGuard™
+						{{/content}}
+						{{#content "teaser-body"}}
+							The world’s first sensor-less load measurement that gives real-time feedback on the load angle of the motor.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-class="teaser-a--type-a" teaser-a-image-path=(data 'images.landing-4')}}
+						{{#content "teaser-headline"}}
+							CoolStep™
+						{{/content}}
+						{{#content "teaser-body"}}
+							Load-dependent current control . Always drives the motor at optimum current for optimal energy efficiency.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-class="teaser-a--type-a" teaser-a-image-path=(data 'images.landing-6')}}
+						{{#content "teaser-headline"}}
+							StealthChop™
+						{{/content}}
+						{{#content "teaser-body"}}
+							A voltage chopper principle that guarantees absolutely quiet motor operation in standstill or slow motion.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 d-flex justify-content-md-center">
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="More technologies" button-link="#" button-start-tag="a"}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									Building Blocks - Embedded Motion Control
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+								{{#content "paragraph"}}
+									Overall processing tasks have become heavier and more complex than ever before. The increasingly smaller and more powerful motors of 3D printers require extremely accurate motion control. Trinamic’s building blocks combine several features into a single package. Enriched with peripherals and embedded complex software, they offer the complete plug-in solution.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="offset-md-2 col-md-4">
+					<ul>
+						<li>less space needed</li>
+						<li>compatible with most systems</li>
+						<li>software in silicon</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li>state-of-the-art technology</li>
+						<li>plug-and-play</li>
+						<li>shorter time-to-market</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 d-flex justify-content-md-center">
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Learn more" button-link="#" button-start-tag="a"}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									TMC2100 with SilentStepStick - the community's favorite
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6 mb-4 mb-md-0">
+					{{#embed "patterns.atom.image.image-pattern" image-path=(data 'images.landing-12')}}
+					{{/embed}}
+				</div>
+				<div class="col-md-6">
+					{{#embed "patterns.molecule.testimonial.testimonial-pattern"}}
+						{{#content "testimonial-header"}}
+							{{#embed "patterns.atom.avatar.avatar-pattern" avatar-class="avatar--md" avatar-image-path=(data 'images.landing-13')}}
+							{{/embed}}
+						{{/content}}
+						{{#content "testimonial-body"}}
+							{{#embed "patterns.atom.blockquote.blockquote-pattern" blockquote-cite="www.trinamic.com"}}
+								{{#content "blockquote-body"}}
+									"They are really nice drivers and I’m really looking forward to seeing 3D printers, or even new integrated 3D printer electronics pop up that use these new chips or driver modules."
+								{{/content}}
+								{{#content "blockquote-cite"}}
+									<a href="#">Thomas Sanladerer, 3D printing expert and YouTuber</a>
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+						{{#content "testimonial-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right mb-2 mb-md-0" button-icon="triangle" button-label="Watch the video" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-12">
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="text-md-center mb-2"}}
+						{{#content "paragraph"}}
+							Trinamic’s <a target="_blank" href="https://www.trinamic.com/products/integrated-circuits/details/tmc2100/">TMC2100</a> is renowned in the 3D printing community for its ability to turn 3D printers into silent machines with smooth motor control. Following its success, Trinamic improved the concept by developing the <a target="_blank" href="https://www.trinamic.com/products/integrated-circuits/details/tmc2130/">TMC2130</a> and <a target="_blank" href="https://www.trinamic.com/products/integrated-circuits/details/tmc2208-la/">TMC2208</a>.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 d-flex justify-content-md-center">
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right mr-1" button-icon="triangle" button-label="Learn more" button-link="#" button-start-tag="a"}}
+					{{/embed}}
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn-secondary btn--icon-right" button-icon="triangle" button-label="Buy here" button-link="#" button-start-tag="a"}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-0"}}
+								{{#content "headline"}}
+									Find out more about our innovative products
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.landing-14')}}
+						{{#content "teaser-headline"}}
+							Integrated Circuits
+						{{/content}}
+						{{#content "teaser-body"}}
+							ICs or microchips are integrated in the 3D printer at board-level, perfect for flexible system architectures while taking up minimal space.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.landing-15')}}
+						{{#content "teaser-headline"}}
+							Modules
+						{{/content}}
+						{{#content "teaser-body"}}
+							System-on-Modules (SoM) are integrated at the system-level and designed for small to mid-sized projects and rapid time-to-market.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.landing-16')}}
+						{{#content "teaser-headline"}}
+							Motors and Drives
+						{{/content}}
+						{{#content "teaser-body"}}
+							Performance-optimized stepper motors for 3D printers can be used as single parts or bundled with electronics as ready-to-run PANdrives.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									What our customers say
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					{{#embed "patterns.molecule.testimonial.testimonial-pattern" testimonial-class="testimonial--type-a"}}
+						{{#content "testimonial-header"}}
+							{{#embed "patterns.atom.image.image-pattern" image-width="120" image-height="120" image-path=(data 'images.logo-3')}}
+							{{/embed}}
+						{{/content}}
+						{{#content "testimonial-body"}}
+							{{#embed "patterns.atom.blockquote.blockquote-pattern" blockquote-cite="www.trinamic.com"}}
+								{{#content "blockquote-body"}}
+									"Engineer time is a precious resource at Markforged. Trinamic’s integrated drivers allow us to implement high-performance motion systems with a minimum amount of overhead."
+								{{/content}}
+								{{#content "blockquote-cite"}}
+									David Lawrence, <a href="#">Markforged</a>
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-md-4">
+					{{#embed "patterns.molecule.testimonial.testimonial-pattern" testimonial-class="testimonial--type-a"}}
+						{{#content "testimonial-header"}}
+							{{#embed "patterns.atom.image.image-pattern" image-width="120" image-height="120" image-path=(data 'images.logo-6')}}
+							{{/embed}}
+						{{/content}}
+						{{#content "testimonial-body"}}
+							{{#embed "patterns.atom.blockquote.blockquote-pattern" blockquote-cite="www.trinamic.com"}}
+								{{#content "blockquote-body"}}
+									"The Trinamic TMC2660 is at the core of the advanced features within our 3D printing electronics, we have found it to be in a class of its own in both performance and ease of configuration.“
+								{{/content}}
+								{{#content "blockquote-cite"}}
+									Tony Lock, <a href="#">Duet3D</a>
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-md-4">
+					{{#embed "patterns.molecule.testimonial.testimonial-pattern" testimonial-class="testimonial--type-a"}}
+						{{#content "testimonial-header"}}
+							{{#embed "patterns.atom.image.image-pattern" image-width="120" image-height="120" image-path=(data 'images.logo-7')}}
+							{{/embed}}
+						{{/content}}
+						{{#content "testimonial-body"}}
+							{{#embed "patterns.atom.blockquote.blockquote-pattern" blockquote-cite="www.trinamic.com"}}
+								{{#content "blockquote-body"}}
+									"The TMC5130 allowed us to eliminate the failure-prone mechanical endstops and the noise generated by stepper motors. The result is a cleaner and less intrusive product that will change the way 3D printers are perceived in the future.“
+								{{/content}}
+								{{#content "blockquote-cite"}}
+									Jon Goitia, <a href="#">BQ</a>
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class="section--bg-brand-highlight"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-10 offset-md-1">
+					{{#embed "patterns.molecule.teaser-d.teaser-d-pattern" teaser-d-class="teaser-d--type-a"}}
+						{{#content "teaser-headline"}}
+							Looking for the best solution?
+						{{/content}}
+						{{#content "teaser-body"}}
+							Trinamic is the goto partner for everything that needs to be positioned precisely. Whenever a small motor is involved, Trinamic makes it turn.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Get in touch with our experts" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6 mb-4 mb-md-0">
+					{{#embed "patterns.atom.badge.badge-pattern" badge-class="badge--size-xl badge-circle badge-primary badge--absolute-left" badge-label="WIN 1 of 3 Brand new WitboxGo!"}}
+					{{/embed}}
+					{{#embed "patterns.atom.image.image-pattern" image-path=(data 'images.landing-20')}}
+					{{/embed}}
+				</div>
+				<div class="col-md-6">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Gewinnspiel
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-2"}}
+						{{#content "paragraph"}}
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis id ut totam iure beatae commodi, aliquam labore provident voluptatum corporis fuga, a eaque molestias quibusdam eligendi quod molestiae? Repellat, suscipit!
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn-link btn--icon-right mr-1" button-label="Follow us on Twitter" button-icon="triangle" button-link="#" button-start-tag="a"}}
+					{{/embed}}
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn-link btn--icon-right mr-1" button-label="Subscribe to our YouTube channel" button-icon="triangle" button-link="#" button-start-tag="a"}}
+					{{/embed}}
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn-link btn--icon-right" button-label="Sign up to our newsletter" button-icon="triangle" button-link="#" button-start-tag="a"}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					{{#embed "patterns.molecule.teaser-f.teaser-f-pattern" teaser-f-image-path=(data 'images.landing-17') teaser-f-image-width="180"}}
+						{{#content "teaser-headline"}}
+							About Trinamic
+						{{/content}}
+						{{#content "teaser-body"}}
+							Trinamic's experience and expertise in connecting the physical and digital worlds together provide customers direct access to the type of application knowledge that takes decades to achieve.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-link btn--icon-right" button-icon="triangle" button-label="About trinamic" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-md-4">
+					{{#embed "patterns.molecule.teaser-f.teaser-f-pattern" teaser-f-image-path=(data 'images.landing-18') teaser-f-image-width="180"}}
+						{{#content "teaser-headline"}}
+							Not just 3D Printing
+						{{/content}}
+						{{#content "teaser-body"}}
+							Our products are designed for laboratory and factory automation, semiconductor manufacturing, textiles, robotics, and ATMs among others. Trinamic is the first choice when it comes to reliable positioning.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-link btn--icon-right" button-icon="triangle" button-label="Solution" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-md-4">
+					{{#embed "patterns.molecule.teaser-f.teaser-f-pattern" teaser-f-image-path=(data 'images.landing-19') teaser-f-image-width="180"}}
+						{{#content "teaser-headline"}}
+							Follow us
+						{{/content}}
+						{{#content "teaser-body"}}
+							Do you want to have the latest technologies at your fingertips? Sign up to our newsletter, follow us on Twitter, or sign up to our YouTube channel and stay up-to-date with the latest innovations in 3D printing and more.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-link btn--icon-right mr-1" button-label="Twitter" button-icon="triangle" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-link btn--icon-right mr-1" button-label="Youtube" button-icon="triangle" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-link btn--icon-right" button-label="Newsletter" button-icon="triangle" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}

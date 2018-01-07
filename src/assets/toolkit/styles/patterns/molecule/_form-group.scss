@@ -1,0 +1,35 @@
+$form-group-margin-bottom: 15px;
+
+.katana {
+	.form-group {
+		&.has-danger {
+			.form-label {
+				color: $brand-danger;
+			}
+
+			.form-control {
+				border-color: $brand-danger;
+			}
+		}
+
+		&.has-success {
+			.form-label {
+				color: $brand-success;
+			}
+
+			.form-control {
+				border-color: $brand-success;
+			}
+		}
+
+		&.has-warning {
+			.form-label {
+				color: $brand-warning;
+			}
+
+			.form-control {
+				border-color: $brand-warning;
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+---
+name: Default
+previewClass: col-12
+---
+
+
+{{#embed "patterns.molecule.table.table-pattern"}}
+	{{#content "table-head"}}
+		<tr>
+			{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="File" }}
+			{{/embed}}
+			{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="Type" }}
+			{{/embed}}
+			{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="Size" }}
+			{{/embed}}
+			{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="Version" }}
+			{{/embed}}
+			{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="Modified" }}
+			{{/embed}}
+		</tr>
+	{{/content}}
+	{{#content "table-body"}}
+		{{#embed "patterns.molecule.table._table-item-row"}}
+			{{#content "table-item-row-body"}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-link="#" table-item-column-label="TMC2041_datasheet.pdf"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-class="table-item-column--icon" table-item-column-icon="PDF"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="2.3 MB"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="v1.04"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="Aug 10, 2017 10:37 AM"}}
+				{{/embed}}
+			{{/content}}
+		{{/embed}}
+		{{#embed "patterns.molecule.table._table-item-row"}}
+			{{#content "table-item-row-body"}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-link="#" table-item-column-label="TMC2041_datasheet.pdf"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-class="table-item-column--icon" table-item-column-icon="ZIP"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="2.3 MB"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="v1.04"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="Aug 10, 2017 10:37 AM"}}
+				{{/embed}}
+			{{/content}}
+		{{/embed}}
+		{{#embed "patterns.molecule.table._table-item-row"}}
+			{{#content "table-item-row-body"}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-link="#" table-item-column-label="TMC2041_datasheet.pdf"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-class="table-item-column--icon" table-item-column-icon="PDF"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="2.3 MB"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="v1.04"}}
+				{{/embed}}
+				{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="Aug 10, 2017 10:37 AM"}}
+				{{/embed}}
+			{{/content}}
+		{{/embed}}
+	{{/content}}
+{{/embed}}

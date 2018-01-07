@@ -1,0 +1,14 @@
+---
+name: Default
+list-item-label: List Item
+---
+
+{{#embed "patterns.molecule.list-group.list-group-pattern" list-group-class="mb-2 mb-md-4"}}
+	{{#content "list-group-body"}}
+		{{#embed "patterns.molecule.list-group._list-item-pattern"}}{{/embed}}
+		{{#embed "patterns.molecule.list-group._list-item-pattern"}}{{/embed}}
+		{{#embed "patterns.molecule.list-group._list-item-pattern" list-item-active="true" }}{{/embed}}
+		{{#embed "patterns.molecule.list-group._list-item-pattern" list-item-disabled="true" }}{{/embed}}
+		{{#embed "patterns.molecule.list-group._list-item-pattern"}}{{/embed}}
+	{{/content}}
+{{/embed}}

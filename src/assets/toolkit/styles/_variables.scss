@@ -1,0 +1,290 @@
+////////////////////////////////////////////////////////////////////////
+///////////////////////////Bootstrap Standard//////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+
+/*---------------------------------------------------------------------
+
+Grid Container
+
+---------------------------------------------------------------------*/
+//$container-width-sm:											320px;
+//$container-width-lg:											1280px;
+//
+//$grid-gutter-width-base:									30px !default;
+
+/*---------------------------------------------------------------------
+
+Spacer variables
+
+---------------------------------------------------------------------*/
+//$spacer:																	1rem ;
+//$spacer-x:																$spacer;
+//$spacer-y:																$spacer;
+//
+//$spacers: (
+//	0: (
+//		x: 0,
+//		y: 0
+//	),
+//	1: (
+//		x: ($spacer-x * .25),
+//		y: ($spacer-y * .25)
+//	),
+//	2: (
+//		x: ($spacer-x * .5),
+//		y: ($spacer-y * .5)
+//	),
+//	3: (
+//		x: $spacer-x,
+//		y: $spacer-y
+//	),
+//	4: (
+//		x: ($spacer-x * 1.5),
+//		y: ($spacer-y * 1.5)
+//	),
+//	5: (
+//		x: ($spacer-x * 3),
+//		y: ($spacer-y * 3)
+//	)
+//) ;
+
+/*---------------------------------------------------------------------
+
+Border Styles
+
+---------------------------------------------------------------------*/
+//$border-radius:														.25rem !default;
+//$border-radius-lg:												.3rem !default;
+//$border-radius-sm:												.2rem !default;
+//
+//$border-width:														1px !default;
+
+/*---------------------------------------------------------------------
+
+Color variables
+
+---------------------------------------------------------------------*/
+//$white:																		#fff !default;
+//$black:																		#000 !default;
+//$red:																			#d9534f !default;
+//$orange:																	#f0ad4e !default;
+//$yellow:																	#ffd500 !default;
+//$green:																		#5cb85c !default;
+//$blue:																		#0275d8 !default;
+//$teal:																		#5bc0de !default;
+//$pink:																		#ff5b77 !default;
+//$purple:																	#613d7c !default;
+//
+//$gray-base:																#000;
+//$gray-darker:															lighten($gray-base, 13.5%); // #222
+//$gray-dark:																lighten($gray-base, 20%);   // #333
+//$gray:																		lighten($gray-base, 33.5%); // #555
+//$gray-light:															lighten($gray-base, 46.7%); // #777
+//$gray-lighter:														lighten($gray-base, 93.5%); // #eee
+//
+//$brand-primary:														rgb(83, 154, 163);
+//$brand-primary-light:											lighten($brand-primary, 10);
+//$brand-primary-lighter:										lighten($brand-primary, 30);
+//$brand-primary-dark:											darken($brand-primary, 10);
+//$brand-primary-darker:										darken($brand-primary, 30);
+
+/*---------------------------------------------------------------------
+
+Default font and typo
+
+---------------------------------------------------------------------*/
+//$font-family-sans-serif:									'Montserrat', sans-serif;
+//$font-family-serif:												'Sanchez', serif;
+//$font-family-base:												$font-family-serif;
+//$headings-font-family:										$font-family-sans-serif;
+//$headings-margin-bottom:									($spacer);
+
+// $font-size-base:												1rem !default;
+// $font-size-lg:													1.25rem !default;
+// $font-size-sm:													.875rem !default;
+// $font-size-xs:													.75rem !default;
+
+// $font-weight-normal:										normal !default;
+// $font-weight-bold:											bold !default;
+//
+// $font-weight-base:											$font-weight-normal !default;
+// $line-height-base:											1.5 !default;
+
+/*---------------------------------------------------------------------
+
+Default headline definitions
+
+---------------------------------------------------------------------*/
+//$font-size-h1:														2rem;
+//$font-size-h2:														1.625rem;
+//$font-size-h3:														1.375rem;
+//$font-size-h4:														1.125rem;
+//$font-size-h5:														0.875rem;
+//$font-size-h6:														0.75rem;
+
+/*---------------------------------------------------------------------
+
+Default display headline definitions
+
+---------------------------------------------------------------------*/
+//$display1-size:														$font-size-h1*2;
+//$display2-size:														$font-size-h2*2;
+//$display3-size:														$font-size-h3*2;
+//$display4-size:														$font-size-h4*2;
+
+
+////////////////////////////////////////////////////////////////////////
+//////////////////////////////CUSTOM KATANA////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+/*---------------------------------------------------------------------
+
+Custom color variables
+
+---------------------------------------------------------------------*/
+//$brand-secondary:													#ff0065;
+//$brand-secondary-light:										lighten($brand-secondary, 10);
+//$brand-secondary-lighter:									lighten($brand-secondary, 30);
+//$brand-secondary-dark:										darken($brand-secondary, 10);
+//$brand-secondary-darker:									darken($brand-secondary, 30);
+//
+//$brand-success:														#5cb85c;
+//$brand-info:															#5bc0de;
+//$brand-warning:														#f0ad4e;
+//$brand-danger:														#d9534f;
+//
+//$body-bg:																	$white;
+//$body-color:															$gray;
+//$inverse-bg:															$gray-dark ;
+//$inverse-color:														$gray-lighter;
+//
+//$btn-secondary-color:											$white;
+//$btn-secondary-bg:												$brand-secondary;
+//$btn-secondary-border:										$brand-secondary;
+
+///*---------------------------------------------------------------------
+//
+//Custom headline size (BRP SM)
+//
+//---------------------------------------------------------------------*/
+//$font-size-sm-h1:													$font-size-h1;
+//$font-size-sm-h2:													$font-size-h2;
+//$font-size-sm-h3:													$font-size-h3;
+//$font-size-sm-h4:													$font-size-h4;
+//$font-size-sm-h5:													$font-size-h5;
+//$font-size-sm-h6:													$font-size-h6;
+//
+///*---------------------------------------------------------------------
+//
+//Custom headline size (BRP MD)
+//
+//---------------------------------------------------------------------*/
+//$font-size-md-h1:													2.5rem;
+//$font-size-md-h2:													2rem;
+//$font-size-md-h3:													1.5rem;
+//$font-size-md-h4:													$font-size-h4;
+//$font-size-md-h5:													$font-size-h5;
+//$font-size-md-h6:													$font-size-h6;
+//
+///*---------------------------------------------------------------------
+//
+//Custom headline size (BRP LG)
+//
+//---------------------------------------------------------------------*/
+//$font-size-lg-h1:													3rem;
+//$font-size-lg-h2:													2.25rem;
+//$font-size-lg-h3:													1.75rem;
+//$font-size-lg-h4:													$font-size-h4;
+//$font-size-lg-h5:													$font-size-h5;
+//$font-size-lg-h6:													$font-size-h6;
+//
+///*---------------------------------------------------------------------
+//
+//Custom headline size (BRP XL)
+//
+//---------------------------------------------------------------------*/
+//$font-size-xl-h1:													$font-size-lg-h1;
+//$font-size-xl-h2:													$font-size-lg-h2;
+//$font-size-xl-h3:													$font-size-lg-h3;
+//$font-size-xl-h4:													$font-size-h4;
+//$font-size-xl-h5:													$font-size-h5;
+//$font-size-xl-h6:													$font-size-h6;
+//
+///*---------------------------------------------------------------------
+//
+//Custom display headline size (BRP SM)
+//
+//---------------------------------------------------------------------*/
+//$display1-size-sm:												($font-size-sm-h1 * 2);
+//$display2-size-sm:												($font-size-sm-h2 * 2);
+//$display3-size-sm:												($font-size-sm-h3 * 2);
+//$display4-size-sm:												($font-size-sm-h4 * 2);
+//
+///*---------------------------------------------------------------------
+//
+//Custom display headline size (BRP MD)
+//
+//---------------------------------------------------------------------*/
+//$display1-size-md:												($font-size-md-h1 * 2);
+//$display2-size-md:												($font-size-md-h2 * 2);
+//$display3-size-md:												($font-size-md-h3 * 2);
+//$display4-size-md:												($font-size-md-h4 * 2);
+//
+///*---------------------------------------------------------------------
+//
+//Custom display headline size (BRP LG)
+//
+//---------------------------------------------------------------------*/
+//$display1-size-lg:												($font-size-lg-h1 * 2);
+//$display2-size-lg:												($font-size-lg-h2 * 2);
+//$display3-size-lg:												($font-size-lg-h3 * 2);
+//$display4-size-lg:												($font-size-lg-h4 * 2);
+//
+///*---------------------------------------------------------------------
+//
+//Custom display headline size (BRP XL)
+//
+//---------------------------------------------------------------------*/
+//$display1-size-xl:												($font-size-xl-h1 * 2);
+//$display2-size-xl:												($font-size-xl-h2 * 2);
+//$display3-size-xl:												($font-size-xl-h3 * 2);
+//$display4-size-xl:												($font-size-xl-h4 * 2);
+
+/*---------------------------------------------------------------------
+
+Custom teaser variables
+
+---------------------------------------------------------------------*/
+//$teaser-height:														200px;
+
+/*---------------------------------------------------------------------
+
+Custom height variables
+
+---------------------------------------------------------------------*/
+//$vh-sm:																		25vh;
+//$vh-md:																		50vh;
+//$vh-lg:																		75vh;
+//$vh-xl:																		100vh;
+
+/*---------------------------------------------------------------------
+
+Custom avatar variables
+
+---------------------------------------------------------------------*/
+//$avatar-size-sm:													32px;
+//$avatar-size-md:													($avatar-size-sm * 2);
+//$avatar-size-lg:													($avatar-size-md * 2);
+//$avatar-border-radius:										50%;
+
+/*---------------------------------------------------------------------
+
+Custom footer variables
+
+---------------------------------------------------------------------*/
+//$footer-background:												$gray-lighter;
+//$footer-socket-background:								$gray-lighter;
+//
+//$footer-inverse-background:								$gray-light;
+//$footer-socket-inverse-background:				$gray-base;

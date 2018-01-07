@@ -1,0 +1,54 @@
+.widget {
+	background: $gray-lighter;
+	display: flex;
+	flex-direction: column;
+
+	.widget-image {
+		width: 100%;
+		background: $white;
+		text-align: center;
+
+		img {
+			width: auto;
+			height: auto;
+			max-height: 200px;
+			max-width: 100%;
+			padding: ($spacer * 2);
+			display: inline-block;
+		}
+	}
+
+	.widget-wrapper {
+		background: $gray-lighter;
+		padding: ($spacer * 2) ($spacer * 2) 0 ($spacer * 2);
+		height: 100%;
+
+		.widget-header {
+			margin-bottom: $spacer;
+
+			h4 {
+				color: $brand-primary;
+				margin-bottom: ($spacer * 0.5);
+			}
+
+			.widget-subject {
+				color: $gray;
+			}
+		}
+
+		.widget-body {
+			p {
+				color: $brand-primary-75;
+			}
+		}
+	}
+
+	.widget-footer {
+		padding: 0 ($spacer * 2) ($spacer * 2) ($spacer * 2);
+
+		.btn {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+}

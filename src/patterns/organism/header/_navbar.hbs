@@ -1,0 +1,28 @@
+---
+name: Navbar Pattern
+navbar-class: navbar-toggleable-md navbar-inverse bg-inverse
+hidden: true
+---
+<nav class="navbar {{navbar-class}}">
+	<div class="container">
+		{{#embed "patterns.organism.header._navbar-toggler" navbar-toggler-class="navbar-toggler-right" }}
+		{{/embed}}
+		<a class="navbar-brand" href="/demos/homepage.html">
+			{{#embed "patterns.atom.logo.logo-pattern" logo-class="class"}}
+			{{/embed}}
+		</a>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+			{{#block "navbar"}}
+				{{#embed "patterns.molecule.nav.nav-pattern" nav-class="navbar-nav"}}
+					{{#content "nav-body"}}
+						{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-label="Products"}}{{/embed}}
+						{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-label="Solutions"}}{{/embed}}
+						{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-label="Technology"}}{{/embed}}
+						{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-label="Support"}}{{/embed}}
+						{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-label="Company"}}{{/embed}}
+					{{/content}}
+				{{/embed}}
+			{{/block}}
+		</div>
+	</div>
+</nav>

@@ -1,0 +1,17 @@
+.logo{
+  &.logo--invert{
+    svg{
+      g#svg_g_1 {
+        fill: $white;
+      }
+
+      g#svg_g_2 {
+        fill: $white;
+      }
+
+      g#svg_g_3 {
+        fill: $white;
+      }
+    }
+  }
+}

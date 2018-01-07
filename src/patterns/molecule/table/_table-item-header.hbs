@@ -1,0 +1,15 @@
+---
+name: Table item header
+hidden: true
+---
+
+<th class="table-item-header {{table-item-header-class}}">
+	<div class="table-item-header-content">
+		{{#if table-item-header-image-path}}
+			<div class="table-item-header-image">
+				<img src="{{table-item-header-image-path}}" alt="{{table-item-header-image-alt}}" />
+			</div>
+		{{/if}}
+		{{table-item-header-label}}
+	</div>
+</th>

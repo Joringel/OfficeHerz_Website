@@ -1,0 +1,22 @@
+---
+name: Article pattern
+hidden: true
+---
+
+<article>
+	<header>
+		{{#block "article-header"}}
+			<h2>
+				{{#block "article-headline"}}
+					Headline
+				{{/block}}
+			</h2>
+			{{#block "article-details"}}
+				<span>Author</span> | <span>Jul 3, 2017</span>
+			{{/block}}
+		{{/block}}
+	</header>
+	{{#block "article-body"}}
+		Article Body
+	{{/block}}
+</article>

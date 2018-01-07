@@ -1,0 +1,46 @@
+---
+name: Card Pattern
+hidden: true
+---
+
+<div class="card {{card-class}}">
+	{{#if (content "card-header")}}
+		<div class="card-header">
+			{{#block "card-header"}}
+				Card-Header
+			{{/block}}
+		</div>
+	{{/if}}
+	{{#if card-image-path}}
+		<div class="card-image">
+			{{#block "card-image"}}
+				<img class="card-img" src="{{card-image-path}}" alt="{{card-img-alt}}">
+			{{/block}}
+		</div>
+	{{/if}}
+	{{#if (content "card-body")}}
+		<div class="card-block">
+			{{#block "card-body"}}
+				{{#if (content "card-headline")}}
+					<h4 class="card-title">
+						{{#block "card-headline"}}
+							Card-Title
+						{{/block}}
+					</h4>
+				{{/if}}
+				<p class="card-text">
+					{{#block "card-text"}}
+						This card has supporting text below as a natural lead-in to additional content.
+					{{/block}}
+				</p>
+			{{/block}}
+		</div>
+	{{/if}}
+	{{#if (content "card-footer")}}
+		<div class="card-footer">
+			{{#block "card-footer"}}
+				Card-Footer
+			{{/block}}
+		</div>
+	{{/if}}
+</div>

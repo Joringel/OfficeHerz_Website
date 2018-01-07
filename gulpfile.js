@@ -1,262 +1,147 @@
-require("babel-polyfill");
+'use strict';
 
-const JS_SRC = "./resources/js/src/";
-const JS_DIST = "./resources/js/dist/";
-const JS_LANG = "./resources/js/lang/";
-const SCSS_SRC = "./resources/scss/";
-const SCSS_DIST = "./resources/css/";
-const OUTPUT_PREFIX = "ceres";
+const drizzle = require('drizzle-builder');
+const gulp = require('gulp');
+const ghPages = require('gulp-gh-pages');
+const helpers = require('@cloudfour/hbs-helpers');
+const tasks = require('@cloudfour/gulp-tasks');
+const env = require('gulp-util').env;
+const config = require('./config');
 
-// import gulp
-var fs = require("fs");
-var Q = require("q");
-var path = require("path");
-var gulp = require("gulp");
-var gutil = require("gulp-util");
-var sourcemaps = require("gulp-sourcemaps");
-var concat = require("gulp-concat");
-var uglify = require("gulp-uglify");
-var rename = require("gulp-rename");
-var browserify = require("browserify");
-var babelify = require("babelify");
-var glob = require("glob");
-var source = require("vinyl-source-stream");
-var buffer = require("vinyl-buffer");
-var addSrc = require("gulp-add-src");
-var minifyCSS = require("gulp-minify-css");
-var eslint = require("gulp-eslint");
-var props = require("gulp-props");
-var tap = require("gulp-tap");
-var sass = require("gulp-sass");
-var autoprefixer = require("gulp-autoprefixer");
+const sass = require('gulp-sass');
+const shorthand = require('gulp-shorthand');
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css')
 
-gulp.task("default", ["build"]);
+var svgSprite = require('gulp-svg-sprite');
 
-gulp.task("build", [
-    "build:bundle",
-    "build:sass-min"
+// Append config
+Object.assign(config.drizzle, { helpers });
+
+// Register core tasks
+[
+  'clean',
+  'copy',
+  'js',
+  'serve',
+  'watch'
+].forEach(name => tasks[name](gulp, config[name]));
+
+// Register special CSS tasks
+//tasks.css(gulp, config['css:toolkit']);
+tasks.css(gulp, config['css:drizzle']);
+gulp.task('css', ['css:drizzle']);
+
+// Register Drizzle builder task
+gulp.task('drizzle', () => {
+  const result = drizzle(config.drizzle);
+  return result;
+});
+
+gulp.task('sass:dev', function () {
+  return gulp.src('./src/assets/toolkit/styles/toolkit.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./dist/assets/toolkit/styles/'));
+});
+
+gulp.task('sass:dist', function () {
+  return gulp.src('./src/assets/toolkit/styles/toolkit.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+    .pipe(shorthand())
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('./dist/assets/toolkit/styles/'));
+});
+
+gulp.task('sass:watch', function () {
+  gulp.watch('./src/assets/toolkit/styles/**/*.scss', ['sass:dev']);
+});
+
+var spriteConfig		= {
+    shape				: {
+        dimension		: {			// Set maximum dimensions
+            maxWidth	: 32,
+            maxHeight	: 32
+        },
+        spacing			: {			// Add padding
+            padding		: 0
+        }
+    },
+    mode				: {
+        symbol			:{
+            render		: {
+                scss	: true,
+                json    :{
+                    dest: "../../../../../data/icons",
+                    template: "./src/assets/toolkit/icons/icons-template.json",
+                }
+                }
+        }
+    }
+};
+
+gulp.task('iconSprites', function () {
+    return gulp.src('*.svg', {cwd: './src/assets/toolkit/icons/src'})
+    .pipe(svgSprite(spriteConfig))
+    .pipe(gulp.dest('./src/assets/toolkit/icons/dist'))
+});
+
+gulp.task('copySprite',['iconSprites'], function(){
+     return gulp.src('./src/assets/toolkit/icons/dist/symbol/svg/*.svg')
+    .pipe(gulp.dest('./dist/assets/toolkit/svg'));
+});
+
+
+
+// Register frontend composite task
+gulp.task('frontend:dev', [
+  'drizzle',
+  'copy',
+  'css',
+  'js',
+  'sass:dev',
+  'sass:watch',
+  'iconSprites',
+  'copySprite'
 ]);
 
-// Bundle everything
-gulp.task("build:bundle", [
-    "build:productive-app",
-    "build:vendor",
-    "build:productive-vendor",
-    "build:lang"
-], function()
-{
-    return gulp.src([
-        JS_LANG + "*.js",
-        JS_DIST + OUTPUT_PREFIX + "-vendor.productive.js",
-        JS_SRC + "app.config.js",
-        JS_DIST + OUTPUT_PREFIX + "-app.js"
-    ])
-        .pipe(sourcemaps.init({loadMaps: true}))
-        .pipe(concat(OUTPUT_PREFIX + ".js"))
-        .pipe(gulp.dest(JS_DIST))
-        .pipe(rename(OUTPUT_PREFIX + ".min.js"))
-        .pipe(uglify().on("error", gutil.log))
-        .pipe(sourcemaps.write("."))
-        .pipe(gulp.dest(JS_DIST));
+
+gulp.task('frontend:dist', [
+  'drizzle',
+  'copy',
+  'css',
+  'js',
+  'sass:dist'
+]);
+
+// Register build task (for continuous deployment via Netflify)
+gulp.task('build', ['clean'], done => {
+  gulp.start('frontend:dist');
+  done();
 });
 
-// Build app
-gulp.task("build:app", function()
-{
-    var builder = browserify({
-        entries  : glob.sync("app/!(services)/**/*.js", {cwd: JS_SRC}),
-        debug    : true,
-        basedir  : JS_SRC,
-        paths    : ["app/"],
-        transform: babelify
-    });
-
-    return builder.bundle()
-        .on("error", function(err)
-        {
-            console.log(err.toString());
-            this.emit("end");
-        })
-        .pipe(source(OUTPUT_PREFIX + "-app.js"))
-        .pipe(buffer())
-        .pipe(sourcemaps.init({loadMaps: true}))
-        .pipe(addSrc.append(JS_SRC + "app/main.js"))
-        .pipe(concat(OUTPUT_PREFIX + "-app.js"))
-        .pipe(sourcemaps.write(".", {
-            includeContent: false,
-            sourceRoot    : "../src"
-        }))
-        .pipe(gulp.dest(JS_DIST));
+/**
+ * Register demo task (deploy output to GitHub Pages)
+ * NOTE: Run this after building.
+ */
+gulp.task('demo', () => {
+  const buildDest = `${config.drizzle.dest.pages}/**/*`;
+  return gulp.src(buildDest)
+    .pipe(ghPages({
+      cacheDir: 'demo'
+    }));
 });
 
-// Build app for productive ( with eslint)
-gulp.task("build:productive-app", ["build:lint"], function()
-{
-    var builder = browserify({
-        entries  : glob.sync("app/!(services)/**/*.js", {cwd: JS_SRC}),
-        debug    : true,
-        basedir  : JS_SRC,
-        paths    : ["app/"],
-        transform: babelify
-    });
 
-    return builder.bundle()
-        .pipe(source(OUTPUT_PREFIX + "-app.js"))
-        .pipe(buffer())
-        .pipe(sourcemaps.init({loadMaps: true}))
-        .pipe(addSrc.append(JS_SRC + "app/main.js"))
-        .pipe(concat(OUTPUT_PREFIX + "-app.js"))
-        .pipe(sourcemaps.write(".", {
-            includeContent: false,
-            sourceRoot    : "../src"
-        }))
-        .pipe(gulp.dest(JS_DIST));
-});
 
-// Build Vendor
-gulp.task("build:productive-vendor", function()
-{
-    var libraries = require(JS_SRC + "vendor.productive.json");
-
-    return gulp.src(libraries)
-        .pipe(sourcemaps.init())
-        .pipe(concat(OUTPUT_PREFIX + "-vendor.productive.js"))
-        .pipe(sourcemaps.write(".", {sourceRoot: "../src/libraries"}))
-        .pipe(gulp.dest(JS_DIST));
-});
-
-gulp.task("build:vendor", function()
-{
-    var libraries = require(JS_SRC + "vendor.json");
-
-    return gulp.src(libraries)
-        .pipe(sourcemaps.init())
-        .pipe(concat(OUTPUT_PREFIX + "-vendor.js"))
-        .pipe(sourcemaps.write(".", {sourceRoot: "../src/libraries"}))
-        .pipe(gulp.dest(JS_DIST));
-});
-
-// ESLint
-gulp.task("build:lint", function()
-{
-    // ESLint ignores files with "node_modules" paths.
-    // So, it's best to have gulp ignore the directory as well.
-    // Also, Be sure to return the stream from the task;
-    // Otherwise, the task may end before the stream has finished.
-    return gulp.src([
-        "resources/js/src/**/*.js",
-        "!node_modules/**"
-    ])
-        .pipe(eslint({
-            configFile: "./.eslintrc.json",
-            fix       : true
-        }))
-        .pipe(gulp.dest("resources/js/src/"))
-        // eslint.format() outputs the lint results to the console.
-        // Alternatively use eslint.formatEach() (see Docs).
-        .pipe(eslint.format("table"))
-        .pipe(eslint.failAfterError());
-});
-
-// Lang
-gulp.task("build:lang", function()
-{
-    var defered = Q.defer();
-    var translations = {};
-
-    try
-    {
-        fs.accessSync("./resources/js/lang");
-    }
-    catch (e)
-    {
-        fs.mkdir("./resources/js/lang");
-    }
-    glob.sync("./resources/lang/*").forEach(function(filePath)
-    {
-        if (fs.statSync(filePath).isDirectory())
-        {
-            var lang = path.basename(filePath);
-
-            translations[lang] = {};
-            gulp.src(filePath + "/*.properties")
-                .pipe(props({namespace: ""}))
-                .pipe(
-                    tap(function(file, t)
-                    {
-                        var group = path.basename(file.path, ".json");
-
-                        translations[lang][group] = JSON.parse(String(file.contents));
-                    }).on("end", function()
-                    {
-                        defered.resolve();
-                        var text = "var Languages = Languages || {}; Languages['" + lang + "'] = {";
-
-                        for (var group in translations[lang])
-                        {
-                            text += group + ": {";
-                            for (var entry in translations[lang][group])
-                            {
-                                text += entry + ": " + translations[lang][group][entry] + ",";
-                            }
-                            text += "},";
-                        }
-                        text += "};";
-
-                        fs.writeFileSync("./resources/js/lang/" + lang + ".js", text);
-                    })
-                );
-        }
-    });
-
-    return defered.promise;
-});
-
-// SASS
-gulp.task("build:sass-min", ["build:sass"], function()
-{
-    return buildSass(OUTPUT_PREFIX + ".min.css", "compressed");
-});
-
-gulp.task("build:sass", function()
-{
-    return buildSass(OUTPUT_PREFIX + ".css", "expanded");
-});
-
-function buildSass(outputFile, outputStyle)
-{
-    var config = {
-        scssOptions  : {
-            errLogToConsole: true,
-            outputStyle    : outputStyle
-        },
-        prefixOptions: {
-            browsers: [
-                "last 2 versions",
-                "> 5%",
-                "Firefox ESR"
-            ]
-        }
-    };
-
-    return gulp
-        .src(SCSS_SRC + "Ceres.scss")
-        .pipe(sourcemaps.init())
-        .pipe(sass(config.scssOptions).on("error", sass.logError))
-        .pipe(rename(outputFile))
-        .pipe(autoprefixer(config.prefixOptions))
-        .pipe(minifyCSS())
-        .pipe(sourcemaps.write("."))
-        .pipe(gulp.dest(SCSS_DIST));
-}
-
-// Watchers
-gulp.task("watch:js", ["build:vendor"], function()
-{
-    return gulp.watch(JS_SRC + "**/*.js", ["build:app"]);
-});
-
-gulp.task("watch:sass", function()
-{
-    return gulp.watch(SCSS_SRC + "**/*.scss", ["build:sass"]);
+// Register default task
+gulp.task('default', ['frontend:dev'], done => {
+  gulp.start('serve');
+  if (env.dev) {
+    gulp.start('watch');
+  }
+  done();
 });

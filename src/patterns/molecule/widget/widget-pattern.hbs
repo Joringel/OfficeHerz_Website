@@ -1,0 +1,46 @@
+---
+name: Widget Pattern
+hidden: true
+---
+<a href="#">
+	<div class="widget {{widget-class}}">
+		{{#if widget-image-path}}
+			<div class="widget-image">
+				<img src="{{widget-image-path}}" alt="{{widget-image-alt}}" />
+			</div>
+		{{/if}}
+		<div class="widget-wrapper">
+			<div class="widget-header">
+				{{#block "widget-header"}}
+					<h4>
+						{{#block "teaser-headline"}}
+							Long Headline
+						{{/block}}
+					</h4>
+					{{#if (content "widget-subject")}}
+						<span class="widget-subject">
+							{{#block "widget-subject"}}
+								subject
+							{{/block}}
+						</span>
+					{{/if}}
+				{{/block}}
+			</div>
+			<div class="widget-body">
+				{{#block "widget-body"}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+						{{#content "paragraph"}}
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+						{{/content}}
+					{{/embed}}
+				{{/block}}
+			</div>
+		</div>
+		<div class="widget-footer">
+			{{#block "widget-footer"}}
+				{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Button label" button-start-tag="span"}}
+				{{/embed}}
+			{{/block}}
+		</div>
+	</div>
+</a>

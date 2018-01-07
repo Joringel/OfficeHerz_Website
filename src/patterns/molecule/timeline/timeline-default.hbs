@@ -1,0 +1,33 @@
+---
+name: Default
+previewClass: col-12
+---
+
+{{#embed "patterns.molecule.timeline.timeline-pattern"}}
+	{{#content "timeline-body"}}
+		{{#embed "patterns.molecule.timeline._timeline-item-pattern" timeline-img-path=(data 'images.timeline-1')}}
+			{{#content "timeline-item-title"}}
+				SLA-1
+			{{/content}}
+			{{#content "timeline-item-subline"}}
+				1987
+			{{/content}}
+		{{/embed}}
+		{{#embed "patterns.molecule.timeline._timeline-item-pattern" timeline-img-path=(data 'images.timeline-2')}}
+			{{#content "timeline-item-title"}}
+				DIY Printer
+			{{/content}}
+			{{#content "timeline-item-subline"}}
+				2004
+			{{/content}}
+		{{/embed}}
+		{{#embed "patterns.molecule.timeline._timeline-item-pattern" timeline-img-path=(data 'images.timeline-3')}}
+			{{#content "timeline-item-title"}}
+				Witbox Go!
+			{{/content}}
+			{{#content "timeline-item-subline"}}
+				2017
+			{{/content}}
+		{{/embed}}
+	{{/content}}
+{{/embed}}

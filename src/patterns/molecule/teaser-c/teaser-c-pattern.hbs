@@ -1,0 +1,45 @@
+---
+name: Teaser C Pattern
+teaser-c-image-path: /images/placeholder-ratio.jpg
+hidden: true
+---
+<a href="#">
+	<div class="teaser-c {{teaser-c-class}}">
+		{{#if teaser-c-image-path}}
+			<div class="teaser-image">
+				<img src="{{teaser-c-image-path}}" alt="{{#if teaser-c-image-alt}}{{teaser-c-image-alt}}{{else}}img-alt{{/if}}" {{#if teaser-c-image-width}}width="{{teaser-c-image-width}}"{{/if}} {{#if teaser-c-image-height}}height="{{teaser-c-image-height}}"{{/if}} />
+			</div>
+		{{/if}}
+		<div class="teaser-wrapper">
+			<div class="teaser-header">
+				{{#block "teaser-header"}}
+					<h3>
+						{{#block "teaser-headline"}}
+								Headline
+						{{/block}}
+					</h3>
+				{{/block}}
+			</div>
+			<div class="teaser-body">
+				{{#if (content "teaser-subject")}}
+					<span class="teaser-subject">
+						{{#block "teaser-subject"}}
+							subject
+						{{/block}}
+					</span>
+				{{/if}}
+				{{#block "teaser-body"}}
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
+				{{/block}}
+			</div>
+			{{#if (content "teaser-footer")}}
+				<div class="teaser-footer">
+					{{#block "teaser-footer"}}
+						{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Label" button-start-tag="span"}}
+						{{/embed}}
+					{{/block}}
+				</div>
+			{{/if}}
+		</div>
+	</div>
+</a>

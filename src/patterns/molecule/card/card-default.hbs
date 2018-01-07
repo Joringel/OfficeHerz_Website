@@ -1,0 +1,21 @@
+---
+name: Default
+previewClass: col-sm-6 col-md-4
+---
+
+{{#embed "patterns.molecule.card.card-pattern" card-image-path=(data 'images.stage-1')}}
+	{{#content "card-header"}}
+		Card-Header
+	{{/content}}
+	{{#content "card-body"}}
+		<h4 class="card-title">
+			Card-Title
+		</h4>
+		<p class="card-text">
+			This card has supporting text below as a natural lead-in to additional content.
+		</p>
+	{{/content}}
+	{{#content "card-footer"}}
+		Card-Footer
+	{{/content}}
+{{/embed}}

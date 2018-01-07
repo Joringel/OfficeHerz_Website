@@ -1,0 +1,43 @@
+---
+name: Teaser B Pattern
+teaser-b-image-path: /images/placeholder-ratio.jpg
+hidden: true
+---
+<a href="#">
+	<div class="teaser-b {{teaser-b-class}}">
+		<div class="teaser-image">
+			<img src="{{teaser-b-image-path}}" alt="{{#if teaser-b-image-alt}}{{teaser-b-image-alt}}{{else}}img-alt{{/if}}" {{#if teaser-b-image-width}}width="{{teaser-b-image-width}}"{{/if}} {{#if teaser-b-image-height}}height="{{teaser-b-image-height}}"{{/if}} />
+		</div>
+		<div class="teaser-wrapper">
+			<div class="teaser-header">
+				{{#block "teaser-header"}}
+					<h3>
+						{{#block "teaser-headline"}}
+								Headline
+						{{/block}}
+					</h3>
+				{{/block}}
+			</div>
+			<div class="teaser-body">
+				{{#if (content "teaser-subject")}}
+					<span class="teaser-subject">
+						{{#block "teaser-subject"}}
+							subject
+						{{/block}}
+					</span>
+				{{/if}}
+				{{#block "teaser-body"}}
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
+				{{/block}}
+			</div>
+			{{#if (content "teaser-footer")}}
+				<div class="teaser-footer">
+					{{#block "teaser-footer"}}
+						{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Label" button-start-tag="span"}}
+						{{/embed}}
+					{{/block}}
+				</div>
+			{{/if}}
+		</div>
+	</div>
+</a>

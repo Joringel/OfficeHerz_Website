@@ -1,0 +1,20 @@
+---
+name: Form Group Pattern
+form-text-type: text
+form-text-placeholder: Placeholder
+form-text-id: exampleID
+form-label-label: From Group
+form-label-for: exampleID
+hidden: true
+---
+
+<div class="form-group {{form-group-class}}">
+	{{#if form-label-label}}
+		{{#embed "patterns.molecule.form-group._form-label-pattern"}}
+		{{/embed}}
+	{{/if}}
+	{{#block "form-group-input"}}
+		{{#embed "patterns.atom.form-text.form-text-pattern"}}
+		{{/embed}}
+	{{/block}}
+</div>

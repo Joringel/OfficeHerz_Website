@@ -1,0 +1,211 @@
+---
+title: Cartpage
+notes: Example cartpage using template b
+layout: template-b
+labels:
+	- demo
+styles:
+	- toolkit
+breadcrumb:
+ - Home
+ - Content
+---
+
+{{#content "stage"}}
+	{{#embed "patterns.organism.stage.stage-pattern" stage-class="stage--type-a" stage-image-path=(data 'images.stage-4')}}
+		{{#content "stage-breadcrumb"}}
+			{{#embed "patterns.atom.breadcrumb.breadcrumb-pattern"}}
+			{{/embed}}
+		{{/content}}
+		{{#content "stage-header"}}
+			{{#embed "patterns.atom.headline.headline-pattern" headline-size="1"}}
+				{{#content "headline"}}
+					Your Cart
+				{{/content}}
+			{{/embed}}
+		{{/content}}
+	{{/embed}}
+{{/content}}
+
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12 offset-lg-1 col-lg-10">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-left"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									Request Sample
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-10 offset-lg-1">
+					{{#embed "patterns.molecule.table.table-pattern"}}
+						{{#content "table-head"}}
+							<tr>
+								{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="Productname"}}
+								{{/embed}}
+								{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="Quantity" }}
+								{{/embed}}
+								{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="Delete" }}
+								{{/embed}}
+							</tr>
+						{{/content}}
+						{{#content "table-body"}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+								{{#content "table-item-row-body"}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-link="#" table-item-column-label="TMC2041"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column"}}
+										{{#content table-item-column}}
+											{{#embed "patterns.atom.form-text.form-text-pattern" form-text-value="2"}}
+											{{/embed}}
+										{{/content}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column"}}
+										{{#content table-item-column}}
+											{{#embed "patterns.atom.button.button-pattern" button-class="btn-link btn--icon" button-icon="trash" button-label="" button-link="#" button-start-tag="a"}}
+											{{/embed}}
+										{{/content}}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+							{{#content "table-item-row-body"}}
+								{{#embed "patterns.molecule.table._table-item-column" table-item-column-link="#" table-item-column-label="TMC2041"}}
+								{{/embed}}
+								{{#embed "patterns.molecule.table._table-item-column"}}
+									{{#content table-item-column}}
+										{{#embed "patterns.atom.form-text.form-text-pattern" form-text-value="2"}}
+										{{/embed}}
+									{{/content}}
+								{{/embed}}
+								{{#embed "patterns.molecule.table._table-item-column"}}
+									{{#content table-item-column}}
+										{{#embed "patterns.atom.button.button-pattern" button-class="btn-link btn--icon" button-icon="trash" button-label="" button-link="#" button-start-tag="a"}}
+										{{/embed}}
+									{{/content}}
+								{{/embed}}
+							{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+								{{#content "table-item-row-body"}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-link="#" table-item-column-label="TMC2041"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column"}}
+										{{#content table-item-column}}
+											{{#embed "patterns.atom.form-text.form-text-pattern" form-text-value="2"}}
+											{{/embed}}
+										{{/content}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column"}}
+										{{#content table-item-column}}
+											{{#embed "patterns.atom.button.button-pattern" button-class="btn-link btn--icon" button-icon="trash" button-label="" button-link="#" button-start-tag="a"}}
+											{{/embed}}
+										{{/content}}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12 offset-lg-1 col-lg-10">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-left"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									Check your data
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-2"}}
+								{{#content "paragraph"}}
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 offset-lg-1 col-lg-10">
+					{{#embed "patterns.organism.form.form-pattern" form-class="form--form-reg"}}
+						{{#content "form-body"}}
+							{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label="First Name*"}}
+								{{#content "form-group-input"}}
+									{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label=" Name*"}}
+								{{#content "form-group-input"}}
+									{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label=" Company"}}
+								{{#content "form-group-input"}}
+									{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.form-group.form-group-pattern" form-label-label="E-Mail"}}
+								{{#content "form-group-input"}}
+									{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="email" }}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label="Website"}}
+								{{#content "form-group-input"}}
+									{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label="Phone Number*"}}
+								{{#content "form-group-input"}}
+									{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label="Company Address*"}}
+								{{#content "form-group-input"}}
+									{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label="Company City*"}}
+								{{#content "form-group-input"}}
+									{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label="Company Zip Code"}}
+								{{#content "form-group-input"}}
+									{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label="Country"}}
+								{{#content "form-group-input"}}
+									{{#embed "patterns.atom.form-select.form-select-pattern"}}{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label="Job Title"}}
+								{{#content "form-group-input"}}
+									{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-secondary" button-label="Submit now" button-type="submit" button-start-tag="button" button-end-tag="button" }}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}

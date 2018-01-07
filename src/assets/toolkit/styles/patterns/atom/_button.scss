@@ -1,0 +1,167 @@
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+$btn-line-height: 1.25 !default;
+$btn-font-weight: $font-weight-semibold !default;
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-primary-color: $white !default;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: $btn-primary-bg;
+$btn-secondary-color: $white;
+$btn-secondary-bg: $brand-highlight;
+$btn-secondary-border: $brand-highlight;
+$btn-info-color: $white !default;
+$btn-info-bg: $brand-info !default;
+$btn-info-border: $btn-info-bg !default;
+$btn-success-color: $white !default;
+$btn-success-bg: $brand-success !default;
+$btn-success-border: $btn-success-bg !default;
+$btn-warning-color: $white !default;
+$btn-warning-bg: $brand-warning !default;
+$btn-warning-border: $btn-warning-bg !default;
+$btn-danger-color: $white !default;
+$btn-danger-bg: $brand-danger !default;
+$btn-danger-border: $btn-danger-bg !default;
+$btn-link-disabled-color: $gray-light !default;
+$btn-padding-x: 1rem !default;
+$btn-padding-y: 0.5rem !default;
+$btn-padding-x-sm: 0.5rem !default;
+$btn-padding-y-sm: 0.25rem !default;
+$btn-padding-x-lg: 1.5rem !default;
+$btn-padding-y-lg: 0.75rem !default;
+$btn-block-spacing-y: 0.5rem !default;
+$btn-toolbar-margin: 0.5rem !default;
+$btn-border-radius: 0.3125rem !default;
+$btn-border-radius-lg: $border-radius-lg !default;
+$btn-border-radius-sm: $border-radius-sm !default;
+
+.btn {
+	align-items: center;
+	height: 40px;
+
+	&:hover{
+		cursor: pointer;
+	}
+
+	&.btn--icon,
+	&.btn--icon-left,
+	&.btn--icon-right {
+		svg {
+			fill: #fff;
+			width: 14px;
+			height: 14px;
+		}
+	}
+
+	&.btn--icon-left,
+	&.btn--icon-right {
+		display: inline-flex;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&.btn--icon-right {
+		svg {
+			margin-left: 10px;
+		}
+	}
+
+	&.btn--icon-left {
+		span {
+			order: 2;
+		}
+
+		svg {
+			order: 1;
+			margin-right: 10px;
+		}
+	}
+
+	&.btn-link {
+		padding: 0;
+
+		svg{
+			fill: $brand-primary;
+		}
+
+		&.btn--inverse {
+			color: $white;
+
+			&:hover {
+				color: rgba($white, .5);
+				
+				svg{
+					fill: $brand-primary-75;
+				}
+			}
+		}
+	}
+
+	&.btn-outline-primary,
+	&.btn-outline-secondary,
+	&.btn-outline-success,
+	&.btn-outline-info,
+	&.btn-outline-warning,
+	&.btn-outline-danger,
+	&.btn-outline-gray,
+	&.btn-outline-white{
+		border-width: 2px;
+	}
+
+	&.btn-outline-primary{
+		svg{
+			fill: $brand-primary;
+		}
+
+		&:hover {
+			svg{
+				fill: $white;
+			}
+		}
+	}
+
+	&.btn-outline-gray{
+		color: $brand-primary;
+		border-color: $gray-lighter;
+
+		svg{
+			fill: $brand-primary;
+		}
+
+		&:hover {
+			border-color: $brand-primary;
+		}
+	}
+
+	&.btn-outline-white{
+		color: $white;
+		border-color: $white;
+		background: transparent;
+
+		svg{
+			fill: $white;
+		}
+
+		&:hover {
+			border-color: $white;
+			color: $brand-primary;
+			background: $white;
+
+			svg{
+				fill: $brand-primary;
+			}
+		}
+	}
+
+	&.btn-sm{
+		height: inherit;
+	}
+
+	&.btn-lg{
+		height: inherit;
+	}
+}

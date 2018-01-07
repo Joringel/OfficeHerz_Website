@@ -1,0 +1,71 @@
+/**
+ * Toolkit Styles
+ */
+
+@import     "./_variables.scss";
+
+@import     "./design/index";
+
+@import     "./plugins/swiper.scss",
+						"./plugins/select2.min.scss";
+
+//ELEMENTS
+
+@import     "./patterns/atom/iconfont",
+						"./patterns/atom/blockquote",
+						"./patterns/atom/button",
+						"./patterns/atom/video",
+						"./patterns/atom/logo",
+						"./patterns/atom/avatar",
+						"./patterns/atom/form-text",
+						"./patterns/atom/form-select",
+						"./patterns/atom/form-checkbox",
+						"./patterns/atom/form-radio",
+						"./patterns/atom/form-label",
+						"./patterns/atom/form-textarea.scss",
+						"./patterns/atom/image",
+						"./patterns/atom/breadcrumb",
+						"./patterns/atom/nav-item",
+						"./patterns/atom/section",
+						"./patterns/atom/section-header",
+						"./patterns/atom/icon",
+						"./patterns/atom/badge",
+						"./patterns/atom/animation",
+						"./patterns/atom/divider",
+						"./patterns/atom/anker";
+
+@import     "./patterns/molecule/nav",
+						"./patterns/molecule/slide",
+						"./patterns/molecule/card",
+						"./patterns/molecule/gallery",
+						"./patterns/molecule/filter",
+						"./patterns/molecule/table",
+						"./patterns/molecule/tab",
+						"./patterns/molecule/form-group",
+						"./patterns/molecule/timeline",
+						"./patterns/molecule/modal",
+						"./patterns/molecule/media-text-item",
+						"./patterns/molecule/input-group",
+						"./patterns/molecule/teaser-a",
+						"./patterns/molecule/teaser-b",
+						"./patterns/molecule/teaser-c",
+						"./patterns/molecule/teaser-d",
+						"./patterns/molecule/teaser-e",
+						"./patterns/molecule/teaser-f",
+						"./patterns/molecule/pagination",
+						"./patterns/molecule/cite-cloud",
+						"./patterns/molecule/testimonial",
+						"./patterns/molecule/list-group",
+						"./patterns/molecule/btn-group",
+						"./patterns/molecule/widget";
+
+@import     "./patterns/organism/footer",
+						"./patterns/organism/header",
+						"./patterns/organism/card-layout",
+						"./patterns/organism/stage",
+						"./patterns/organism/article",
+						"./patterns/organism/navbar";
+
+@import     "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+

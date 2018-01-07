@@ -1,0 +1,36 @@
+.jumbotron{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &.jumbotron--bg-white{
+        background-color: #fff;
+    }
+    &.jumbotron--bg-brand-primary{
+        background-color: $brand-primary;
+        color: #fff;
+    }
+    &.jumbotron--bg-lighter{
+        background-color: $gray-lighter;
+    }
+    &.jumbotron--bg-gray-dark{
+        background-color: $gray-dark;
+        color: #fff;
+    }
+    &.jumbotron--height-sm{
+        min-height: $vh-sm;
+        max-height: $vh-sm;
+    }
+    &.jumbotron--height-md{
+        min-height: $vh-md;
+        max-height: $vh-md;
+    }
+    &.jumbotron--height-lg{
+        min-height: $vh-lg;
+        max-height: $vh-lg;
+    }
+    &.jumbotron--height-xl{
+        min-height: $vh-xl;
+        max-height: $vh-xl;
+    }
+}

@@ -1,0 +1,17 @@
+---
+name: Navigation Pattern
+hidden: true
+---
+
+<ul class="nav {{nav-class}}">
+	{{#block "nav-body"}}
+		{{#embed 'patterns.molecule.nav._nav-item-pattern' nav-item-label="Nav Label #1" nav-item-link="#"}}
+		{{/embed}}
+		{{#embed 'patterns.molecule.nav._nav-item-pattern' nav-item-label="Nav Label #2" nav-item-link="#"}}
+		{{/embed}}
+		{{#embed 'patterns.molecule.nav._nav-item-pattern' nav-item-label="Nav Label #3" nav-item-link="#"}}
+		{{/embed}}
+		{{#embed 'patterns.molecule.nav._nav-item-pattern' nav-item-label="Nav Label #4" nav-item-link="#"}}
+		{{/embed}}
+	{{/block}}
+</ul>

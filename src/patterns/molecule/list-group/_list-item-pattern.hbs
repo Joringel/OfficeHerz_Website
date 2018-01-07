@@ -1,0 +1,9 @@
+---
+name: List item pattern
+list-item-label: List Item
+hidden: true
+---
+
+<{{#unless list-item-link}}li{{else}}a{{/unless}} class="list-group-item {{list-item-class}} {{#if list-item-active}}active{{/if}} {{#if list-item-disabled}}disabled{{/if}}" {{#if list-item-link}} href="{{list-item-link}}"{{/if}}>
+    <span>{{#block "list-item-body"}}{{list-item-label}}{{/block}}</span>
+{{#unless list-item-link}}</li>{{else}}</a>{{/unless}}

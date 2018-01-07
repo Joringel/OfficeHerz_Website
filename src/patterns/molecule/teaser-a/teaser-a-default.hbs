@@ -1,0 +1,14 @@
+---
+name: Default
+previewClass: col-sm-6 col-md-5
+---
+
+{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-image-path=(data 'images.teaser-1')}}
+	{{#content "teaser-body"}}
+		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+	{{/content}}
+	{{#content "teaser-footer"}}
+		{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn more" button-start-tag="span"}}
+		{{/embed}}
+	{{/content}}
+{{/embed}}

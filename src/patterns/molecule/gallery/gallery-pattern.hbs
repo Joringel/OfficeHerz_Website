@@ -1,0 +1,19 @@
+---
+name: Gallery Pattern
+hidden: true
+---
+
+<div class="gallery {{gallery-class}}">
+	<div class="gallery-body">
+		<ul class="gallery-wrapper">
+			{{#block "gallery-body"}}
+				{{#each (data "gallery")}}
+					{{#each this as |gallery-item|}}
+						{{#embed "patterns.molecule.gallery._gallery-item"}}
+						{{/embed}}
+					{{/each}}
+				{{/each}}
+			{{/block}}
+		</ul>
+	</div>
+</div>

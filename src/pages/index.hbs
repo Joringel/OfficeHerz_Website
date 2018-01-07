@@ -1,0 +1,98 @@
+---
+title: Overview
+order: 1
+layout: master
+---
+
+<div class="drizzle-Grid">
+   <div class="drizzle-Grid-cell drizzle-u-lg-size12of12">
+       <div class="drizzle-Intro">
+        {{> patterns.atom.logo.logo-pattern}}
+        <h1 class="drizzle-u-padTop drizzle-u-padBottom">{{data "project.customer"}}</h1>
+        <h2>Pattern Library</h2>
+        <span>version {{data "project.version"}}</span>
+        </div>
+   </div>
+    <div class="drizzle-Grid-cell drizzle-u-lg-size6of12">
+        <div class="drizzle-u-pad">
+            <h2>Introduction</h2>
+            <p>
+              Katana is a modular Pattern Library to build and prototype web applications. This Pattern Library provides a couple of general elements and components for  web applications.
+            </p>
+
+            <h2>Demos</h2>
+            <p>
+              Some <a href="/demos/index.html">Demos</a> give an overview how the components could be used.
+            </p>
+
+            <h2>Resources</h2>
+            <p>
+                ...
+            </p>
+        </div>
+
+    </div>
+    <div class="drizzle-Grid-cell drizzle-u-lg-size6of12">
+       <div class="drizzle-u-pad">
+        <h2>Usage</h2>
+        <p>
+          The Katana Pattern Library provides css, java-script and html for elements and components. It could be used as an guidline to develope own components or it could be used as a UI Framework. In this case the css and java-script files have to be included in the dedicated application. By copy the html code from the compontent detailpage you get the compontent in the right style and behavior in your application.
+        </p>
+        <h3>CSS</h3>
+        <code class="language-markup">{{data "project.url"}}/assets/toolkit/styles/toolkit.css</code>
+
+        <h3>Java-Script</h3>
+        <code class="language-markup">{{data "project.url"}}/assets/toolkit/scripts/toolkit.js</code>
+        </div>
+    </div>
+</div>
+
+{{!--
+<hr />
+<div class="drizzle-u-pad drizzle-u-rythm">
+<h2 class="display-4">Atome</h2>
+      {{#each (collections "atom")}}
+	  <div style="margin-bottom: 40px;">
+	  	<h3>{{this.name}}</h3>
+         {{#each patterns}}
+         <div style="margin-bottom: 10px;">
+	 	      {{> drizzle.item-short}}
+         </div>
+	    {{/each}}
+	    <a href="{{@root.baseurl}}/{{url}}">Details ansehen</a>
+	  </div>
+      {{/each}}
+
+<hr />
+
+<h2 class="display-4">Moleküle</h2>
+      {{#each (collections "molecule")}}
+	  <div style="margin-bottom: 40px;">
+	  	<h3>{{this.name}}</h3>
+         {{#each patterns}}
+         <div style="margin-bottom: 10px;">
+	 	      {{> drizzle.item-short}}
+         </div>
+	    {{/each}}
+	    <a href="{{@root.baseurl}}/{{url}}">Details ansehen</a>
+	  </div>
+      {{/each}}
+
+<hr />
+
+<h2 class="display-4">Organismen</h2>
+      {{#each (collections "organism")}}
+	  	<div style="margin-bottom: 40px;">
+	  	<h3>{{this.name}}</h3>
+         {{#each patterns}}
+		 <div style="margin-bottom: 10px;">
+			 	{{> drizzle.item-short}}
+		 </div>
+	    {{/each}}
+	    <a href="{{@root.baseurl}}/{{url}}">Details ansehen</a>
+	  	</div>
+      {{/each}}
+
+</div>
+
+--}}

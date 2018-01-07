@@ -1,0 +1,51 @@
+---
+name: Form Pattern
+invert: true
+hidden: true
+---
+
+<div class="form {{form-class}}">
+	<form>
+		{{#block "form-body"}}
+			{{#embed "patterns.molecule.form-group.form-group-pattern" form-label-label="Username*"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}
+					{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.molecule.form-group.form-group-pattern" form-label-label="E-Mail"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="email" }}
+					{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label="First Name*"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label=" Name*"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label=" Company"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="text" }}{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label="Password*"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="password" }}{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.molecule.form-group.form-group-pattern"form-label-label="Repeat Password*"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="password" }}{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.atom.button.button-pattern" button-class="btn-secondary" button-label="Create profile now" button-type="submit" button-start-tag="button" button-end-tag="button" }}
+			{{/embed}}
+		{{/block}}
+	</form>
+</div>

@@ -1,0 +1,42 @@
+---
+title: Colors
+layout: colors
+notes: |
+  These are the brand colors.
+order: 10
+---
+
+
+        {{#each (data "colors")}}
+
+
+
+            <div class="drizzle-Swatch-content">
+           {{#each brand-colors as |brand-color|}}
+
+                    <div class="drizzle-Swatch-wrapper">
+                        {{#each this as |colors|}}
+                           <h4 class="drizzle-u-capitalize drizzle-Headline detail-js">{{@key}}</h4>
+                           {{#each colors as |color|}}
+
+
+
+                                    {{> drizzle.swatch color=color.color property=color.property}}
+
+
+                           {{/each}}
+                        {{/each}}
+                    </div>
+
+           {{/each}}
+            </div>
+
+            <div class="drizzle-Swatch-content">
+            {{#each states as |states-color|}}
+                {{> drizzle.swatch swatch-class="drizzle-Swatch-state" color=states-color.color property=states-color.property}}
+            {{/each}}
+            </div>
+
+        {{/each}}
+
+

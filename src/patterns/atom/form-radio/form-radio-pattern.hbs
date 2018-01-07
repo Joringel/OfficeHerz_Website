@@ -1,0 +1,17 @@
+---
+name: Form Radio Pattern
+form-radio-label: Form Radio Label
+hidden: true
+---
+
+<div class="form-radio {{form-radio-class}}">
+	<input type="radio" class="form-radio-input" name="{{form-radio-name}}" id="{{form-radio-id}}" value="{{form-radio-value}}" {{#if form-radio-checked}} checked {{/if}}>
+	<label for="{{form-radio-id}}" class="form-radio-label">
+		<span class="check-control"></span>
+		<span>
+			{{#block "label"}}
+					{{form-radio-label}}
+			{{/block}}
+		</span>
+	</label>
+</div>

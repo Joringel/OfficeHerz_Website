@@ -1,0 +1,19 @@
+---
+name: Blockquote pattern
+blockquote-cite: www.raatid.net
+hidden: true
+---
+
+
+<blockquote class="blockquote {{blockquote-class}}" {{#if blockquote-cite}}cite="{{blockquote-cite}}"{{/if}}>
+	{{#block "blockquote-body"}}
+		Some quick example text to build on the card title and make up the bulk of the card's content.
+	{{/block}}
+	{{#if blockquote-cite}}
+		<cite>
+			{{#block "blockquote-cite"}}
+				{{blockquote-cite}}
+			{{/block}}
+		</cite>
+	{{/if}}
+</blockquote>

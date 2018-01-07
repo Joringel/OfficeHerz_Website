@@ -1,0 +1,25 @@
+---
+name: Input Group Pattern
+hidden: true
+---
+
+<div class="input-group {{#if input-group-icon-right}}input-group--type-a{{/if}} {{input-group-class}}">
+	{{#unless input-group-icon-right}}
+		<div class="input-group-addon">
+			{{#block "input-group-addon"}}
+				@
+			{{/block}}
+		</div>
+	{{/unless}}
+	{{#block "input-group-input"}}
+		{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="email" form-text-placeholder="E-Mail"}}
+		{{/embed}}
+	{{/block}}
+	{{#if input-group-icon-right}}
+		<div class="input-group-addon">
+			{{#block "input-group-addon"}}
+				@
+			{{/block}}
+		</div>
+	{{/if}}
+</div>

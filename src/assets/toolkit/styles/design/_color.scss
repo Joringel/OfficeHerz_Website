@@ -1,0 +1,34 @@
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+// Start with assigning color names to specific hex values.
+$white: #fff;
+$black: #000;
+$red: #a94442;
+$orange: #f0ad4e;
+$yellow: #ffd500;
+$green: #5cb85c;
+$blue: #0275d8;
+$teal: #5bc0de;
+$pink: #ff5b77;
+$purple: #613d7c;
+// Create grayscale
+$gray: #afb3b6;
+$gray-darker: #15252f;
+$gray-dark: #3a5b78;
+$gray-light: #dbe0e6;
+$gray-lighter: #f1f3f5;
+// Reassign color vars to semantic color scheme
+$brand-primary: #004db9;
+$brand-primary-light: #1391cc;
+$brand-primary-25: #003d91;
+$brand-primary-50: #002e6e;
+$brand-primary-75: #001c42;
+$brand-primary-100: #000f24;
+$brand-highlight: #f7751f;
+$brand-success: $green;
+$brand-info: $teal;
+$brand-warning: $orange;
+$brand-danger: $red;
+$brand-inverse: $gray-dark;
+$overlay-color: rgba(0, 42, 95, 0.56);

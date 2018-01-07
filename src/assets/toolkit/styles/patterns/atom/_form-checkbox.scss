@@ -1,0 +1,40 @@
+.form-checkbox {
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	input[type="checkbox"] + label {
+		font-weight: $font-weight-semibold;
+		display: flex;
+		align-items: center;
+	}
+
+	input[type="checkbox"] + label span {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 20px;
+		height: 20px;
+		margin: -2px ($spacer * .75) 0 0;
+		vertical-align: middle;
+		background: $white;
+		cursor: pointer;
+		border-radius: 4px;
+		border: 1px solid $gray-light;
+
+		svg {
+			width: 14px;
+			height: 14px;
+			fill: $brand-primary;
+			opacity: 0;
+			transition: 250ms;
+		}
+	}
+
+	input[type="checkbox"]:checked + label span {
+		svg {
+			opacity: 1;
+			transition: 250ms;
+		}
+	}
+}

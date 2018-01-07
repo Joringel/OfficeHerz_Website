@@ -1,0 +1,112 @@
+.teaser-b {
+	width: 100%;
+	text-align: center;
+	background: $white;
+	margin: ($spacer*1.5) 0;
+	transform: scale(1);
+	transition: transform 0.2s,z-index 0.2s linear;
+	z-index: 0;
+	box-shadow: 0 0 50px 0 rgba(0,0,0,0.05);
+
+	&:hover {
+		transform: scale(1.02);
+		z-index: 10;
+	}
+
+	.teaser-image {
+		img {
+			max-width: 100%;
+			height: 100%;
+		}
+	}
+
+	.teaser-wrapper {
+		padding: ($spacer*2);
+
+		.teaser-header {
+			overflow: hidden;
+			margin-bottom: $spacer;
+			height: 28px;
+
+			.h3,
+			h3 {
+				font-size: $font-size-h4;
+				color: $brand-primary;
+				margin: 0;
+				text-decoration: none;
+			}
+		}
+
+		.teaser-body {
+			position: relative;
+			overflow: hidden;
+			margin-bottom: ($spacer*1.5);
+			min-height: 115px;
+			max-height: 115px;
+			color: $brand-primary-75;
+			font-size: $font-size-sm;
+			text-decoration: none;
+
+			&:after {
+				content: "";
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width: 150px;
+				height: 20px;
+				background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.78) 50%,#ffffff);
+				background-image: -o-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.78) 50%,#ffffff);
+				background-image: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0.78) 50%,#ffffff);
+				background-repeat: no-repeat;
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= '#00ffffff',endColorstr='#ffffffff',GradientType=1);
+				pointer-events: none;
+			}
+
+			p {
+				margin: 0;
+			}
+
+			.teaser-subject {
+				font-size: $font-size-sm;
+				display: block;
+				line-height: 24px;
+				height: 24px;
+			}
+		}
+
+		.teaser-footer {
+			overflow: hidden;
+			min-height: 40px;
+			max-height: 40px;
+		}
+	}
+
+	&.teaser-b--type-a {
+
+		.teaser-wrapper {
+
+			.teaser-header {
+				height: 34px;
+				margin-bottom: ($spacer*2);
+
+				.h3,
+				h3 {
+					font-size: $font-size-h3;
+				}
+			}
+
+			.teaser-body {
+				min-height: 104px;
+				max-height: 104px;
+				margin-bottom: ($spacer*2);
+				font-size: $font-size-base;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg){
+	.teaser-b{
+		margin: 0;
+	}
+}

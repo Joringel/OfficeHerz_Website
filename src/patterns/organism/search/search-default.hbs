@@ -1,0 +1,66 @@
+---
+name: Default
+---
+{{#embed "patterns.organism.search.search-pattern"}}
+	{{#content "search-header"}}
+		{{#embed "patterns.molecule.filter.filter-pattern" filter-class="mb-4"}}
+			{{#content "filter-body"}}
+				<div class="filter-row">
+					{{#embed "patterns.molecule.form-group.form-group-pattern" form-group-class="mb-0 mr-1" form-text-type="text" form-text-placeholder="Enter search term"}}
+					{{/embed}}
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn-primary mt-1 mt-md-0" button-label="Search now" button-type="submit" button-start-tag="button" button-end-tag="button" }}
+					{{/embed}}
+				</div>
+			{{/content}}
+		{{/embed}}
+	{{/content}}
+	{{#content "search-body"}}
+		<div class="search-row mb-2 d-flex flex-column align-items-start flex-md-row justify-content-md-between align-items-md-center">
+			{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0"}}
+				{{#content "paragraph"}}
+					Searched for <strong>"chip"</strong>. Found <strong>29</strong> results.
+				{{/content}}
+			{{/embed}}
+			<div class="btn-toolbar mt-1 mt-md-0" role="toolbar" aria-label="Toolbar with button groups">
+				<div class="btn-group align-items-center mr-2" role="group" aria-label="First group">
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0"}}
+						{{#content "paragraph"}}
+							Results per Page
+						{{/content}}
+					{{/embed}}
+				</div>
+				{{#embed "patterns.atom.dropdown.dropdown-pattern" dropdown-button-class="btn-outline-primary" dropdown-label= "10"}}
+					{{#content "dropdown-menue"}}
+						<a class="dropdown-item" href="#">25</a>
+						<a class="dropdown-item" href="#">50</a>
+						<a class="dropdown-item" href="#">75</a>
+					{{/content}}
+				{{/embed}}
+			</div>
+		</div>
+		{{#embed "patterns.atom.divider.divider-pattern" divider-class="divider--type-a mb-2"}}
+		{{/embed}}
+		{{#embed "patterns.molecule.teaser-c.teaser-c-pattern" teaser-c-class="teaser-c--type-b"}}
+		{{/embed}}
+		{{#embed "patterns.atom.divider.divider-pattern" divider-class="divider--type-a mb-2"}}
+		{{/embed}}
+		{{#embed "patterns.molecule.teaser-c.teaser-c-pattern" teaser-c-class="teaser-c--type-b"}}
+		{{/embed}}
+		{{#embed "patterns.atom.divider.divider-pattern" divider-class="divider--type-a mb-2"}}
+		{{/embed}}
+		{{#embed "patterns.molecule.teaser-c.teaser-c-pattern" teaser-c-class="teaser-c--type-b"}}
+		{{/embed}}
+		{{#embed "patterns.atom.divider.divider-pattern" divider-class="divider--type-a mb-2"}}
+		{{/embed}}
+		{{#embed "patterns.molecule.teaser-c.teaser-c-pattern" teaser-c-class="teaser-c--type-b"}}
+		{{/embed}}
+		{{#embed "patterns.atom.divider.divider-pattern" divider-class="divider--type-a mb-4"}}
+		{{/embed}}
+	{{/content}}
+	{{#content "search-footer"}}
+		<div class="search-row d-flex justify-content-center">
+			{{#embed "patterns.molecule.pagination.pagination-pattern"}}
+			{{/embed}}
+		</div>
+	{{/content}}
+{{/embed}}

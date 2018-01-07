@@ -1,0 +1,31 @@
+.filter {
+	width: 100%;
+	background: $gray-lighter;
+	padding: ($spacer * 2);
+
+	.filter-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+
+		.form-group {
+			width: 100%;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.filter {
+		.filter-row {
+			justify-content: flex-start;
+			align-items: flex-end;
+			flex-wrap: nowrap;
+
+			.form-group {
+				width: 100%;
+			}
+		}
+	}
+}

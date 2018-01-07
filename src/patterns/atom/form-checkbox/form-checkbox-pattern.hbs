@@ -1,0 +1,17 @@
+---
+name: Form Checkbox Pattern
+form-checkbox-label: Form Checkbox Label
+form-checkbox-id: c1
+hidden: true
+---
+
+<div class="form-checkbox {{form-checkbox-class}}">
+	<input id="{{form-checkbox-id}}" type="checkbox" class="form-check-input">
+	<label for="{{form-checkbox-id}}">
+		<span>
+			{{#embed "patterns.atom.icon.icon-pattern" icon-name="check"}}
+			{{/embed}}
+		</span>
+		{{form-checkbox-label}}
+	</label>
+</div>

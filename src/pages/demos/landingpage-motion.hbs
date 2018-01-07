@@ -1,0 +1,713 @@
+---
+title: Landingpage
+notes: Landingpage for motion control
+layout: template-a
+labels:
+	- demo
+styles:
+	- toolkit
+---
+
+{{#content "stage"}}
+	{{#embed "patterns.organism.stage.stage-pattern" stage-class="" stage-image-path=(data 'images.stage-1')}}
+		{{#content "stage-image"}}
+			<video autoplay loop muted class="stage__video running" onplay="this.classList.add('running')">
+				<source src="/images/_stage/02_MotionControl.mp4">
+			</video>
+		{{/content}}
+		{{#content "stage-header"}}
+			{{#embed "patterns.atom.headline.headline-pattern" headline-size="1"}}
+				{{#content "headline"}}
+					What is Motion Control?
+				{{/content}}
+			{{/embed}}
+		{{/content}}
+		{{#content "stage-body"}}
+			We live in a physical world. Whenever we need an object on the right time at the right place, we need motion control. Motion control is the control of position, speed and acceleration. As real objects are involved motion control requires precision and reliability more than most other disciplines.
+		{{/content}}
+		{{#content "stage-footer"}}
+			{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn more" button-link="#" button-start-tag="a"}}
+			{{/embed}}
+		{{/content}}
+	{{/embed}}
+{{/content}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-0"}}
+								{{#content "headline"}}
+									The Power of Motion Control
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6">
+					{{#embed "patterns.atom.animation.animation-pattern" animation-sprite="printer"}}
+					{{/embed}}
+				</div>
+				<div class="col-md-6">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Silent Stepper Motors
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0"}}
+						{{#content "paragraph"}}
+							The most advanced and most silent 3D-printer manufacturers rely on Trinamic's superior current control.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6 push-md-6">
+					{{#embed "patterns.atom.animation.animation-pattern" animation-sprite="robot"}}
+					{{/embed}}
+				</div>
+				<div class="col-md-6 pull-md-6">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Precise, Reliable
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0"}}
+						{{#content "paragraph"}}
+							Automation needs repeatable and dependable positioning. Trinamic's motion control technology is synonymous with high quality output since decades.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6">
+					{{#embed "patterns.atom.animation.animation-pattern" animation-sprite="drone"}}
+					{{/embed}}
+				</div>
+				<div class="col-md-6">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Efficient and Responsive.
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0"}}
+						{{#content "paragraph"}}
+							Dynamic Motors have highest requirements to fast current control. Trinamic's dedicated servo controllers make high-end current control easy as 1-2-3...
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6 push-md-6">
+					{{#embed "patterns.atom.animation.animation-pattern" animation-sprite="prothesis"}}
+					{{/embed}}
+				</div>
+				<div class="col-md-6 pull-md-6">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Smooth, Dependable.
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0"}}
+						{{#content "paragraph"}}
+							When a motor becomes part of the human body, it has to be as smooth and dependable as a muscle. Trinamic's technology helps to reduce inequalities.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6">
+					{{#embed "patterns.atom.animation.animation-pattern" animation-sprite="kuka"}}
+					{{/embed}}
+				</div>
+				<div class="col-md-6">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Reliable, Durable.
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0"}}
+						{{#content "paragraph"}}
+							Automated intra-logistics and robotics require durable and reliable motion and motor control. Trinamic's components and solutions embody decades of experience and have a proven track record of reliability.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class="section--bg-brand-primary"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-10 offset-md-1">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-left justify-content-md-between flex-md-row"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2 mb-md-0"}}
+								{{#content "headline"}}
+									Find out more about Motion Control.
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn More" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									Small motors are ubiquitous!
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0"}}
+								{{#content "paragraph"}}
+									Motors are everywhere, and so are applications for motion control. The challenge is to find the right solution for specific requirements. Trinamic products are used in a wide range of applications.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-image-path=(data 'images.teaser-15')}}
+						{{#content "teaser-headline"}}
+							Automation & Manufacturing
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn More" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-image-path=(data 'images.teaser-16')}}
+						{{#content "teaser-headline"}}
+						Medical & Laboratory
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn More" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-image-path=(data 'images.teaser-17')}}
+						{{#content "teaser-headline"}}
+						Robotics & Drones
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn More" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									Trinamic - The Motion Control Specialist
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+								{{#content "paragraph"}}
+									Trinamic’s ICs and microsystems connect the digital and physical worlds by embodying decades of engineering experience in to every one of our products. Innovation leading companies from all over the world rely in Trinamic products, systems, and support.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 col-sm-4 col-lg-2 offset-lg-1">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--logo-item" image-path=(data 'images.logo-1')}}
+					{{/embed}}
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--logo-item" image-path=(data 'images.logo-2')}}
+					{{/embed}}
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--logo-item" image-path=(data 'images.logo-3')}}
+					{{/embed}}
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--logo-item" image-path=(data 'images.logo-4')}}
+					{{/embed}}
+				</div>
+				<div class="col-6 col-sm-4 col-lg-2">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--logo-item" image-path=(data 'images.logo-5')}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									Trinamic System Architecture
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+								{{#content "paragraph"}}
+									The Trinamic Motion Control Architecture consists of several functional building blocks. The motion controller receives commands over a selected interface, in a defined protocol. The commands are translated into signals for the motor control and driver part.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.landing-1') teaser-b-image-width="200" teaser-b-image-height="200"}}
+						{{#content "teaser-headline"}}
+							Motion Controller
+						{{/content}}
+						{{#content "teaser-body"}}
+							Our products are based on two main functional building blocks, Motion Controllers, and Drivers, They receive commands from a host and drive the motor.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.landing-2') teaser-b-image-width="200" teaser-b-image-height="200"}}
+						{{#content "teaser-headline"}}
+							Interface
+						{{/content}}
+						{{#content "teaser-body"}}
+							Every system needs an interface to connect to its environment. Interface specifications depend on complexity level, timing constraint, and robustness requirements.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.landing-3') teaser-b-image-width="200" teaser-b-image-height="200"}}
+						{{#content "teaser-headline"}}
+							Protocol
+						{{/content}}
+						{{#content "teaser-body"}}
+							To use Trinamic products you need to speak their language. We created TMCL, to use simple commands to easiyl set the parameters. CANopen is standard in the automation industry.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									Amplify your Product with Trinamic technologies
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+								{{#content "paragraph"}}
+									The Trinamic Motion Control Architecture consists of several functional building blocks. The motion controller receives commands over a selected interface, in a defined protocol. The commands are translated into signals for the motor control and driver part.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row d-flex align-items-center mb-4">
+				<div class="col-md-6">
+					{{#embed "patterns.atom.animation.animation-pattern" animation-sprite="micro-stepping"}}
+					{{/embed}}
+				</div>
+				<div class="col-md-6">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Micro Stepping
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-2"}}
+						{{#content "paragraph"}}
+							The higher the micro-step resolution, the smoother the motor, greatly reducing resonance and distortion.
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Learn More" button-link="#" button-start-tag="a"}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6 push-md-6">
+					{{#embed "patterns.atom.animation.animation-pattern" animation-sprite="ramping"}}
+					{{/embed}}
+				</div>
+				<div class="col-md-6 pull-md-6">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Ramp Generation
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-2"}}
+						{{#content "paragraph"}}
+							No beer get's spilled! Trinamic's advanced motion controllers support s-shaped acceleration ramps for super smooth motion.
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Learn More" button-link="#" button-start-tag="a"}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class="section--bg-brand-primary"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-10 offset-md-1">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-left justify-content-md-between flex-md-row"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2 mb-md-0"}}
+								{{#content "headline"}}
+									More about our Technologies
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn More" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									The Motor is the Sensor! Trinamic Innovations are driving the Industry
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+								{{#content "paragraph"}}
+									Trinamic products offer a variety of unique features to improve accuracy and smoothness of motor operation.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-class="teaser-a--type-a" teaser-a-image-path=(data 'images.landing-5')}}
+						{{#content "teaser-headline"}}
+							StallGuard™
+						{{/content}}
+						{{#content "teaser-body"}}
+							The world’s first sensor-less load measurement that gives real-time feedback on the load angle of the motor.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-class="teaser-a--type-a" teaser-a-image-path=(data 'images.landing-4')}}
+						{{#content "teaser-headline"}}
+							CoolStep™
+						{{/content}}
+						{{#content "teaser-body"}}
+							Load-dependent current control . Always drives the motor at optimum current for optimal energy efficiency.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-class="teaser-a--type-a" teaser-a-image-path=(data 'images.landing-6')}}
+						{{#content "teaser-headline"}}
+							StealthChop™
+						{{/content}}
+						{{#content "teaser-body"}}
+							A voltage chopper principle that guarantees absolutely quiet motor operation in standstill or slow motion.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class="section--bg-brand-primary"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-3 push-md-8">
+					<div class="animation " style="height:200px;">
+						<div class="spotlight">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7 pull-md-2">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-left"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									More Trinamic Innovations
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Get more" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									At Trinamic everything is in Motion.
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+								{{#content "paragraph"}}
+									Our highly specialized employees are enthusiasts with a special dedication to Motion Control. So we are not only working on this topic at the Lab, but also in our spare time. We are Engineers, Computer Scientists and Physicist and our expertise is driving the whole industry.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+						{{#embed "patterns.organism.card-layout.card-layout-pattern" card-layout-class="card-columns"}}
+							{{#content "card-layout"}}
+								{{#each (data "masonry")}}
+									{{#embed "patterns.molecule.card.card-pattern" card-class="card--type-a" card-image-path=image}}
+										{{#content "card-body"}}
+											<h4 class="card-title">
+												{{headline}}
+											</h4>
+											<p class="card-text">
+												{{subline}}
+											</p>
+										{{/content}}
+									{{/embed}}
+								{{/each}}
+							{{/content}}
+						{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class="section--bg-image section--height-md py-2 py-md-6 d-flex align-items-center" section-image-path=(data 'images.stage-5')}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									It has a Motor? Choose Trinamic
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-2"}}
+								{{#content "paragraph"}}
+									At Trinamic, we believe that motion control should be precise and dependable, motors should work efficient, smooth, and noiseless. Our products enable the new breed of software-centric engineers to realize leading edge solutions, reliable and fast - because we supply an API which makes it easy for them to access our technology.
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Meet us" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+								{{#content "headline"}}
+									Get started with Motion Control
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+								{{#content "paragraph"}}
+									Motion control always includes hardware and software. With our evaluation kits, software packages, application notes and how-to videos we offer a fully equipped toolbox. Get instantly started creating great designs.
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4 offset-md-2">
+					{{#embed "patterns.atom.animation.animation-pattern" animation-sprite="rocket"}}
+					{{/embed}}
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="3" headline-class="mb-2 text-center"}}
+						{{#content "headline"}}
+							Hardware
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="text-center"}}
+						{{#content "paragraph"}}
+							Whatever your application is, start your design easily using the Landungsbrücke Evaluation Kits. The flexible layout enables testing of several different chips with almost the same basic setup.
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.atom.animation.animation-pattern" animation-sprite="code"}}
+					{{/embed}}
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="3" headline-class="mb-2 text-center"}}
+						{{#content "headline"}}
+							Software
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="text-center"}}
+						{{#content "paragraph"}}
+							To bring our motion control hardware to life, we offer a rich tool set of software. Start easy using the TMCL-IDE or create powerful embedded code based on the TMC-API.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-10 offset-md-1">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-left justify-content-md-between flex-md-row"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2 mb-md-0"}}
+								{{#content "headline"}}
+									Start with trinamic Evaluation Kits
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Start now" button-link="#" button-start-tag="a"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class="section--bg-brand-highlight"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-10 offset-md-1">
+					{{#embed "patterns.molecule.teaser-d.teaser-d-pattern" teaser-d-class="teaser-d--type-a"}}
+						{{#content "teaser-headline"}}
+							Need to move something?
+						{{/content}}
+						{{#content "teaser-body"}}
+							Trinamic is the goto partner for everything that needs to be positioned precisely. Whenever a small motor is involved, Trinamic makes it turn.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Contact us today" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}

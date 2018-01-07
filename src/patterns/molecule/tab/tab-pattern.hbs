@@ -1,0 +1,47 @@
+---
+name: tab pattern
+hidden: true
+---
+<div class="tab {{tab-class}}">
+	<ul class="nav nav-tabs" role="tablist">
+		{{#block "tab-header"}}
+			<li class="nav-item">
+				<a class="nav-link active" href="#Tab1" role="tab" data-toggle="tab" aria-expanded="true">
+					Tab label #1
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#Tab2" role="tab" data-toggle="tab" aria-expanded="false">
+					Tab label #2
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#Tab3" role="tab" data-toggle="tab" aria-expanded="false">
+					Tab label #3
+				</a>
+			</li>
+		{{/block}}
+	</ul>
+	<div class="tab-content">
+		{{#block "tab-body"}}
+			{{#embed "patterns.molecule.tab._tab-pane" tab-pane-active=true tab-pane-id="Tab1"}}
+				{{#content "tab-pane-body"}}
+					{{#embed "patterns.atom.image.image-pattern" image-path=(data 'images.pinout-3')}}
+					{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.molecule.tab._tab-pane" tab-pane-id="Tab2"}}
+				{{#content "tab-pane-body"}}
+					{{#embed "patterns.atom.image.image-pattern" image-path=(data 'images.pinout-2')}}
+					{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.molecule.tab._tab-pane" tab-pane-id="Tab3"}}
+				{{#content "tab-pane-body"}}
+					{{#embed "patterns.atom.image.image-pattern" image-path=(data 'images.pinout-1')}}
+					{{/embed}}
+				{{/content}}
+			{{/embed}}
+		{{/block}}
+	</div>
+</div>

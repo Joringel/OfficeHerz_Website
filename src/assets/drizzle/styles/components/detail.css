@@ -1,0 +1,27 @@
+.detail{
+    font-family: var(--Font-family-sans-serif) !important;
+    color: var(--color-grey-light);
+}
+
+.showDetails-js{
+    font-family: var(--Font-family-sans-serif) !important;
+    text-decoration: none;
+    color: var(--color-grey-light);
+    &:hover{
+        text-decoration: none;
+        color: var(--color-grey);
+    }
+    &:focus{
+        text-decoration: none;
+        color: var(--color-grey-light);
+    }
+}
+
+.detail-js{
+    transition: .2s cubic-bezier(.0,0,.07,1);
+    opacity: 0;
+    &.show{
+
+        opacity: 1;
+    }
+}

@@ -1,0 +1,24 @@
+---
+name: Table item column
+hidden: true
+---
+
+<td class="table-item-column {{table-item-column-class}}" data-value="{{data-value}}" data-value-asc="{{data-value-asc}}" data-value-desc="{{data-value-desc}}">
+	{{#block table-item-column}}
+		{{#if table-item-column-link}}
+			<a href="{{table-item-column-link}}" title="{{table-item-column-title}}">
+		{{/if}}
+		{{#if table-item-column-label}}
+			{{table-item-column-label}}
+		{{/if}}
+		{{#if table-item-column-icon}}
+			<svg class="icon" viewBox="0 0 32 32">
+				<use xlink:href="/assets/toolkit/svg/sprite.symbol.svg#{{table-item-column-icon}}"></use>
+			</svg>
+			<span class="sr-only">yes</span>
+		{{/if}}
+		{{#if table-item-column-link}}
+			</a>
+		{{/if}}
+	{{/block}}
+</td>

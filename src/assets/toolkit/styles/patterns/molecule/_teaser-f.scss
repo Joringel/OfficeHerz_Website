@@ -1,0 +1,40 @@
+.teaser-f {
+	margin: ($spacer*1.5) 0;
+
+	.teaser-image {
+		margin-bottom: ($spacer * 2);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			max-width: 100%;
+			height: 100%;
+		}
+	}
+
+	.teaser-header {
+		margin-bottom: $spacer;
+		color: $brand-primary;
+		text-align: center;
+
+		h3 {
+			margin-bottom: 0;
+		}
+	}
+
+	.teaser-body {
+		text-align: center;
+	}
+
+	.teaser-footer {
+		text-align: center;
+		margin-top: $spacer;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.teaser-f {
+		margin: 0;
+	}
+}

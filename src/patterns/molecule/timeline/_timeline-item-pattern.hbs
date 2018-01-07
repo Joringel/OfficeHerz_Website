@@ -1,0 +1,20 @@
+---
+name: Timeline item patern
+hidden: true
+---
+
+<div class=" timeline-item {{timeline-item-class}}">
+	<img class="timeline-item-img" src="{{timeline-img-path}}" alt="{{timeline-img-alt}}">
+	<span class="timeline-item-title">
+		{{#block "timeline-item-title"}}
+			Item title
+		{{/block}}
+	</span>
+	<div class="timeline-item-divider">
+	</div>
+	<span class="timeline-item-sub">
+		{{#block "timeline-item-subline"}}
+			Item subline
+		{{/block}}
+	</span>
+</div>

@@ -1,0 +1,22 @@
+---
+name: Pagination Pattern
+hidden: true
+---
+<div class="pagination {{pagination-class}}">
+	<ul class="pagination-wrapper">
+		{{#block "pagination-body"}}
+			{{#embed 'patterns.molecule.pagination._pagination-item-pattern' pagination-item-label="Previous" page-item-link="#" page-item-disabled="true"}}
+			{{/embed}}
+			{{#embed 'patterns.molecule.pagination._pagination-item-pattern' pagination-item-label="1" pagination-item-link="#"}}
+			{{/embed}}
+			{{#embed 'patterns.molecule.pagination._pagination-item-pattern' pagination-item-label="2" pagination-item-link="#"}}
+			{{/embed}}
+			{{#embed 'patterns.molecule.pagination._pagination-item-pattern' pagination-item-label="3" pagination-item-link="#" pagination-item-active="true"}}
+			{{/embed}}
+			{{#embed 'patterns.molecule.pagination._pagination-item-pattern' pagination-item-label="4" pagination-item-link="#"}}
+			{{/embed}}
+			{{#embed 'patterns.molecule.pagination._pagination-item-pattern' pagination-item-label="Next" pagination-item-link="#"}}
+			{{/embed}}
+		{{/block}}
+	</ul>
+</div>

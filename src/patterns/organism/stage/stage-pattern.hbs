@@ -1,0 +1,46 @@
+---
+name: stage pattern
+hidden: true
+---
+
+<div class="stage {{stage-class}}">
+	<div class="stage-image" style="background-image:url('{{stage-image-path}}')">
+		{{#block "stage-image"}}
+		{{/block}}
+	</div>
+
+		{{#if (content "stage-breadcrumb")}}
+			<div class="container">
+				<div class="stage-breadcrumb">
+					{{#block "stage-breadcrumb"}}
+						{{#embed "patterns.atom.breadcrumb.breadcrumb-pattern"}}
+						{{/embed}}
+					{{/block}}
+				</div>
+			</div>
+		{{/if}}
+			<div class="stage-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="stage-header">
+						{{#block "stage-header"}}
+						{{/block}}
+					</div>
+					{{#if (content "stage-body")}}
+						<div class="stage-body">
+							{{#block "stage-body"}}
+							{{/block}}
+						</div>
+					{{/if}}
+					{{#if (content "stage-footer")}}
+						<div class="stage-footer">
+							{{#block "stage-footer"}}
+							{{/block}}
+						</div>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

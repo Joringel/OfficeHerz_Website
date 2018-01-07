@@ -1,0 +1,15 @@
+---
+name: Default
+previewClass: col-12
+invert: true
+---
+
+{{#embed "patterns.molecule.teaser-d.teaser-d-pattern" teaser-d-image-path=(data 'images.teaser-13')}}
+	{{#content "teaser-body"}}
+		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
+	{{/content}}
+	{{#content "teaser-footer"}}
+		{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Label" button-start-tag="span"}}
+		{{/embed}}
+	{{/content}}
+{{/embed}}

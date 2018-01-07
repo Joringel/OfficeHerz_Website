@@ -1,0 +1,22 @@
+---
+name: Default
+---
+
+{{#embed "patterns.organism.stage.stage-pattern" stage-class="" stage-image-path=(data 'images.stage-1')}}
+	{{#content "stage-image"}}
+		<video autoplay loop muted class="stage__video running" onplay="this.classList.add('running')">
+			<source src="/images/_stage/02_WhatWeDo480p_high50pro_web.mp4">
+		</video>
+	{{/content}}
+	{{#content "stage-header"}}
+		{{#embed "patterns.atom.headline.headline-pattern" headline-size="1"}}
+			{{#content "headline"}}
+				Trinamic’s advanced microsystems transform digital information into physical motion.
+			{{/content}}
+		{{/embed}}
+	{{/content}}
+	{{#content "stage-footer"}}
+		{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="What is Motion Control?" button-link="#" button-start-tag="a"}}
+		{{/embed}}
+	{{/content}}
+{{/embed}}

@@ -1,0 +1,24 @@
+---
+name: Validation
+---
+
+{{#embed "patterns.molecule.form-group.form-group-pattern" form-group-class="has-success" form-label-label="Input with success" }}
+	{{#content "form-group-input"}}
+		{{#embed "patterns.atom.form-text.form-text-pattern" form-text-class="form-control-success" form-text-type="text" }}{{/embed}}
+		<div class="form-control-feedback">Success! You've done it.</div>
+	{{/content}}
+{{/embed}}
+
+{{#embed "patterns.molecule.form-group.form-group-pattern" form-group-class="has-warning" form-label-label="Input with warning" }}
+	{{#content "form-group-input"}}
+		{{#embed "patterns.atom.form-text.form-text-pattern" form-text-class="form-control-warning" form-text-type="text" }}{{/embed}}
+		<div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
+	{{/content}}
+{{/embed}}
+
+{{#embed "patterns.molecule.form-group.form-group-pattern" form-group-class="has-danger" form-label-label="Input with danger" }}
+	{{#content "form-group-input"}}
+		{{#embed "patterns.atom.form-text.form-text-pattern" form-text-class="form-control-danger" form-text-type="text" }}{{/embed}}
+		<div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+	{{/content}}
+{{/embed}}

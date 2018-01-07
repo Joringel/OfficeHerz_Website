@@ -1,0 +1,42 @@
+---
+title: Images
+layout: colors
+---
+
+<div class="detail-js">
+    <p>
+        Some description
+    </p>
+</div>
+
+<div class="grid-images">
+        <div class="grid-sizer"></div>
+         {{#each (data "images")}}
+            <div class="grid-item">
+                <div class="image-item">
+                    <div class="image-container">
+                        <img src="{{this}}" />
+                    </div>
+                    <div class="image-detail detail-js">
+                       <table>
+                           <tr>
+                               <td>Name</td>
+                               <td>{{@key}}</td>
+                           </tr>
+                           <tr>
+                               <td>Size:</td>
+                               <td></td>
+                           </tr>
+                           <tr>
+                               <td>Ratio:</td>
+                               <td></td>
+                           </tr>
+                       </table>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+

@@ -1,0 +1,41 @@
+---
+name: Styles
+masonryclass: grid-item--width2
+notes: <code>.alert-info</code> <code>.alert-success</code> <code>.alert-warning</code> <code>.alert-danger</code>
+---
+
+{{#embed "patterns.atom.alert.alert-pattern" alert-class="alert-info" removable=true}}
+  {{#content "alert-message"}}
+    Heads up!
+  {{/content}}
+  {{#content "alert-description"}}
+    This alert needs your attention, but it's not super important.
+  {{/content}}
+{{/embed}}
+
+{{#embed "patterns.atom.alert.alert-pattern" alert-class="alert-success" removable=true}}
+  {{#content "alert-message"}}
+    Success!
+  {{/content}}
+  {{#content "alert-description"}}
+    This alert needs your attention and shows a successfull task.
+  {{/content}}
+{{/embed}}
+
+{{#embed "patterns.atom.alert.alert-pattern" alert-class="alert-warning" removable=false}}
+  {{#content "alert-message"}}
+    Warning!
+  {{/content}}
+  {{#content "alert-description"}}
+    This alert needs your attention and it shows a warning.
+  {{/content}}
+{{/embed}}
+
+{{#embed "patterns.atom.alert.alert-pattern" alert-class="alert-danger" removable=false}}
+  {{#content "alert-message"}}
+    Error!
+  {{/content}}
+  {{#content "alert-description"}}
+    This alert needs your attention and it shows an error message.
+  {{/content}}
+{{/embed}}

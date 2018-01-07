@@ -1,0 +1,8 @@
+---
+name: Form Text Pattern
+form-text-placeholder: Placeholder
+form-text-type: text
+hidden: true
+---
+
+<input class="form-text form-control {{form-text-class}}" type="{{form-text-type}}" value="{{form-text-value}}" id="{{#if form-text-id}}{{form-text-id}}{{else}}form-id{{/if}}" name="{{#if form-text-name}}{{form-text-name}}{{else}}form-name{{/if}}" placeholder="{{form-text-placeholder}}">

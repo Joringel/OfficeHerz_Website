@@ -1,0 +1,65 @@
+$badge-default-bg: $gray-light !default;
+$badge-primary-bg: $brand-primary !default;
+$badge-success-bg: $brand-success !default;
+$badge-info-bg: $brand-info !default;
+$badge-warning-bg: $brand-highlight !default;
+$badge-danger-bg: $brand-danger !default;
+$badge-color: $white !default;
+$badge-link-hover-color: $white !default;
+$badge-font-size: 75% !default;
+$badge-font-weight: $font-weight-bold !default;
+$badge-padding-x: 0.4em !default;
+$badge-padding-y: 0.25em !default;
+$badge-pill-padding-x: 0.6em !default;
+$badge-pill-border-radius: 10rem !default;
+
+.katana {
+	.badge {
+		&.badge-circle {
+			width: 16px;
+			height: 16px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			white-space: normal;
+		}
+
+		&.badge--size-sm {
+			width: ($spacer * 4);
+			height: ($spacer * 4);
+		}
+
+		&.badge--size-md {
+			font-size: $font-size-xs;
+			font-weight: 700;
+			width: ($spacer * 8);
+			height: ($spacer * 8);
+		}
+
+		&.badge--size-xl {
+			width: ($spacer * 14);
+			height: ($spacer * 14);
+			font-size: ($font-size-base * 1);
+			line-height: 1.25;
+		}
+
+		&.badge--absolute-right{
+			box-shadow: -13px 5px 50px 0px rgba(0, 0, 0, 0.16);
+			position: absolute;
+			transform: rotate(15deg);
+			top: 0;
+			right: 15px;
+			z-index: 999;
+		}
+
+		&.badge--absolute-left{
+			box-shadow: -13px 5px 50px 0px rgba(0, 0, 0, 0.16);
+			position: absolute;
+			transform: rotate(-15deg);
+			top: 0;
+			left: 15px;
+			z-index: 999;
+		}
+	}
+}

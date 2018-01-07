@@ -1,0 +1,48 @@
+---
+name: Teaser D Pattern
+teaser-d-image-path: /images/placeholder-ratio.jpg
+hidden: true
+---
+
+<a href="#">
+	<div class="teaser-d {{teaser-d-class}}">
+		<div class="teaser-wrapper">
+			{{#if teaser-d-image-path}}
+				<div class="teaser-image">
+					<img src="{{teaser-d-image-path}}" alt="{{#if teaser-d-image-alt}}{{teaser-d-image-alt}}{{else}}img-alt{{/if}}" {{#if teaser-d-image-width}}width="{{teaser-d-image-width}}"{{/if}} {{#if teaser-d-image-height}}height="{{teaser-d-image-height}}"{{/if}} />
+				</div>
+			{{/if}}
+			<div class="teaser-header">
+				{{#block "teaser-header"}}
+					<h3>
+						{{#block "teaser-headline"}}
+								Headline
+						{{/block}}
+					</h3>
+				{{/block}}
+			</div>
+			{{#if (content "teaser-body")}}
+				<div class="teaser-body">
+					{{#if (content "teaser-subject")}}
+						<span class="teaser-subject">
+							{{#block "teaser-subject"}}
+								subject
+							{{/block}}
+						</span>
+					{{/if}}
+						{{#block "teaser-body"}}
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
+						{{/block}}
+				</div>
+			{{/if}}
+			{{#if (content "teaser-footer")}}
+				<div class="teaser-footer">
+					{{#block "teaser-footer"}}
+						{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Label" button-start-tag="span"}}
+						{{/embed}}
+					{{/block}}
+				</div>
+			{{/if}}
+		</div>
+	</div>
+</a>

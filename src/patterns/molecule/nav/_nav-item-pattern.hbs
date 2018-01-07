@@ -1,0 +1,18 @@
+---
+name: Navigation Item
+notes: Requires a Nav-Molecule as a parent.
+previewClass: nav
+nav-item-label: Nav-Item
+hidden: true
+---
+
+<li class="nav-item {{nav-item-class}}">
+	<a class="nav-link {{#if nav-item-active}}active{{/if}}" href="{{nav-item-link}}">
+		{{#if nav-icon-name}}
+			<svg viewBox="0 0 32 32">
+				<use xlink:href="/assets/toolkit/svg/sprite.symbol.svg#{{nav-icon-name}}"></use>
+			</svg>
+		{{/if}}
+		{{nav-item-label}}
+	</a>
+</li>

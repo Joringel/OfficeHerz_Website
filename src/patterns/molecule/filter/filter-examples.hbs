@@ -1,0 +1,44 @@
+---
+name: Examples
+previewClass: col-12
+---
+
+{{#embed "patterns.molecule.filter.filter-pattern" filter-class="mb-4"}}
+	{{#content "filter-body"}}
+		<div class="filter-row">
+			{{#embed "patterns.molecule.form-group.form-group-pattern" form-group-class="mr-0 mr-sm-1 mb-1 mb-md-0" form-label-label="Filter results"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-select.form-select-pattern" }}{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.molecule.form-group.form-group-pattern" form-group-class="mb-1 mb-md-0"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-select.form-select-pattern" }}{{/embed}}
+				{{/content}}
+			{{/embed}}
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.molecule.filter.filter-pattern" filter-class="mb-4"}}
+	{{#content "filter-body"}}
+		<div class="filter-row">
+			{{#embed "patterns.molecule.form-group.form-group-pattern" form-label-label="Filter label" form-group-class="mr-0 mr-sm-1 mb-1 mb-md-0"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-select.form-select-pattern" }}{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.molecule.form-group.form-group-pattern" form-label-label="Filter label" form-group-class="mr-0 mr-sm-1 mb-1 mb-md-0"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-select.form-select-pattern" }}{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.molecule.form-group.form-group-pattern" form-label-label="Filter label" form-group-class="mr-0 mr-sm-1 mb-1 mb-md-0"}}
+				{{#content "form-group-input"}}
+					{{#embed "patterns.atom.form-select.form-select-pattern" }}{{/embed}}
+				{{/content}}
+			{{/embed}}
+			{{#embed "patterns.atom.button.button-pattern" button-class="btn-primary btn--icon-right" button-icon="angle-right" button-label="Aktualieren" button-type="submit" button-start-tag="button" button-end-tag="button" }}
+			{{/embed}}
+		</div>
+	{{/content}}
+{{/embed}}

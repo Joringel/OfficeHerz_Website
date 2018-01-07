@@ -1,0 +1,35 @@
+---
+name: Teaser B Pattern
+teaser-f-image-path: /images/placeholder-ratio.jpg
+hidden: true
+---
+
+<div class="teaser-f {{teaser-f-class}}">
+	<div class="teaser-image">
+		<img src="{{teaser-f-image-path}}" alt="{{#if teaser-f-image-alt}}{{teaser-f-image-alt}}{{else}}img-alt{{/if}}" {{#if teaser-f-image-width}}width="{{teaser-f-image-width}}"{{/if}} {{#if teaser-f-image-height}}height="{{teaser-f-image-height}}"{{/if}} />
+	</div>
+	<div class="teaser-wrapper">
+		<div class="teaser-header">
+			{{#block "teaser-header"}}
+				<h3>
+					{{#block "teaser-headline"}}
+							Headline
+					{{/block}}
+				</h3>
+			{{/block}}
+		</div>
+		<div class="teaser-body">
+			{{#block "teaser-body"}}
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
+			{{/block}}
+		</div>
+		{{#if (content "teaser-footer")}}
+			<div class="teaser-footer">
+				{{#block "teaser-footer"}}
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Label" button-link="#" button-start-tag="a"}}
+					{{/embed}}
+				{{/block}}
+			</div>
+		{{/if}}
+	</div>
+</div>

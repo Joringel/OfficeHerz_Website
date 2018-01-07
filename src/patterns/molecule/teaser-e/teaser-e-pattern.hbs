@@ -1,0 +1,37 @@
+---
+name: Teaser D Pattern
+teaser-e-image-path: /images/placeholder-ratio.jpg
+hidden: true
+---
+
+<div class="teaser-e {{teaser-e-class}}">
+	<div class="teaser-header">
+		{{#block "teaser-header"}}
+			<h2>
+				{{#block "teaser-headline"}}
+						Some very long teaser headline fullwidth
+				{{/block}}
+			</h2>
+			{{#if (content "teaser-subject")}}
+				<span class="teaser-subject">
+					{{#block "teaser-subject"}}
+						subject
+					{{/block}}
+				</span>
+			{{/if}}
+		{{/block}}
+	</div>
+	<div class="teaser-wrapper">
+		{{#if teaser-e-image-path}}
+			<div class="teaser-image">
+				<img src="{{teaser-e-image-path}}" alt="{{#if teaser-e-image-alt}}{{teaser-e-image-alt}}{{else}}img-alt{{/if}}" {{#if teaser-e-image-width}}width="{{teaser-e-image-width}}"{{/if}} {{#if teaser-e-image-height}}height="{{teaser-e-image-height}}"{{/if}} />
+			</div>
+		{{/if}}
+		<div class="teaser-body">
+			{{#block "teaser-body"}}
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
+				{{#embed "patterns.atom.button.button-pattern" button-class="btn-link" button-label="Link" button-link="#" button-start-tag="a"}}{{/embed}}
+			{{/block}}
+		</div>
+	</div>
+</div>

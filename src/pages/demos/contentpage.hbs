@@ -1,0 +1,157 @@
+---
+title: Contentpage
+notes: Example contentpage using template b
+layout: template-b
+labels:
+	- demo
+styles:
+	- toolkit
+breadcrumb:
+ - Home
+ - Content
+---
+
+{{#content "stage"}}
+	{{#embed "patterns.organism.stage.stage-pattern" stage-class="stage--type-a" stage-image-path=(data 'images.stage-4')}}
+		{{#content "stage-breadcrumb"}}
+			{{#embed "patterns.atom.breadcrumb.breadcrumb-pattern"}}
+			{{/embed}}
+		{{/content}}
+		{{#content "stage-header"}}
+			{{#embed "patterns.atom.headline.headline-pattern" headline-size="1"}}
+				{{#content "headline"}}
+					Technology
+				{{/content}}
+			{{/embed}}
+		{{/content}}
+		{{#content "stage-body"}}
+			Our products transform digital information into physical motion and vice versa. Trinamic's unique technologies enable customers to reduce time-to-market, while improving efficiency and precision.
+		{{/content}}
+	{{/embed}}
+{{/content}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-8 offset-lg-2">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="1" headline-class="mb-1 mb-md-2"}}
+						{{#content "headline"}}
+							What is Motion Control?
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0"}}
+						{{#content "paragraph"}}
+							Motion control is the part of automation that handles moving parts of machines in a deliberate and controlled manner. The primary components of a motion control system are the motion controller and the energy amplifier or driver. Motion control is either open- or closed-loop. In open-loop systems, the motion controller sends commands to the amplifier without knowing if the desired motion was achieved. Closed-loop systems include feedback from the actuator to compensate for errors. Every application is different. To achieve the best solution, different kinds of system architectures are available. The Trinamic Motion Control Architecture enables engineers to fit their solution perfectly to their requirements. They can build up a system from scratch, based on ICs and motors, or choose system-level components like modules or ready-to-run PAN drives. Trinamic provides common motion control technologies like ramp-generation, microstepping or closed-loop operation with unique features that improve accuracy and smoothness of operation.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-image-path=(data 'images.teaser-1')}}
+						{{#content "teaser-headline"}}
+							Digital Manufacturing
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn More" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+						{{#content "teaser-body"}}
+							Digital technologies like 3D printing, CNC-milling, and laser cutting are increasingly mature and accessible, and dramatically impacting the manufacturing industry.
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-image-path=(data 'images.teaser-2')}}
+						{{#content "teaser-headline"}}
+							Medical Devices
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn More" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+						{{#content "teaser-body"}}
+							Medical applications require the highest levels of reliability and precision. Trinamic handles health care's challenges with affordable quality.
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-image-path=(data 'images.teaser-3')}}
+						{{#content "teaser-headline"}}
+							Laboratory Automation
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn More" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+						{{#content "teaser-body"}}
+							Automation is an indispensable tool that can increase productivity and support manual processes. Imitating experienced human hands requires a steady, smooth motion.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+	<div class="container">
+		<div class="row row-eq-height">
+			<div class="col-4">
+				{{#embed "patterns.molecule.widget.widget-pattern" widget-image-path=(data 'images.teaser-11') widget-class="col-eq-height"}}
+					{{#content "widget-subject"}}
+						Oct 9 - Oct 12, 2017
+					{{/content}}
+					{{#content "widget-body"}}
+						{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+							{{#content "paragraph"}}
+								<strong>Messe Stuttgart, Germany</strong> </br>
+								Messepiazza 1 </br>
+								Stuttgart, 70629
+							{{/content}}
+						{{/embed}}
+					{{/content}}
+				{{/embed}}
+			</div>
+			<div class="col-4">
+				{{#embed "patterns.molecule.widget.widget-pattern" widget-image-path=(data 'images.teaser-11') widget-class="col-eq-height"}}
+					{{#content "widget-subject"}}
+						Oct 9 - Oct 12, 2017
+					{{/content}}
+					{{#content "widget-body"}}
+						{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+							{{#content "paragraph"}}
+								<strong>Vogel Convention Center Würzburg Vogel Convention Center Würzburg Vogel Convention Center Würzburg</strong> </br>
+								Max-Planck-Straße 7-9 </br>
+								97064 Würzburg
+							{{/content}}
+						{{/embed}}
+					{{/content}}
+				{{/embed}}
+			</div>
+			<div class="col-4">
+				{{#embed "patterns.molecule.widget.widget-pattern" widget-image-path=(data 'images.teaser-11') widget-class="col-eq-height"}}
+					{{#content "widget-subject"}}
+						Oct 9 - Oct 12, 2017
+					{{/content}}
+					{{#content "widget-body"}}
+						{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+							{{#content "paragraph"}}
+								<strong>Vogel Convention Center Würzburg</strong> </br>
+								Max-Planck-Straße 7-9 </br>
+								97064 Würzburg
+							{{/content}}
+						{{/embed}}
+					{{/content}}
+				{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}

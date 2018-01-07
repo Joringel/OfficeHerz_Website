@@ -1,0 +1,10 @@
+---
+name: Section Pattern
+notes: Section for wrapping content
+hidden: true
+---
+
+<section {{#if section-id}}id="{{section-id}}"{{/if}} class="section {{section-class}}" {{#if section-image-path}}style="background-image:url('{{section-image-path}}')"{{/if}}>
+	{{#block "section-body"}}
+	{{/block}}
+</section>

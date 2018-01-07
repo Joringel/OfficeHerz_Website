@@ -1,0 +1,19 @@
+article{
+
+	header{
+		margin-bottom: ($spacer * 3);
+	}
+
+	section{
+		margin-bottom: ($spacer * 3);
+
+		h1,
+		h2, h3, h4, h5, h6{
+			margin-bottom: ($spacer * 1.5);
+		}
+
+		&:last-child{
+			margin: 0;
+		}
+	}
+}

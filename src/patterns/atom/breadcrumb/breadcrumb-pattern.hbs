@@ -1,0 +1,14 @@
+---
+Name: Breadcrumb Pattern
+hidden: true
+breadcrumb:
+ - Level 1
+ - Level 2
+ - Level 3
+---
+
+<ol class="breadcrumb {{breadcrumb-class}}">
+	{{#each breadcrumb}}
+		<li {{#if @last}}class="active breadcrumb-item"{{else}} class="breadcrumb-item"{{/if}}>{{#unless @last}}<a href="#">{{/unless}} {{.}}{{#unless @last}}</a>{{/unless}}</li>
+	{{/each}}
+</ol>

@@ -1,0 +1,24 @@
+{{#extend "blank" htmlclass="drizzle-Layout" bodyclass="drizzle-Layout-body"}}
+  {{#content "head" mode="append"}}
+    <link rel="stylesheet" href="{{@root.baseurl}}/assets/drizzle/styles/drizzle.css">
+    <link rel="stylesheet" href="{{@root.baseurl}}/assets/toolkit/styles/toolkit.css">
+  {{/content}}
+  {{#content "body"}}
+    {{> drizzle.nav}}
+    <div class="drizzle-Layout-main drizzle-u-cf">
+      <div id="content" class="drizzle-u-rhythm">
+       <div class="drizzle-Item-header">
+            <h1 class="drizzle-Headline">{{name}}</h1>
+        </div>
+        {{#block "main"}}
+            {{#each patterns}}
+              {{> drizzle.item}}
+            {{/each}}
+        {{/block}}
+      </div>
+    </div>
+  {{/content}}
+  {{#content "foot"}}
+    <script src="{{@root.baseurl}}/assets/drizzle/scripts/drizzle.js"></script>
+  {{/content}}
+{{/extend}}

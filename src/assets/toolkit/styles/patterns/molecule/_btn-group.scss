@@ -1,0 +1,45 @@
+.katana {
+	.btn-toolbar {
+		display: block;
+
+		.btn-group {
+			width: 100%;
+			margin-bottom: $spacer;
+			margin-right: $spacer;
+
+			&:last-child{
+				margin-right: 0px;
+			}
+
+			.btn {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm){
+	.katana {
+		.btn-toolbar{
+			width: inherit;
+
+			.btn-group{
+				width: inherit;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md){
+	.katana {
+		.btn-toolbar{
+			display: inline-flex;
+			flex-wrap: wrap;
+			width: inherit;
+
+			.btn-group{
+				width: inherit;
+			}
+		}
+	}
+}

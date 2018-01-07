@@ -1,0 +1,416 @@
+---
+title: Homepage
+notes: Example homepage using template a
+layout: template-a
+labels:
+	- demo
+styles:
+	- toolkit
+---
+
+{{#content "stage"}}
+	{{#embed "patterns.organism.stage.stage-pattern" stage-class="" stage-image-path=(data 'images.stage-1')}}
+		{{#content "stage-image"}}
+			<video autoplay loop muted class="stage__video running" onplay="this.classList.add('running')">
+				<source src="/images/_stage/02_MotionControl.mp4">
+			</video>
+		{{/content}}
+		{{#content "stage-header"}}
+			{{#embed "patterns.atom.headline.headline-pattern" headline-size="1"}}
+				{{#content "headline"}}
+					Trinamic’s advanced microsystems transform digital information into physical motion.
+				{{/content}}
+			{{/embed}}
+		{{/content}}
+		{{#content "stage-footer"}}
+			{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="What is Motion Control?" button-link="#" button-start-tag="a"}}
+			{{/embed}}
+		{{/content}}
+	{{/embed}}
+{{/content}}
+{{#embed "patterns.atom.section.section-pattern" section-class=" "}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-8 offset-lg-2">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-1 mb-md-2"}}
+						{{#content "headline"}}
+							Trinamic Motion Control
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.paragraph.paragraph-pattern" paragraph-class="mb-0"}}
+						{{#content "paragraph"}}
+							Trinamic develops the world's most sophisticated technology for motion and motor control applications. Our state-of-the-art ICs, modules, and mechatronic systems enable today's software engineers to quickly and reliably develop highly precise drives that work efficiently, smoothly, and quietly.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class=" "}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2"}}
+								{{#content "headline"}}
+									Solutions
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-image-path=(data 'images.teaser-1')}}
+						{{#content "teaser-headline"}}
+							Digital Manufacturing
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn More" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+						{{#content "teaser-body"}}
+							Digital technologies like 3D printing, CNC-milling, and laser cutting are increasingly mature and accessible, and dramatically impacting the manufacturing industry.
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-image-path=(data 'images.teaser-2')}}
+						{{#content "teaser-headline"}}
+							Medical Devices
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn More" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+						{{#content "teaser-body"}}
+							Medical applications require the highest levels of reliability and precision. Trinamic handles health care's challenges with affordable quality.
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-a.teaser-a-pattern" teaser-a-image-path=(data 'images.teaser-3')}}
+						{{#content "teaser-headline"}}
+							Laboratory Automation
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Learn More" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+						{{#content "teaser-body"}}
+							Automation is an indispensable tool that can increase productivity and support manual processes. Imitating experienced human hands requires a steady, smooth motion.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class="section--bg-brand-primary teaser-d"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.molecule.teaser-d.teaser-d-pattern" teaser-d-image-path=(data 'images.teaser-13')}}
+						{{#content "teaser-headline"}}
+							Advanced Evaluation Platform For Trinamic ICs
+						{{/content}}
+						{{#content "teaser-body"}}
+							With Trinamic’s new Evaluation Board system, users can freely combine multiple evaluation boards into a single kit, enabling easy development of comprehensive solutions for controlling and driving electric motors. Check out the Landungsbrücke and Startrampe evaluation platforms to get started.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-white btn--icon-right" button-icon="triangle" button-label="Find out more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2"}}
+								{{#content "headline"}}
+									Latest Products
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.teaser-8')}}
+						{{#content "teaser-headline"}}
+							TMC4670-BI Servo Control
+						{{/content}}
+						{{#content "teaser-body"}}
+							The TMC4670 is a single-axis servo motor controller for industrial automation, embedded servo control and other automated equipment applications.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.teaser-9')}}
+						{{#content "teaser-headline"}}
+							TMC2208 Stepper Driver
+						{{/content}}
+						{{#content "teaser-body"}}
+							The TMC2208-LA and TMC2224-LA are the easiest monolithic stepper motor drivers to implement for up to 1.2 A RMS on today's market. Both come with stealthChop™ for noiseless operation.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.teaser-10')}}
+						{{#content "teaser-headline"}}
+							PD42-1070 Family
+						{{/content}}
+						{{#content "teaser-body"}}
+							The PD42-1070 family was developed to simplify device development. The NEMA17 stepper motors are equipped with pre-configured driver boards and controlled via step and direction signals.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class=" "}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-6">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-2 mb-md-3"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2"}}
+								{{#content "headline"}}
+									Upcoming Events
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.molecule.teaser-c.teaser-c-pattern" teaser-c-class="teaser-c--type-a" teaser-c-image-path=(data 'images.teaser-11')}}
+						{{#content "teaser-headline"}}
+							Motek 2017
+						{{/content}}
+						{{#content "teaser-subject"}}
+							Oct 9 - Oct 12, 2017
+						{{/content}}
+						{{#content "teaser-body"}}
+							Messe Stuttgart Germany
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.molecule.teaser-c.teaser-c-pattern" teaser-c-class="teaser-c--type-a" teaser-c-image-path=(data 'images.teaser-12')}}
+						{{#content "teaser-headline"}}
+							Motek 2017
+						{{/content}}
+						{{#content "teaser-subject"}}
+							Oct 9 - Oct 12, 2017
+						{{/content}}
+						{{#content "teaser-body"}}
+							Messe Stuttgart Germany
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.molecule.teaser-c.teaser-c-pattern" teaser-c-class="teaser-c--type-a" teaser-c-image-path=(data 'images.teaser-4')}}
+						{{#content "teaser-headline"}}
+							Motek 2017
+						{{/content}}
+						{{#content "teaser-subject"}}
+							Oct 9 - Oct 12, 2017
+						{{/content}}
+						{{#content "teaser-body"}}
+							Messe Stuttgart Germany
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-md-12 col-lg-6">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-2 mb-md-3"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2"}}
+								{{#content "headline"}}
+									News & Press
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.molecule.teaser-c.teaser-c-pattern" teaser-c-class="" teaser-c-image-path=(data 'images.teaser-4')}}
+						{{#content "teaser-headline"}}
+							TMC4670-BI Servo Control
+						{{/content}}
+						{{#content "teaser-subject"}}
+							Aug 4, 2017
+						{{/content}}
+						{{#content "teaser-body"}}
+							The TMC4670 is a single-axis servo motor controller for industrial automation, embedded servo control and other automated equipment applications.
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.molecule.teaser-c.teaser-c-pattern" teaser-c-class="" teaser-c-image-path=(data 'images.teaser-4')}}
+						{{#content "teaser-headline"}}
+							The TMC4670 is a single-axis servo motor controller for industrial automation, embedded servo control and other automated equipment applications.
+						{{/content}}
+						{{#content "teaser-subject"}}
+							Aug 4, 2017
+						{{/content}}
+						{{#content "teaser-body"}}
+							The TMC4670 is a single-axis servo motor controller for industrial automation, embedded servo control and other automated equipment applications.
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.molecule.teaser-c.teaser-c-pattern" teaser-c-class="" teaser-c-image-path=(data 'images.teaser-4')}}
+						{{#content "teaser-headline"}}
+							TMC4670-BI Servo Control
+						{{/content}}
+						{{#content "teaser-subject"}}
+							Aug 4, 2017
+						{{/content}}
+						{{#content "teaser-body"}}
+							The TMC4670 is a single-axis servo motor controller for industrial automation, embedded servo control and other automated equipment applications.
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class=" "}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2"}}
+								{{#content "headline"}}
+									Trinamic Customers
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 col-md-4 col-lg-4 col-xl-2">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--logo-item" image-path=(data 'images.logo-1')}}
+					{{/embed}}
+				</div>
+				<div class="col-6 col-md-4 col-lg-4 col-xl-2">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--logo-item" image-path=(data 'images.logo-2')}}
+					{{/embed}}
+				</div>
+				<div class="col-6 col-md-4 col-lg-4 col-xl-2">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--logo-item" image-path=(data 'images.logo-3')}}
+					{{/embed}}
+				</div>
+				<div class="col-6 col-md-4 col-lg-4 col-xl-2">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--logo-item" image-path=(data 'images.logo-4')}}
+					{{/embed}}
+				</div>
+				<div class="col-6 col-md-4 col-lg-4 col-xl-2">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--logo-item" image-path=(data 'images.logo-5')}}
+					{{/embed}}
+				</div>
+				<div class="col-6 col-md-4 col-lg-4 col-xl-2">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--logo-item" image-path=(data 'images.logo-1')}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+{{#embed "patterns.atom.section.section-pattern" section-class=" "}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2"}}
+								{{#content "headline"}}
+									More about Trinamic
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-image-path=(data 'images.teaser-4')}}
+						{{#content "teaser-headline"}}
+							TMC4670-BI Servo Control
+						{{/content}}
+						{{#content "teaser-body"}}
+							The TMC4670 is a single-axis servo motor controller for industrial automation, embedded servo control and other automated equipment applications.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-image-path=(data 'images.teaser-5')}}
+						{{#content "teaser-headline"}}
+							TMC2208 Stepper Driver
+						{{/content}}
+						{{#content "teaser-body"}}
+							The TMC2208-LA and TMC2224-LA are the easiest monolithic stepper motor drivers to implement for up to 1.2 A RMS on today's market. Both come with stealthChop™ for noiseless operation.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-image-path=(data 'images.teaser-6')}}
+						{{#content "teaser-headline"}}
+							PD42-1070 Family
+						{{/content}}
+						{{#content "teaser-body"}}
+							The PD42-1070 family was developed to simplify device development. The NEMA17 stepper motors are equipped with pre-configured driver boards and controlled via step and direction signals.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-image-path=(data 'images.teaser-7')}}
+						{{#content "teaser-headline"}}
+							PD42-1070 Family
+						{{/content}}
+						{{#content "teaser-body"}}
+							The PD42-1070 family was developed to simplify device development. The NEMA17 stepper motors are equipped with pre-configured driver boards and controlled via step and direction signals.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}

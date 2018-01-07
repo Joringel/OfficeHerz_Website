@@ -1,0 +1,82 @@
+.cite-cloud {
+	position: relative;
+	width: 100%;
+
+	.cite-cloud-item {
+		display: inline-block;
+		color: $brand-primary;
+		font-style: italic;
+		font-size: $font-size-md;
+		margin-bottom: ($spacer*2);
+		line-height: normal;
+
+		blockquote {
+			display: inline-block;
+			margin: 0;
+
+			cite {
+				display: block;
+				font-size: $font-size-xs;
+				font-style: normal;
+				color: $gray-dark;
+				margin-top: ($spacer);
+
+				a {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.cite-cloud {
+		position: relative;
+		width: 100%;
+
+		.cite-cloud-item {
+			max-width: 48%;
+			text-align: center;
+			margin-bottom:0;
+
+			&:nth-child(odd) {
+				float: left;
+			}
+
+			&:nth-child(even) {
+				float: right;
+			}
+
+			&:nth-child(3n) {
+				clear: both;
+				display: inline-block;
+				width: 100%;
+				float: none;
+				max-width: 100%;
+				font-size: ($font-size-base * 2);
+				margin: ($spacer * 4) 0;
+				line-height: normal;
+
+				blockquote{
+					max-width: 80%;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg){
+	.cite-cloud {
+
+		.cite-cloud-item {
+			max-width: 40%;
+
+			&:nth-child(3n) {
+
+				blockquote{
+					max-width: 60%;
+				}
+			}
+		}
+	}
+}

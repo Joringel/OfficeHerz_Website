@@ -1,0 +1,24 @@
+.nav-item{
+	line-height: $font-size-base;
+
+	.nav-link{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding-top: 0;
+		padding-bottom: 0;
+
+		svg{
+			width: 16px;
+			height: 16px;
+			fill: $brand-primary;
+			margin-right: 6px;
+		}
+	}
+
+	&:hover{
+		svg{
+			fill: $brand-primary-75;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+---
+name: Headline Pattern
+hidden: true
+headline-size: 1
+---
+
+<h{{headline-size}} {{#if headline-class}}class="{{headline-class}}"{{/if}}>
+	{{#block "headline"}}
+		My fancy headline
+	{{/block}}
+</h{{headline-size}}>

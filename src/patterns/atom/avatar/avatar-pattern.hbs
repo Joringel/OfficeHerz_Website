@@ -1,0 +1,15 @@
+---
+name: Avatar Pattern
+avatar-class: avatar--md
+avatar-text: AW
+hidden: true
+---
+
+<div class="avatar {{avatar-class}} {{#if avatar-text}}avatar--text{{/if}} {{#if avatar-icon}}avatar--icon{{/if}} {{#if avatar-image-path}}avatar--image{{/if}}" {{#if avatar-image-path}}style="background-image:url('{{avatar-image-path}}')" {{/if}}>
+    {{#if avatar-text}}
+        <p>{{avatar-text}}</p>
+    {{/if}}
+    {{#if avatar-icon}}
+        <i class="fa {{avatar-icon}}"></i>
+    {{/if}}
+</div>

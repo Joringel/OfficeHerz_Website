@@ -1,0 +1,40 @@
+.testimonial {
+	display: flex;
+	flex-direction: column;
+	margin: ($spacer * 1.5) 0;
+
+	.testimonial-header {
+		margin-bottom: ($spacer * 2);
+		display: flex;
+		justify-content: center;
+	}
+
+	.testimonial-body {
+		display: block;
+	}
+
+	.testimonial-footer {
+		margin-top: ($spacer * 2);
+		display: block;
+	}
+}
+@include media-breakpoint-up(md) {
+	.testimonial {
+		.testimonial-header {
+			display: flex;
+			justify-content: flex-start;
+		}
+	}
+
+	&.testimonial--type-a {
+		align-items: center;
+
+		.testimonial-header {
+			text-align: center;
+		}
+
+		.testimonial-body {
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+[
+    {{#shapes}}
+        {
+         "icon-name" :  "{{base}}"
+        }
+        {{^last}}
+        ,
+        {{/last}}
+    {{/shapes}}
+]

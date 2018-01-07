@@ -1,0 +1,25 @@
+---
+name: Typ A
+notes: <code>.stage--type-a</code>
+breadcrumb:
+ - Level 1
+ - Level 2
+ - Level 3
+---
+
+{{#embed "patterns.organism.stage.stage-pattern" stage-class="stage--type-a" stage-image-path=(data 'images.stage-3')}}
+	{{#content "stage-breadcrumb"}}
+		{{#embed "patterns.atom.breadcrumb.breadcrumb-pattern"}}
+		{{/embed}}
+	{{/content}}
+	{{#content "stage-header"}}
+		{{#embed "patterns.atom.headline.headline-pattern" headline-size="1"}}
+			{{#content "headline"}}
+				Dependable Building Blocks
+			{{/content}}
+		{{/embed}}
+	{{/content}}
+	{{#content "stage-body"}}
+		We provide different functional building blocks, including motion controllers, drivers, steppers and BLDC motors, combinations, sub-functions, or companion products that are optimized for performance and fi
+	{{/content}}
+{{/embed}}

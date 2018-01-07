@@ -1,0 +1,16 @@
+---
+name: form select pattern
+hidden: true
+---
+
+<div class="form-select {{form-select-class}}">
+    <select class=" form-select-default-js" id="{{form-select-id}}" {{#if form-select-multiple}}multiple{{/if}} data-placeholder="Select an option">
+        {{#block "form-select"}}
+            <option></option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        {{/block}}
+    </select>
+</div>

@@ -1,0 +1,12 @@
+.slide{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $gray-lighter;
+
+    .slide-body{
+      padding: 0 40px;
+    }
+}

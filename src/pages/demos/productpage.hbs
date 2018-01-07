@@ -1,0 +1,443 @@
+---
+title: Productpage
+notes: Example productpage using template b
+layout: template-b
+labels:
+	- demo
+styles:
+	- toolkit
+breadcrumb:
+ - Home
+ - Content
+---
+
+{{#content "stage"}}
+	{{#embed "patterns.organism.stage.stage-pattern" stage-class="stage--type-a" stage-image-path=(data 'images.stage-4')}}
+		{{#content "stage-breadcrumb"}}
+			{{#embed "patterns.atom.breadcrumb.breadcrumb-pattern"}}
+			{{/embed}}
+		{{/content}}
+		{{#content "stage-header"}}
+			{{#embed "patterns.atom.headline.headline-pattern" headline-size="1"}}
+				{{#content "headline"}}
+					Integrated Circuits
+				{{/content}}
+			{{/embed}}
+		{{/content}}
+	{{/embed}}
+{{/content}}
+
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--space-between"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2 mb-md-0"}}
+								{{#content "headline"}}
+									TMC2130
+								{{/content}}
+							{{/embed}}
+							<div class="btn-toolbar">
+								<div class="btn-group">
+									{{#embed "patterns.atom.button.button-pattern" button-class="btn-secondary btn--icon-right" button-icon="triangle" button-label="Buy Now" button-start-tag="span"}}
+									{{/embed}}
+								</div>
+								<div class="btn-group">
+									{{#embed "patterns.atom.button.button-pattern" button-class="btn-primary btn--icon-right" button-icon="triangle" button-label="Get Sample" button-start-tag="span"}}
+									{{/embed}}
+								</div>
+							</div>
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 mb-2 mb-md-0">
+					{{#embed "patterns.atom.image.image-pattern" image-class="image--full" image-path="/images/placeholder-ratio.jpg"}}
+					{{/embed}}
+				</div>
+				<div class="col-12 col-md-6">
+					{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+						{{#content "paragraph"}}
+							The TMC2130 provides an integrated motor driver solution for 3D-Printing, Cameras, Scanners and other automated equipment applications. The device has an integrated microstepping indexer, the sensorless stall detection technology stallGuard2™, the sensorless load dependent current control coolStep™ and the completely noiseless current control mode stealthChop™ and is intended to drive a bipolar stepper motor. The output driver block consists of low RDSon N-Channel power MOSFETs configured as full H-bridges to drive the motor windings. The TMC2130 is capable of driving up to 2.5A of current from each output (with proper heatsinking). TMC2130 is designed for a supply voltage of 5...46V. The device has a SPI interface for configuration and diagnostics and a step and direction interface.
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="4" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Special Features
+						{{/content}}
+					{{/embed}}
+					{{#embed "patterns.molecule.list-group.list-group-pattern" list-group-class="list-group--type-a"}}
+						{{#content "list-group-body"}}
+							{{#embed "patterns.molecule.list-group._list-item-pattern" list-item-label="programmable microstep table"}}{{/embed}}
+							{{#embed "patterns.molecule.list-group._list-item-pattern" list-item-label="microPlyer™"}}{{/embed}}
+							{{#embed "patterns.molecule.list-group._list-item-pattern" list-item-label="coolStep™"}}{{/embed}}
+							{{#embed "patterns.molecule.list-group._list-item-pattern" list-item-label="passive breaking"}}{{/embed}}
+							{{#embed "patterns.molecule.list-group._list-item-pattern" list-item-label="spreadCycle™"}}{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center"}}
+						{{#content "section-header-body"}}
+							<div class="btn-toolbar">
+								<div class="btn-group">
+									{{#embed "patterns.atom.button.button-pattern" button-link="#technical-details" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Technical Details" button-start-tag="a"}}
+									{{/embed}}
+								</div>
+								<div class="btn-group">
+									{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Block Diagram / Pinout" button-start-tag="a"}}
+									{{/embed}}
+								</div>
+								<div class="btn-group">
+									{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Datasheet" button-start-tag="a"}}
+									{{/embed}}
+								</div>
+								<div class="btn-group">
+									{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Documentation" button-start-tag="a"}}
+									{{/embed}}
+								</div>
+								<div class="btn-group">
+									{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-gray btn--icon-right" button-icon="triangle" button-label="Software" button-start-tag="a"}}
+									{{/embed}}
+								</div>
+							</div>
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+
+{{#embed "patterns.atom.section.section-pattern" section-id="technical-details"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Technical Details
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.molecule.table.table-pattern" table-class="table--type-a"}}
+						{{#content "table-head"}}
+							<tr>
+								{{#embed "patterns.molecule.table._table-item-header"}}
+								{{/embed}}
+								{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="MONOpack 2 V2" table-item-header-image-path=(data 'images.product-1')}}
+								{{/embed}}
+								{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="MONOpack 2 V2" table-item-header-image-path=(data 'images.product-2')}}
+								{{/embed}}
+								{{#embed "patterns.molecule.table._table-item-header"}}
+								{{/embed}}
+							</tr>
+						{{/content}}
+						{{#content "table-body"}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+								{{#content "table-item-row-body"}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="Status"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="active"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="active"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" }}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+								{{#content "table-item-row-body"}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="Axes"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="1"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="1"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" }}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+								{{#content "table-item-row-body"}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="Motor Supply"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="12…48V"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="12…48V"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" }}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+								{{#content "table-item-row-body"}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="Phase Current, RMS"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="3.5A"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="3.5A"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" }}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+								{{#content "table-item-row-body"}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="Microsteps"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="406"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="406"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" }}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+								{{#content "table-item-row-body"}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="CAN"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-class="table-item-column--icon" table-item-column-icon="check-circle-o"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-class="table-item-column--icon" table-item-column-icon="check-circle-o"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" }}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Block Diagram / Pinout
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+
+					<div class="tab">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" href="#Tab1" role="tab" data-toggle="tab" aria-expanded="true">
+									Block Diagram (TMC2130)
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#Tab2" role="tab" data-toggle="tab" aria-expanded="false">
+									Pinout (TMC2130-LA)
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#Tab3" role="tab" data-toggle="tab" aria-expanded="false">
+									Pinout (TMC2130-TA)
+								</a>
+							</li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							{{#embed "patterns.molecule.tab._tab-pane" tab-pane-active=true tab-pane-id="Tab1"}}
+								{{#content "tab-pane-body"}}
+									{{#embed "patterns.atom.image.image-pattern" image-path=(data 'images.pinout-3')}}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.tab._tab-pane" tab-pane-id="Tab2"}}
+								{{#content "tab-pane-body"}}
+									{{#embed "patterns.atom.image.image-pattern" image-path=(data 'images.pinout-2')}}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.tab._tab-pane" tab-pane-id="Tab3"}}
+								{{#content "tab-pane-body"}}
+									{{#embed "patterns.atom.image.image-pattern" image-path=(data 'images.pinout-1')}}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.headline.headline-pattern" headline-size="2" headline-class="mb-2"}}
+						{{#content "headline"}}
+							Downloads
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.molecule.table.table-pattern"}}
+						{{#content "table-head"}}
+							<tr>
+								{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="File" }}
+								{{/embed}}
+								{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="Type" }}
+								{{/embed}}
+								{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="Size" }}
+								{{/embed}}
+								{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="Version" }}
+								{{/embed}}
+								{{#embed "patterns.molecule.table._table-item-header" table-item-header-label="Modified" }}
+								{{/embed}}
+							</tr>
+						{{/content}}
+						{{#content "table-body"}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+								{{#content "table-item-row-body"}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-link="#" table-item-column-label="TMC2041_datasheet.pdf"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-class="table-item-column--icon" table-item-column-icon="PDF"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="2.3 MB"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="v1.04"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="Aug 10, 2017 10:37 AM"}}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+								{{#content "table-item-row-body"}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-link="#" table-item-column-label="TMC2041_datasheet.pdf"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-class="table-item-column--icon" table-item-column-icon="ZIP"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="2.3 MB"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="v1.04"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="Aug 10, 2017 10:37 AM"}}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+							{{#embed "patterns.molecule.table._table-item-row"}}
+								{{#content "table-item-row-body"}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-link="#" table-item-column-label="TMC2041_datasheet.pdf"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-class="table-item-column--icon" table-item-column-icon="PDF"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="2.3 MB"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="v1.04"}}
+									{{/embed}}
+									{{#embed "patterns.molecule.table._table-item-column" table-item-column-label="Aug 10, 2017 10:37 AM"}}
+									{{/embed}}
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}
+
+{{#embed "patterns.atom.section.section-pattern"}}
+	{{#content "section-body"}}
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{#embed "patterns.atom.section-header.section-header-pattern" section-header-class="section-header--align-center mb-1 mb-md-2"}}
+						{{#content "section-header-body"}}
+							{{#embed "patterns.atom.headline.headline-pattern" headline-size="2"}}
+								{{#content "headline"}}
+									Related Products
+								{{/content}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.teaser-8')}}
+						{{#content "teaser-headline"}}
+							TMC4670-BI Servo Control
+						{{/content}}
+						{{#content "teaser-body"}}
+							The TMC4670 is a single-axis servo motor controller for industrial automation, embedded servo control and other automated equipment applications.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.teaser-9')}}
+						{{#content "teaser-headline"}}
+							TMC2208 Stepper Driver
+						{{/content}}
+						{{#content "teaser-body"}}
+							The TMC2208-LA and TMC2224-LA are the easiest monolithic stepper motor drivers to implement for up to 1.2 A RMS on today's market. Both come with stealthChop™ for noiseless operation.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					{{#embed "patterns.molecule.teaser-b.teaser-b-pattern" teaser-b-class="teaser-b--type-a" teaser-b-image-path=(data 'images.teaser-10')}}
+						{{#content "teaser-headline"}}
+							PD42-1070 Family
+						{{/content}}
+						{{#content "teaser-body"}}
+							The PD42-1070 family was developed to simplify device development. The NEMA17 stepper motors are equipped with pre-configured driver boards and controlled via step and direction signals.
+						{{/content}}
+						{{#content "teaser-footer"}}
+							{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Read more" button-start-tag="span"}}
+							{{/embed}}
+						{{/content}}
+					{{/embed}}
+				</div>
+			</div>
+		</div>
+	{{/content}}
+{{/embed}}

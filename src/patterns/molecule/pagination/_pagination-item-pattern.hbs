@@ -1,0 +1,11 @@
+---
+name: Pagination Item
+notes: Requires a pagination as a parent.
+previewClass: pagination
+pagination-item-label: Pagination-Item
+hidden: true
+---
+
+<li class="page-item {{pagination-item-class}} {{#if pagination-item-active}}active{{/if}} {{#if pagination-item-disabled}}disabled{{/if}}">
+    <a class="page-link" href="{{pagination-item-link}}">{{pagination-item-label}}</a>
+</li>

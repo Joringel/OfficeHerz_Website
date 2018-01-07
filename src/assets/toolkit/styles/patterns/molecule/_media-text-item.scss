@@ -1,0 +1,36 @@
+.media-text-item {
+
+	.media-text-item-header {
+		width: 100%;
+		margin-bottom: ($spacer * 2);
+
+		.h1,
+		.h2,
+		.h3,
+		.h4,
+		h1,
+		h2,
+		h3,
+		h4 {
+			margin-bottom: 0;
+
+			a{
+				color: $brand-primary-75;
+			}
+		}
+	}
+
+	.media-text-item-body {
+		width: 100%;
+		display: inline-block;
+
+		.image{
+
+			img{
+				width: 100%;
+				height: auto;
+			}
+
+		}
+	}
+}

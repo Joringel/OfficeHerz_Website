@@ -1,0 +1,158 @@
+$footer-background: $brand-primary-75;
+$footer-socket-background: $brand-primary-100;
+$footer-inverse-background: $brand-primary-75;
+$footer-socket-inverse-background: $brand-primary-100;
+
+.footer {
+	background: $footer-background;
+	color: $white;
+
+	a {
+		color: $gray-lighter;
+	}
+
+	.footer-body {
+		text-align: center;
+
+		h3,h4,h5,h6{
+			&:hover {
+				color: $gray;
+			}
+		}
+
+		.nav {
+			&.flex-column {
+				.nav-item {
+					margin-bottom: ($spacer*1.5);
+
+					.nav-link {
+						padding: 0;
+						font-size: $font-size-sm;
+						line-height: $font-size-sm;
+						justify-content: center;
+
+						&:hover {
+							color: $gray;
+						}
+					}
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		.social {
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			justify-content: center;
+
+			span {
+				border-radius: 100px;
+				background: $white;
+				width: 34px;
+				height: 34px;
+				display: flex;
+				align-items: center;
+				flex-direction: row;
+				justify-content: center;
+				margin-right: ($spacer*1.5);
+				cursor: pointer;
+
+				&:hover{
+					background: $gray;
+				}
+
+				svg {
+					width: 24px;
+					height: 24px;
+					fill: $footer-inverse-background;
+				}
+			}
+		}
+	}
+
+	.footer-footer {
+		background: $footer-socket-inverse-background;
+		text-align: center;
+
+		.copyright {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: $font-size-sm;
+
+			.copyright-text {
+				color: $gray;
+			}
+
+			.nav {
+				flex-direction: column;
+				text-align: center;
+
+				.nav-item {
+					margin-bottom: ($spacer*1.5);
+
+					.nav-link {
+						justify-content: center;
+						padding: 0;
+						color: $gray;
+						line-height: $font-size-sm;
+
+						&:hover {
+							color: $white;
+						}
+					}
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.footer {
+		.footer-body {
+			text-align: left;
+
+			.social {
+				justify-content: flex-start;
+			}
+
+			.nav {
+				&.flex-column {
+					.nav-item {
+						.nav-link {
+							justify-content: flex-start;
+						}
+					}
+				}
+			}
+		}
+
+		.footer-footer {
+			.copyright {
+				flex-direction: row;
+
+				.copyright-text {
+					margin-right: ($spacer*2);
+				}
+
+				.nav {
+					flex-direction: row;
+
+					.nav-item {
+						margin-bottom: 0;
+
+						.nav-link {
+							margin-right: ($spacer*2);
+						}
+					}
+				}
+			}
+		}
+	}
+}

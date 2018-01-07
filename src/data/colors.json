@@ -1,0 +1,82 @@
+[{
+  "brand-colors": [
+    {
+      "brand-primary": [
+        {
+          "color": "#004db9",
+          "property": "$brand-primary"
+        },
+        {
+          "color": "#1391cc",
+          "property": "$brand-primary-light"
+        },
+          {
+          "color": "#003d91",
+          "property": "$brand-primary-25"
+        },
+        {
+          "color": "#002e6e",
+          "property": "$brand-primary-50"
+        },
+        {
+          "color": "#001c42",
+          "property": "$brand-primary-75"
+        },
+        {
+          "color": "#000f24",
+          "property": "$brand-primary-100"
+        }
+      ]
+    },
+    {
+      "brand-highlight": [
+        {
+          "color": "#f7751f",
+          "property": "$brand-highlight"
+        }
+      ]
+    },
+    {
+      "grays": [
+        {
+          "color": "#afb3b6",
+          "property": "$gray"
+        },
+        {
+          "color": "#15252f",
+          "property": "$gray-darker"
+        },
+        {
+          "color": "#3a5b78",
+          "property": "$gray-dark"
+        },
+        {
+          "color": "#dbe0e6",
+          "property": "$gray-light"
+        },
+        {
+          "color": "#f1f3f5",
+          "property": "$gray-lighter"
+        }
+      ]
+    }
+  ],
+  "states": [
+    {
+      "color": "#01BB3F",
+      "property": "$brand-success"
+    },
+    {
+      "color": "#1391cc",
+      "property": "$brand-info"
+    },
+    {
+      "color": "#FBB818",
+      "property": "$brand-warning"
+    },
+    {
+      "color": "#A94442",
+      "property": "$brand-danger"
+    }
+  ]
+}]

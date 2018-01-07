@@ -1,0 +1,21 @@
+---
+name: Dropdown Pattern
+hidden: true
+dropdown-button-class: btn-primary
+dropdown-button-id: dropdownMenuButton
+dropdown-label: Dropdown button
+---
+
+<div class="dropdown {{dropdown-class}}">
+  <button class="btn {{dropdown-button-class}} dropdown-toggle" type="button" id="{{dropdown-button-id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {{dropdown-label}}
+  </button>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {{#block "dropdown-menue"}}
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      {{/block}}
+  </div>
+</div>

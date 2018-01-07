@@ -1,0 +1,76 @@
+.image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	img {
+		max-width: 100%;
+		max-height: 100%;
+		vertical-align: middle;
+		display: inline-block;
+		height: auto;
+	}
+
+	&.image--logo-item {
+		margin: ($spacer*1.5) 0;
+		height: 84px;
+		line-height: 84px;
+		text-align: center;
+		padding: 0 ($spacer*1);
+	}
+
+	&.image--float-right {
+		float: right;
+		margin-left: ($spacer * 1.5);
+		margin-top: ($spacer * 0.5);
+		margin-bottom: ($spacer * 2);
+	}
+
+	&.image--float-left {
+		float: left;
+		margin-right: ($spacer * 1.5);
+		margin-top: ($spacer * 0.5);
+		margin-bottom: ($spacer * 2);
+	}
+
+	&.image--width-33{
+		width: 33%;
+		margin-bottom: ($spacer * 2);
+	}
+
+	&.image--width-50{
+		width: 50%;
+		margin-bottom: ($spacer * 2);
+	}
+
+	&.image--full{
+		width: 100%;
+		margin-bottom: ($spacer * 2);
+	}
+}
+@include media-breakpoint-up(md) {
+	.image {
+		&.image--logo-item {
+			padding: 0 ($spacer*2);
+		}
+
+		&.image--float-right {
+			margin-bottom: 0;
+		}
+
+		&.image--float-left {
+			margin-bottom: 0;
+		}
+
+		&.image--width-33{
+			width: 33%;
+			margin-bottom: 0;
+		}
+
+		&.image--width-50{
+			width: 50%;
+			margin-bottom: 0;
+		}
+
+	}
+}

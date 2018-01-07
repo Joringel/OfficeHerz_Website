@@ -1,0 +1,20 @@
+{{#extend "blank" htmlclass="" bodyclass=""}}
+	{{#content "head"}}
+		<title>{{title}} - {{data "project.title"}}</title>
+		<link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
+	{{/content}}
+	{{#content "body"}}
+		{{#embed "patterns.organism.header.header-pattern" header-class="sticky-top"}}
+		{{/embed}}
+		{{#block "stage"}}
+		{{/block}}
+		<div class="content">
+			{{#block "main"}}
+			{{/block}}
+		</div>
+	{{/content}}
+	{{#content "foot"}}
+		{{#embed "patterns.organism.footer.footer-pattern"}}
+		{{/embed}}
+	{{/content}}
+{{/extend}}

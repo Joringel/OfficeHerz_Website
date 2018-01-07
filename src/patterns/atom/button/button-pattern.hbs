@@ -1,0 +1,18 @@
+---
+name: Button Pattern
+hidden: true
+---
+
+<{{#if button-start-tag}}{{button-start-tag}}{{else}}a{{/if}}
+   {{#if button-link}}href="{{button-link}}"{{/if}}
+   {{#if button-type}}type="{{button-type}}"{{/if}}
+   {{#if button-value}}value="{{button-value}}"{{/if}}
+   {{#if button-id}}id="{{button-id}}"{{/if}}
+   {{#if button-data-target}}data-target="{{button-data-target}}"{{/if}}
+   {{#if button-data-toggle}}data-toggle="{{button-data-toggle}}"{{/if}}
+   {{#if button-data-dismiss}}data-dismiss="{{button-data-dismiss}}"{{/if}}
+   class="btn {{button-class}}"
+   {{#if button-role}}role="{{button-role}}"{{/if}} {{#if disabled}}disabled{{/if}}>
+    {{#if button-icon}}{{#if button-label}}<span>{{/if}}{{/if}}{{button-label}}{{#if button-icon}}{{#if button-label}}</span>{{/if}}{{/if}}{{#if button-icon}}
+        {{#embed "patterns.atom.icon.icon-pattern" icon-class="" icon-name=button-icon}}{{/embed}}
+    {{/if}} {{#if button-start-tag}}</{{button-start-tag}}>{{/if}}

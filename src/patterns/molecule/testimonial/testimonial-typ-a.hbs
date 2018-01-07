@@ -1,0 +1,26 @@
+---
+name: Typ A
+previewClass: col-4
+notes: <code>.testimonial--type-a</code>
+---
+
+{{#embed "patterns.molecule.testimonial.testimonial-pattern" testimonial-class="testimonial--type-a"}}
+	{{#content "testimonial-header"}}
+		{{#embed "patterns.atom.avatar.avatar-pattern" avatar-class="avatar--md" avatar-image-path="/images/placeholder-square.jpg"}}
+		{{/embed}}
+	{{/content}}
+	{{#content "testimonial-body"}}
+		{{#embed "patterns.atom.blockquote.blockquote-pattern" blockquote-cite="Author"}}
+			{{#content "blockquote-body"}}
+				Some quick example text to build on the card title and make up the bulk of the card's content.
+			{{/content}}
+			{{#content "blockquote-cite"}}
+				Author <a href="#">Link</a>
+			{{/content}}
+		{{/embed}}
+	{{/content}}
+	{{#content "testimonial-footer"}}
+		{{#embed "patterns.atom.button.button-pattern" button-class="btn-outline-primary btn--icon-right" button-icon="triangle" button-label="Primary" button-link="#" button-start-tag="a"}}
+		{{/embed}}
+	{{/content}}
+{{/embed}}

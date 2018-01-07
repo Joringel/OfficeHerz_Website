@@ -1,0 +1,16 @@
+---
+name: Table pattern
+hidden: true
+---
+<div class="table {{table-class}}" >
+	<table {{#if table-id}}id="{{table-id}}"{{/if}}>
+		<thead>
+			{{#block "table-head"}}
+			{{/block}}
+		</thead>
+		<tbody>
+			{{#block "table-body"}}
+			{{/block}}
+		</tbody>
+	</table>
+</div>

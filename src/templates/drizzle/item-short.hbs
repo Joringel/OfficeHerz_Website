@@ -1,0 +1,27 @@
+  {{!-- Preview --}}
+
+<!--
+    {{#> drizzle.labelheader tag="h3" id=(toSlug name) labels=data.labels}}
+      {{name}}
+    {{/drizzle.labelheader}}
+-->
+
+  {{#if data.labels}}
+
+  <ul class="
+    drizzle-u-inlineBlock
+    drizzle-u-alignMiddle
+    drizzle-u-listUnstyled">
+    {{#each data.labels as |label|}}
+      <li class="drizzle-Label drizzle-Label--{{label}}">
+        {{label}}
+      </li>
+    {{/each}}
+  </ul>
+{{/if}}
+
+  <div>
+    <div class="drizzle-u-padBottom drizzle-u-cf drizzle-u-posRelative {{data.previewClass}}" style="{{#if data.previewHeight}}height: {{data.previewHeight}}{{/if}}">
+      {{{pattern id @root}}}
+    </div>
+  </div>

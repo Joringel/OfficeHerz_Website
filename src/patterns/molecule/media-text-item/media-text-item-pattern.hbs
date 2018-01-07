@@ -1,0 +1,25 @@
+---
+name: Media Text Item Pattern
+hidden: true
+---
+
+<div class="media-text-item {{media-text-item-class}}">
+	<div class="media-text-item-header">
+		{{#block "media-text-item-header"}}
+			<h2>
+				{{#block "media-text-item-headline"}}
+						Some very long teaser headline fullwidth
+				{{/block}}
+			</h2>
+		{{/block}}
+	</div>
+	<div class="media-text-item-body">
+		{{#block "media-text-item-body"}}
+			{{#embed "patterns.atom.paragraph.paragraph-pattern"}}
+				{{#content "paragraph"}}
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
+				{{/content}}
+			{{/embed}}
+		{{/block}}
+	</div>
+</div>

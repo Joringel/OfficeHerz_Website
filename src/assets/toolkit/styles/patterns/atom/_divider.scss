@@ -1,0 +1,7 @@
+.divider{
+	border-top: 2px solid $gray-lighter;
+
+	&.divider--type-a{
+		border-top: 1px solid $gray-lighter;
+	}
+}

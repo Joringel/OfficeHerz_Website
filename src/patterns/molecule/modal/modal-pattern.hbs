@@ -1,0 +1,28 @@
+---
+name: Modal Pattern
+hidden: true
+---
+
+<div class="modal fade {{modal-class}}" id="{{modal-id}}" tabindex="-1" role="dialog" aria-labelledby="{{modal-title}}" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">{{modal-title}}</h4>
+				<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				{{#block "modal-body"}}
+					<p>Modal body text goes here.</p>
+				{{/block}}
+			</div>
+			<div class="modal-footer">
+				{{#block "modal-footer"}}
+					{{#embed "patterns.atom.button.button-pattern" button-class="btn btn-outline-gray" button-label="Close" button-type="button" button-data-dismiss="modal" button-start-tag="button" button-end-tag="button" }}
+					{{/embed}}
+				{{/block}}
+			</div>
+		</div>
+	</div>
+</div>

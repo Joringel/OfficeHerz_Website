@@ -1,0 +1,92 @@
+body {
+  background-color: #fff !important;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+code,
+pre {
+  font-family: var(--monospace), monospace !important
+}
+
+.drizzle-Layout-main{
+
+/*
+
+    & h1{
+        font-size: 38px;
+        margin: calc(var(--space) * 2) 0;
+    }
+
+    & h2{
+        font-size: 20px;
+        margin: var(--space) 0 var(--space) 0;
+        & a{
+            font-weight: 100;
+        }
+    }
+
+    & h3{
+        margin: var(--space) 0 var(--space) 0;
+
+        font-size: 16px;
+
+        & a{
+            font-weight: 100;
+        }
+
+    }
+*/
+
+
+
+}
+
+
+h1.drizzle-Headline{
+        font-size: 38px;
+        margin: calc(var(--space) * 0) 0 calc(var(--space) * 2) 0;
+    }
+
+
+h2.drizzle-Headline{
+        font-size: 20px;
+        margin: var(--space) 0 var(--space) 0;
+        & a{
+            font-weight: 100;
+        }
+    }
+
+
+h3.drizzle-Headline{
+        margin: var(--space) 0 var(--space) 0;
+
+        font-size: 16px;
+
+        & a{
+            font-weight: 100;
+        }
+
+    }
+h4.drizzle-Headline{
+        font-size: 18px;
+        margin: var(--space) 0 var(--space) 0;
+        & a{
+            font-weight: 100;
+        }
+    }
+
+.Headline{
+    margin-top: 32px;
+    color: color(var(--color-grey) lightness(+50%));
+    line-height: inherit;
+    font-weight: 300;
+    text-transform: none;
+    font-family: var(--Font-family-sans-serif);
+    text-transform: none !important;
+
+}
+
+.Font{
+    font-family: var(--Font-family-sans-serif);
+}

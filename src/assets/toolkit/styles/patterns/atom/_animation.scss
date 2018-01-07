@@ -1,0 +1,214 @@
+$animation-scale: 0.914285714286;
+
+.animation {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+
+	.delivery,
+	.drone,
+	.kuka,
+	.micro-stepping,
+	.printer,
+	.prothesis,
+	.robot,
+	.spotlight {
+		display: block;
+		@keyframes play {
+			100% {
+				background-position: -9450px;
+			}
+		}
+	}
+
+	.printer {
+		width: 350px;
+		height: 200px;
+		background: url('/images/_animation/3D_printer.svg') left center;
+		animation: play 2.5s steps(27) infinite;
+		transform: scale(-$animation-scale, $animation-scale) translateX(40px);
+		-ms-transform: scale(-$animation-scale, $animation-scale) translateX(40px);
+		-webkit-transform: scale(-$animation-scale, $animation-scale) translateX(40px);
+		-moz-transform: scale(-$animation-scale, $animation-scale) translateX(40px);
+	}
+
+	.robot {
+		width: 350px;
+		height: 200px;
+		background: url('/images/_animation/robotic_arm.svg') left center;
+		animation: play 3s steps(27) infinite;
+		transform: scale($animation-scale) translateX(-15px);
+		-ms-transform: scale($animation-scale) translateX(-15x);
+		-webkit-transform: scale($animation-scale) translateX(-15px);
+	}
+
+	.drone {
+		width: 350px;
+		height: 200px;
+		background: url('/images/_animation/drone.svg') left center;
+		animation: play 2.5s steps(27) infinite;
+		transform: scale($animation-scale) translateX(-30px);
+		-ms-transform: scale($animation-scale) translateX(-30px);
+		-webkit-transform: scale($animation-scale) translateX(-30px);
+		-moz-transform: scale($animation-scale) translateX(-30px);
+	}
+
+	.prothesis {
+		width: 350px;
+		height: 200px;
+		background: url('/images/_animation/prothesis.svg') left center;
+		animation: play 1.2s steps(27) infinite;
+		transform: scale($animation-scale) translateX(-50px);
+		-ms-transform: scale($animation-scale) translateX(-50px);
+		-webkit-transform: scale($animation-scale) translateX(-50px);
+		-moz-transform: scale($animation-scale) translateX(-50px);
+	}
+
+	.delivery {
+		width: 350px;
+		height: 200px;
+		background: url('/images/_animation/delivery_bot.svg') left center;
+		animation: play 2s steps(27) infinite;
+		transform: scale(-$animation-scale, $animation-scale);
+		-ms-transform: scale(-$animation-scale, $animation-scale);
+		-webkit-transform: scale(-$animation-scale, $animation-scale);
+		-moz-transform: scale(-$animation-scale, $animation-scale);
+	}
+
+	.kuka {
+		width: 350px;
+		height: 200px;
+		background: url('/images/_animation/kuka_bot.svg') left center;
+		animation: play 4s steps(27) infinite;
+		transform: scale(-$animation-scale, $animation-scale) translateX(30px);
+		-ms-transform: scale(-$animation-scale, $animation-scale) translateX(30px);
+		-webkit-transform: scale(-$animation-scale, $animation-scale) translateX(30px);
+		-moz-transform: scale(-$animation-scale, $animation-scale) translateX(30px);
+	}
+
+	.spotlight {
+		width: 350px;
+		height: 200px;
+		background: url('/images/_animation/spotlight.svg') left center;
+		animation: play 2.6s steps(27) infinite;
+		transform: scale(-$animation-scale, $animation-scale) translateX(50px);
+		-ms-transform: scale(-$animation-scale, $animation-scale) translateX(50px);
+		-webkit-transform: scale(-$animation-scale, $animation-scale) translateX(50px);
+		-moz-transform: scale(-$animation-scale, $animation-scale) translateX(50px);
+	}
+
+	.micro-stepping {
+		width: 350px;
+		height: 200px;
+		background: url('/images/_animation/micro_stepping.svg') left center;
+		animation: play 3s steps(27) infinite;
+		transform: scale(-$animation-scale, $animation-scale) translateX(55px);
+		-ms-transform: scale(-$animation-scale, $animation-scale) translateX(55px);
+		-webkit-transform: scale(-$animation-scale, $animation-scale) translateX(55px);
+		-moz-transform: scale(-$animation-scale, $animation-scale) translateX(55px);
+	}
+
+	.ramping {
+		width: 350px;
+		height: 200px;
+		background: url('/images/_animation/ramping_sprite.png') left center;
+		animation: ramp 2.8s steps(44) infinite;
+		transform: scale(0.8) translateX(-50px);
+		-ms-transform: scale(0.8) translateX(-50px);
+		-webkit-transform: scale(0.8) translateX(-50px);
+		-moz-transform: scale(0.8) translateX(-50px);
+		@keyframes ramp {
+			100% {
+				background-position: -15400px;
+			}
+		}
+	}
+}
+
+.rocket {
+	width: 100%;
+	height: 250px;
+	background: url('/images/_animation/rocket_still.png') center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.code {
+	width: 100%;
+	height: 250px;
+	background: url('/images/_animation/code_still.png') center center;
+	background-repeat: contain;
+}
+
+@include media-breakpoint-up(md) {
+	.animation {
+
+		.printer {
+			transform: scale(-$animation-scale*1.2, $animation-scale*1.2);
+			-ms-transform: scale(-$animation-scale*1.2, $animation-scale*1.2);
+			-webkit-transform: scale(-$animation-scale*1.2, $animation-scale*1.2);
+			-moz-transform: scale(-$animation-scale*1.2, $animation-scale*1.2);
+		}
+
+		.robot {
+			transform: scale(-$animation-scale*1.2, $animation-scale*1.2) translate(35px,0px);
+			-ms-transform: scale(-$animation-scale*1.2, $animation-scale*1.2) translate(35px,0px);
+			-webkit-transform: scale(-$animation-scale*1.2, $animation-scale*1.2) translate(35px,0px);
+			-moz-transform: scale(-$animation-scale*1.2, $animation-scale*1.2) translate(35px,0px);
+		}
+
+		.drone {
+			transform: scale($animation-scale*1.25) translate(80px,0);
+			-ms-transform: scale($animation-scale*1.25) translate(80px,0);
+			-webkit-transform: scale($animation-scale*1.25) translate(80px,0);
+			-moz-transform: scale($animation-scale*1.25) translate(80px,0);
+		}
+
+		.prothesis {
+			transform: scale(-$animation-scale*1.1, $animation-scale*1.1) translate(-10px,0);
+			-ms-transform: scale(-$animation-scale*1.1, $animation-scale*1.1) translate(-10px,0);
+			-webkit-transform: scale(-$animation-scale*1.1, $animation-scale*1.1) translate(-10px,0);
+			-moz-transform: scale(-$animation-scale*1.1, $animation-scale*1.1) translate(-10px,0);
+		}
+
+		.delivery {
+			transform: scale(-$animation-scale*1.4, $animation-scale*1.4);
+			-ms-transform: scale(-$animation-scale*1.4, $animation-scale*1.4);
+			-webkit-transform: scale(-$animation-scale*1.4, $animation-scale*1.4);
+			-moz-transform: scale(-$animation-scale*1.4, $animation-scale*1.4);
+		}
+
+		.kuka {
+			transform: scale(-$animation-scale*1.2, $animation-scale*1.2);
+			-ms-transform: scale(-$animation-scale*1.2, $animation-scale*1.2);
+			-webkit-transform: scale(-$animation-scale*1.2, $animation-scale*1.2);
+			-moz-transform: scale(-$animation-scale*1.2, $animation-scale*1.2);
+		}
+
+		.ramping {
+			transform: scale($animation-scale*0.8) translate(-30px,0);
+			-ms-transform: scale($animation-scale*0.8) translate(-30px,0);
+			-webkit-transform: scale($animation-scale*0.8) translate(-30px,0);
+			-moz-transform: scale($animation-scale*0.8) translate(-30px,0);
+		}
+
+		.spotlight {
+			transform: scale(-$animation-scale, $animation-scale) translateX(100px);
+			-ms-transform: scale(-$animation-scale, $animation-scale) translateX(100px);
+			-webkit-transform: scale(-$animation-scale, $animation-scale) translateX(100px);
+			-moz-transform: scale(-$animation-scale, $animation-scale) translateX(100px);
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.animation {
+
+		.spotlight {
+			transform: scale(-$animation-scale, $animation-scale) translateX(50px);
+			-ms-transform: scale(-$animation-scale, $animation-scale) translateX(50px);
+			-webkit-transform: scale(-$animation-scale, $animation-scale) translateX(50px);
+			-moz-transform: scale(-$animation-scale, $animation-scale) translateX(50px);
+		}
+	}
+}

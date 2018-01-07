@@ -1,0 +1,11 @@
+---
+name: Progress Bar Pattern
+notes: Requires a progress pattern as a parent.
+progress: 25
+progress-min: 0
+progress-max: 100
+progress-animated: false
+hidden: true
+---
+
+<div class="progress-bar {{#if progress-animated}}progress-bar-striped progress-bar-animated{{/if}} {{progress-bar-class}}" role="progressbar" style="width:{{progress}}%" aria-valuenow="{{progress}}" aria-valuemin="{{progress-min}}" aria-valuemax="{{progress-max}}"></div>
