@@ -17,17 +17,18 @@
     --color-fuchsia: #f012be;
     --color-gray: #aaa;
     --color-white: #fff;
-    --color-black: #111;
-    --color-silver: #f0f0f0;
+    --color-black: #000;
+    --color-silver: #f1f1f1;
     /*  --color-brand: rgb(83, 154, 163);*/
     --color-brand: #000;
-    --color-client: #004db9;
+    --color-client: #fa3b38;
     --monospace: "Source Code Pro";
     --space: 1rem;
-    --color-grey: #2c2c2c;
-    --color-grey-light: color(#555555 lightness(70%));
-    --color-grey-lighter: color(#555555 lightness(90%));
-    --color-grey-dark: #242424;
+    --color-grey: #afb3b6;
+    --color-grey-light: #dbe0e6;
+    --color-grey-lighter: #ebebeb;
+    --color-grey-dark: #383838;
+    --color-grey-darker: #1f1f1f;
     /* SUIT component properties */
     --Arrange-gutter-size: calc(var(--space) / 2);
 

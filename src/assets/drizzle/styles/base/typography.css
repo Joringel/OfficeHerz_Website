@@ -78,7 +78,7 @@ h4.drizzle-Headline{
 
 .Headline{
     margin-top: 32px;
-    color: color(var(--color-grey) lightness(+50%));
+    color: color(var(--color-grey-dark) lightness(+50%));
     line-height: inherit;
     font-weight: 300;
     text-transform: none;

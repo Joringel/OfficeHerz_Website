@@ -20,16 +20,11 @@ $gray-dark: #383838;
 $gray-darker: #1f1f1f;
 // Reassign color vars to semantic color scheme
 $brand-primary: #fa3b38;
-$brand-primary-light: #fb6c6a;
-$brand-primary-25: #f90a06;
-$brand-primary-50: #c70805;
-$brand-primary-75: #950604;
-$brand-primary-100: #640403;
-// $brand-primary-light: lighten($brand-primary, 10);
-// $brand-primary-25: darken($brand-primary, 10);
-// $brand-primary-50: darken($brand-primary, 20);
-// $brand-primary-75: darken($brand-primary, 30);
-// $brand-primary-100: darken($brand-primary, 40);
+$brand-primary-light: #fb6c6a; //lighten 10
+$brand-primary-25: #f90a06; //darken 10
+$brand-primary-50: #c70805; //darken 20
+$brand-primary-75: #950604; //darken 30
+$brand-primary-100: #640403; //darken 40
 
 $brand-highlight: #2130a7;
 $brand-highlight-50: #152d71;

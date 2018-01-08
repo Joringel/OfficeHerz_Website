@@ -1,3 +1,4 @@
+
 :root {
     --Nav-background: var(--color-white);
     --Nav-active-background: color(var(--color-grey) lightness(+5%));
@@ -22,12 +23,12 @@
 }
 
 .Nav-header{
-    background: var(--color-grey-dark);
-
+    background: var(--color-silver);
+    border-bottom: 3px solid red;
     padding: calc(var(--space) * 1.5) calc(var(--space) * 2);
     position: relative;
     & svg{
-      fill: color(var(--color-grey) lightness(+25%));
+      fill: color(var(--color-grey-darker));
     }
     & h3 {
         color: color(var(--color-grey) lightness(+25%));
@@ -64,7 +65,7 @@
 .Nav a:--enter {
     text-decoration: none;
     &:not(.is-active) {
-        color: var(--color-grey-light);
+        color: var(--color-grey-dark);
 
     }
 }
@@ -96,7 +97,10 @@
             background: var(--color-white);
             & >.drizzle-Nav-item{
                 background: var(--color-white);
-                color: var(--color-grey);
+                color: var(--color-grey-dark);
+                border-left: solid 3px var(--color-client);
+                padding-left: 13px;
+
 
             }
 
@@ -122,8 +126,10 @@
 
 .Nav-item {
     display: block;
-    margin: 0 var(--Nav-item-padding);
-    color: var(--color-grey-light);
+    padding-left: 16px;
+    margin: var(--Nav-item-padding);
+    margin-left: 0;
+    color: var(--color-grey-dark);
     &.is-active {
 /*        background: var(--Nav-active-background);*/
     }
@@ -161,4 +167,11 @@
 
 .Nav-menu li.active>.Nav-menu {
     display: block;
+}
+
+
+@media screen and (max-width: 768px){
+  .Nav{
+
+  }
 }

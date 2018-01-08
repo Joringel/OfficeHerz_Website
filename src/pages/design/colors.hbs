@@ -32,11 +32,9 @@ order: 10
             </div>
 
             <div class="drizzle-Swatch-content">
-            {{#each states as |states-color|}}
+            {{#each states as |states-color|}}f
                 {{> drizzle.swatch swatch-class="drizzle-Swatch-state" color=states-color.color property=states-color.property}}
             {{/each}}
             </div>
 
         {{/each}}
-
-
