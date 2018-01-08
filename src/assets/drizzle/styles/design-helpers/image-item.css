@@ -1,6 +1,6 @@
 .image-item{
     position: relative;
-    background: var(--color-grey-dark);
+    background: var(--color-grey-lighter);
     display: table;
     width: 100%;
     & .image-container{

@@ -3,27 +3,27 @@
     {
       "brand-primary": [
         {
-          "color": "#004db9",
+          "color": "#fa3b38",
           "property": "$brand-primary"
         },
         {
-          "color": "#1391cc",
+          "color": "#fb6c6a",
           "property": "$brand-primary-light"
         },
           {
-          "color": "#003d91",
+          "color": "#f90a06",
           "property": "$brand-primary-25"
         },
         {
-          "color": "#002e6e",
+          "color": "#c70805",
           "property": "$brand-primary-50"
         },
         {
-          "color": "#001c42",
+          "color": "#950604",
           "property": "$brand-primary-75"
         },
         {
-          "color": "#000f24",
+          "color": "#640403",
           "property": "$brand-primary-100"
         }
       ]
@@ -31,51 +31,59 @@
     {
       "brand-highlight": [
         {
-          "color": "#f7751f",
+          "color": "#2130a7",
           "property": "$brand-highlight"
+        },
+        {
+          "color": "#152d71",
+          "property": "$brand-highlight-50"
+        },
+        {
+          "color": "#0f2e4c",
+          "property": "$brand-highlight-100"
         }
       ]
     },
     {
       "grays": [
         {
-          "color": "#afb3b6",
-          "property": "$gray"
-        },
-        {
-          "color": "#15252f",
-          "property": "$gray-darker"
-        },
-        {
-          "color": "#3a5b78",
-          "property": "$gray-dark"
+          "color": "#ebebeb",
+          "property": "$gray-lighter"
         },
         {
           "color": "#dbe0e6",
           "property": "$gray-light"
         },
         {
-          "color": "#f1f3f5",
-          "property": "$gray-lighter"
+          "color": "#afb3b6",
+          "property": "$gray"
+        },
+        {
+          "color": "#383838",
+          "property": "$gray-dark"
+        },
+        {
+          "color": "#1f1f1f",
+          "property": "$gray-darker"
         }
       ]
     }
   ],
   "states": [
     {
-      "color": "#01BB3F",
+      "color": "#06D046",
       "property": "$brand-success"
     },
     {
-      "color": "#1391cc",
+      "color": "#5a8ef8",
       "property": "$brand-info"
     },
     {
-      "color": "#FBB818",
+      "color": "#fab93e",
       "property": "$brand-warning"
     },
     {
-      "color": "#A94442",
+      "color": "#dd0f19",
       "property": "$brand-danger"
     }
   ]
