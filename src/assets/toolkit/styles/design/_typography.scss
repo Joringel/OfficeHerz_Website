@@ -4,13 +4,14 @@ IMPORT FONTS
 ------------------------------------------------------------------
 ----------------------------------------------------------------*/
 @import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,400,400i,500,500i,600,600i');
 /*----------------------------------------------------------------
 ------------------------------------------------------------------
 FONT SETUP
 ------------------------------------------------------------------
 ----------------------------------------------------------------*/
-$font-family-sans-serif: 'Open Sans', sans-serif;
-$font-family-serif: 'Georgia', serif;
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-serif: 'Montserrat', serif;
 $font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base: $font-family-sans-serif; //----BASE FONT COLOR
 $body-color: $gray-darker; //-----FONT Sizes
@@ -19,10 +20,10 @@ $font-size-lg: 1.25rem;
 $font-size-md: 1.125rem;
 $font-size-sm: 0.875rem;
 $font-size-xs: 0.75rem; //-----FONT WEIGHTS
-$font-weight-light: 300;
+$font-weight-light: 200;
 $font-weight-normal: 400;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
 $font-weight-base: $font-weight-normal; //-----LINE HEIGHT
 $line-height-base: 1.7;
 /*----------------------------------------------------------------
@@ -31,10 +32,14 @@ HEADLINE SETUP
 ------------------------------------------------------------------
 ----------------------------------------------------------------*/
 //-----Basic headline setup
-$headings-font-family: $font-family-sans-serif;
-$headings-font-weight: $font-weight-light;
-$headings-line-height: 1.2;
-$headings-color: inherit; //-----Sizes for default Healdines
+$headings-margin-bottom: ($spacer / 2) !default; //-----Headline Margin
+$headings-font-family:   $font-family-sans-serif;
+$headings-font-weight:   $font-weight-semibold;
+$headings-line-height:   1.2 !default;
+$headings-color:         inherit !default;
+
+
+//-----Sizes for default Healdines
 
 $font-size-h1: 1.75rem; //28px
 $font-size-sm-h1: $font-size-h1;
@@ -53,8 +58,8 @@ $font-size-h3: 1.75rem; //28px
 $font-size-h4: 1.375rem; //22px
 $font-size-h5: 1rem; //16px
 $font-size-h6: 0.875rem; //14px
-//-----Headline Margin
-$headings-margin-bottom: ($spacer / 2);
+
+
 /*----------------------------------------------------------------
 ------------------------------------------------------------------
 DISPLAY HEADLINE SETUP
@@ -62,14 +67,14 @@ DISPLAY HEADLINE SETUP
 ----------------------------------------------------------------*/
 //----- Line height for Display fonts
 $display-line-height: 1; //----- Display Headline Size
-$display1-size: 6rem;
-$display2-size: 5.5rem;
-$display3-size: 4.5rem;
-$display4-size: 3.5rem; //----- Display Headline weight
-$display1-weight: $font-weight-light;
-$display2-weight: $font-weight-light;
-$display3-weight: $font-weight-light;
-$display4-weight: $font-weight-light;
+$display1-size: 6rem !important;
+$display2-size: 5.5rem !important;
+$display3-size: 4.5rem !important;
+$display4-size: 3.5rem !important; //----- Display Headline weight
+$display1-weight: $font-weight-light !important;
+$display2-weight: $font-weight-light !important;
+$display3-weight: $font-weight-light !important;
+$display4-weight: $font-weight-light !important;
 /*----------------------------------------------------------------
 ------------------------------------------------------------------
 Special typo settings
@@ -110,17 +115,18 @@ body {
 
 .katana{
 
-	h1,.h1{
-		font-weight: $font-weight-light;
+	h1,.h1,
+	h2,.h2{
+		font-weight: $font-weight-normal;
 	}
 
-	h2,.h2,
-	h3,.h3,
-	h4,.h4{
+	h3,.h3 {
+		font-weight: $font-weight-semibold;
 	}
 
 	h5,.h5,
-	h6,.h6{
+	h6,.h6,
+	h4,.h4 {
 		font-weight: $font-weight-bold;
 	}
 
