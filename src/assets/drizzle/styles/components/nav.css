@@ -25,20 +25,22 @@
 .Nav-header{
     background: var(--color-silver);
     border-bottom: 3px solid red;
-    padding: calc(var(--space) * 1.5) calc(var(--space) * 2);
+    padding: calc(var(--space) * 1.5) calc(var(--space) * 2) calc(var(--space) * 1.5) calc(var(--space) * 2);
     position: relative;
     & svg{
-      fill: color(var(--color-grey-darker));
+      fill: color(var(--color-grey-dark));
     }
     & h3 {
-        color: color(var(--color-grey) lightness(+25%));
+        color: color(var(--color-grey-dark));
         margin-top: 3px;
-        margin-left: calc(var(--space) * 2.4);
+        /* margin-left: calc(var(--space) * 2.4); */
         margin-bottom: 0;
         font-size: 16px;
         font-family: var(--Font-family-sans-serif);
-        font-weight: 300;
+        font-weight: 600 ;
+        letter-spacing: 1.5px;
         text-transform: none !important;
+        font-variant-ligatures: none;
     }
 }
 
