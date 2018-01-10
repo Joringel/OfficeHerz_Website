@@ -1,16 +1,19 @@
 .logo{
+
   &.logo--invert{
     svg{
+    fill: $gray-darker;
+
       g#svg_g_1 {
-        fill: $white;
+        fill: $gray-darker;
       }
 
       g#svg_g_2 {
-        fill: $white;
+        fill: $gray-darker;
       }
 
       g#svg_g_3 {
-        fill: $white;
+        fill: $gray-darker;
       }
     }
   }

@@ -1,5 +1,8 @@
 .nav {
 	.nav-item {
+		i {
+			margin-right: 5px;
+		}
 		&.dropdown {
 			.dropdown-toggle {
 				&:after {

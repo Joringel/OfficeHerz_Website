@@ -9,9 +9,10 @@ hidden: true
 <li class="nav-item {{nav-item-class}}">
 	<a class="nav-link {{#if nav-item-active}}active{{/if}}" href="{{nav-item-link}}">
 		{{#if nav-icon-name}}
-			<svg viewBox="0 0 32 32">
+		<i class="fa fa-{{nav-icon-name}}"></i>
+			{{!-- <svg viewBox="0 0 32 32">
 				<use xlink:href="/assets/toolkit/svg/sprite.symbol.svg#{{nav-icon-name}}"></use>
-			</svg>
+			</svg> --}}
 		{{/if}}
 		{{nav-item-label}}
 	</a>

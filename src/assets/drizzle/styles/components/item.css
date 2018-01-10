@@ -32,7 +32,7 @@
     text-align: right;
     text-decoration: none;
     border-top: 1px solid color(var(--color-grey) lightness(+75%));
-    color: color(var(--color-grey) lightness(+50%));
+    color: color(var(--color-client-highlight)) !important;
     padding: 5px 0;
     margin-top: var(--space);
 }

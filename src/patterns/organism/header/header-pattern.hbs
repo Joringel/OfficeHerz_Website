@@ -10,8 +10,8 @@ hidden: true
 			<div class="container">
 				{{#embed "patterns.molecule.nav.nav-pattern" nav-class="justify-content-end"}}
 				{{#content "nav-body"}}
-					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-label="Blog" nav-icon-name="align-left"}}{{/embed}}
-					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-label="Login" nav-icon-name="home"}}{{/embed}}
+					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-label="Anmelden" nav-icon-name="user"}}{{/embed}}
+					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-label="Sprache" nav-icon-name="flag"}}{{/embed}}
 				{{/content}}
 				{{/embed}}
 			</div>
@@ -21,7 +21,7 @@ hidden: true
 		{{#block "header-body"}}
 			{{#embed "patterns.organism.header._navbar" navbar-class="navbar-toggleable-md navbar-default"}}
 				{{#content "navbar"}}
-					{{#embed "patterns.molecule.nav.nav-pattern" nav-class="navbar-nav mx-lg-2 mx-xl-6"}}
+					{{!-- {{#embed "patterns.molecule.nav.nav-pattern" nav-class="navbar-nav mx-lg-2 mx-xl-6"}}
 						{{#content "nav-body"}}
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
@@ -66,7 +66,7 @@ hidden: true
 								</div>
 							</li>
 						{{/content}}
-					{{/embed}}
+					{{/embed}} --}}
 					<form class="navbar-form" action="/search/">
 					{{#embed "patterns.molecule.input-group.input-group-pattern" input-group-class="input-group--type-b mr-1" input-group-icon-right=true}}
 						{{#content "input-group-addon"}}
@@ -78,11 +78,15 @@ hidden: true
 								{{/embed}}
 						{{/content}}
 					{{/embed}}
-					{{#embed "patterns.atom.button.button-pattern" button-class="btn-secondary btn-sm btn--icon-right" button-icon="triangle" button-label="Buy here" button-link="#" button-start-tag="a"}}
-					{{/embed}}
+					{{!-- {{#embed "patterns.atom.button.button-pattern" button-class="btn-secondary btn-sm btn--icon-right" button-icon="triangle" button-label="Buy here" button-link="#" button-start-tag="a"}}
+					{{/embed}} --}}
 				</form>
 				{{/content}}
 			{{/embed}}
 		{{/block}}
+
+
+
+
 	</div>
 </header>

@@ -6,7 +6,7 @@
 	.header_header {
 		height: 36px;
 		padding: $spacer 0;
-		background: $white;
+		background: $gray-lighter;
 
 		.nav {
 			.nav-item {
@@ -14,13 +14,14 @@
 					padding-top: 0;
 					padding-bottom: 0;
 					font-size: $font-size-xs;
-					color: $brand-primary-75;
+					color: $gray-darker;
 				}
 			}
 		}
 	}
 
 	.header_body {
+		background-color: $white;
 		height: 80px;
 		z-index: 20;
 		top: 0;
@@ -109,10 +110,11 @@
 						display: flex;
 						flex-direction: row;
 						height: 35px;
+						width: 70%;
 
 						.input-group {
 							min-width: 200px;
-							max-width: 200px;
+							max-width: 800px;
 
 							.form-text {
 								padding-top: 0;
@@ -134,10 +136,10 @@
 
 						svg {
 							width: 145.45454545px;
-							height: 32px;
-							margin-top: 24px;
-							margin-bottom: 24px;
-							fill: $white;
+							height: 60px;
+							margin-top: 10px;
+							margin-bottom: 10px;
+							fill: $gray-darker;
 
 							g#svg_g_1 {
 								fill: $white;
@@ -227,10 +229,10 @@
 						.logo {
 							svg {
 								width: 145.45454545px;
-								height: 32px;
-								margin-top: 24px;
-								margin-bottom: 24px;
-								fill: $white;
+								height: 60px;
+								margin-top: 10px;
+								margin-bottom: 10px;
+								fill: $gray-darker;
 
 								g#svg_g_1 {
 									fill: #afb3b6;

@@ -23,7 +23,7 @@
         color: color(#383838 alpha(-50%));
     }
     & .logo{
-        width: 100px;
+        width: 200px;
         background-color: transparent;
         padding: 25px 25px;
         font-weight: 600;
@@ -44,7 +44,7 @@
   .Intro {
     & .logo{
       visibility: visible;
-      width: 120px;
+      width: 400px;
     }
   }
 }
