@@ -34,6 +34,10 @@
 		height: 80px;
 	}
 
+	&.icon--white {
+		fill: $white;
+	}
+
 	&.icon--gray {
 		fill: $gray;
 	}

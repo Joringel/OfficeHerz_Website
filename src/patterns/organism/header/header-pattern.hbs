@@ -10,6 +10,14 @@ hidden: true
 			<div class="container">
 				{{#embed "patterns.molecule.nav.nav-pattern" nav-class="justify-content-end"}}
 				{{#content "nav-body"}}
+
+					{{#embed "patterns.atom.dropdown.dropdown-pattern" dropdown-label="Privatkunde" dropdown-button-class="btn-secondary btn-secondary--header d-flex justify-content-center"}}
+						{{#content "dropdown-menue"}}
+						<a class="dropdown-item" href="#">Privatkunde</a>
+						<a class="dropdown-item" href="#">Geschäftskunde</a>
+						{{/content}}
+					{{/embed}}
+
 					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-label="Anmelden" nav-icon-name="user"}}{{/embed}}
 					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-label="Sprache" nav-icon-name="flag"}}{{/embed}}
 				{{/content}}
@@ -67,20 +75,34 @@ hidden: true
 							</li>
 						{{/content}}
 					{{/embed}} --}}
-					<form class="navbar-form" action="/search/">
-					{{#embed "patterns.molecule.input-group.input-group-pattern" input-group-class="input-group--type-b mr-1" input-group-icon-right=true}}
-						{{#content "input-group-addon"}}
-								{{#embed "patterns.atom.icon.icon-pattern" icon-name="search"}}
-								{{/embed}}
-						{{/content}}
-						{{#content "input-group-input"}}
-								{{#embed "patterns.atom.form-text.form-text-pattern" form-text-type="search" form-text-placeholder="Search" form-text-name="q"}}
-								{{/embed}}
+					{{#embed "patterns.organism.search.search-pattern" search-class="search--navbar"}}
+						{{#content "search-header"}}
+							{{#embed "patterns.molecule.filter.filter-pattern" filter-class=""}}
+								{{#content "filter-body"}}
+									<div class="filter-row">
+										{{#embed "patterns.molecule.form-group.form-group-pattern" form-group-class="mb-0" form-text-type="text" form-text-placeholder="Suchen Sie nach Produktname, Artikelnummer, Kategorie"}}
+										{{/embed}}
+										{{#embed "patterns.atom.button.button-pattern" button-class="btn-primary btn--icon-left icon--white mt-1 mt-md-0" button-label="Suchen" button-type="submit" button-start-tag="button" button-end-tag="button" button-icon="search" }}
+										{{/embed}}
+									</div>
+								{{/content}}
+							{{/embed}}
 						{{/content}}
 					{{/embed}}
+
+
 					{{!-- {{#embed "patterns.atom.button.button-pattern" button-class="btn-secondary btn-sm btn--icon-right" button-icon="triangle" button-label="Buy here" button-link="#" button-start-tag="a"}}
 					{{/embed}} --}}
 				</form>
+
+				{{#embed "patterns.molecule.nav.nav-pattern" nav-class="justify-content-end"}}
+				{{#content "nav-body"}}
+					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-class="nav-item--vertical" nav-item-label="Merkzettel" nav-icon-name="heart-o"}}{{/embed}}
+					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-class="nav-item--vertical" nav-item-label="Warenkorb" nav-icon-name="shopping-basket"}}{{/embed}}
+					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-class="nav-item--vertical" nav-item-label="" nav-icon-name="bars"}}{{/embed}}
+				{{/content}}
+				{{/embed}}
+
 				{{/content}}
 			{{/embed}}
 		{{/block}}

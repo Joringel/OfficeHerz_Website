@@ -93,7 +93,7 @@ $btn-border-radius-sm: $border-radius-sm !default;
 
 			&:hover {
 				color: rgba($white, .5);
-				
+
 				svg{
 					fill: $brand-primary-75;
 				}
@@ -164,4 +164,16 @@ $btn-border-radius-sm: $border-radius-sm !default;
 	&.btn-lg{
 		height: inherit;
 	}
+
+	&.btn-secondary{
+
+		&.btn-secondary--header{
+			font-size: 0.9rem;
+			padding: 0 10px;
+			margin: -10px 20px 0 0;
+			height: 36px;
+			border-radius: 0;
+		}
+	}
+
 }
