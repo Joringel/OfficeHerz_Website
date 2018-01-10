@@ -10,6 +10,7 @@ hidden: true
 			<div class="container">
 				{{#embed "patterns.molecule.nav.nav-pattern" nav-class="justify-content-end"}}
 				{{#content "nav-body"}}
+					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-class="d-flex nav-item-header--left" nav-item-label="SERVICEHOTLINE: 0 22 43 / 88 99 5" nav-icon-name="phone"}}{{/embed}}
 
 					{{#embed "patterns.atom.dropdown.dropdown-pattern" dropdown-label="Privatkunde" dropdown-button-class="btn-secondary btn-secondary--header d-flex justify-content-center"}}
 						{{#content "dropdown-menue"}}
@@ -27,81 +28,111 @@ hidden: true
 	</div>
 	<div class="header_body">
 		{{#block "header-body"}}
-			{{#embed "patterns.organism.header._navbar" navbar-class="navbar-toggleable-md navbar-default"}}
+
+			{{#embed "patterns.organism.header._navbar" navbar-class="navbar-toggleable-md navbar-default d-flex flex-column"}}
 				{{#content "navbar"}}
-					{{!-- {{#embed "patterns.molecule.nav.nav-pattern" nav-class="navbar-nav mx-lg-2 mx-xl-6"}}
+						{{#embed "patterns.organism.search.search-pattern" search-class="search--navbar"}}
+							{{#content "search-header"}}
+								{{#embed "patterns.molecule.filter.filter-pattern" filter-class="filter--navbar"}}
+									{{#content "filter-body"}}
+										<div class="filter-row">
+											{{#embed "patterns.molecule.form-group.form-group-pattern" form-group-class="mb-0 d-inline-flex" form-text-type="text" form-text-placeholder="Suchen Sie nach Produktname, Artikelnummer, Kategorie"}}
+											{{/embed}}
+										</div>
+									{{/content}}
+								{{/embed}}
+							{{/content}}
+						{{/embed}}
+
+						{{#embed "patterns.molecule.nav.nav-pattern" nav-class="justify-content-end"}}
+							{{#content "nav-body"}}
+								{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-class="" nav-item-label="Merkzettel" nav-icon-name="heart-o"}}{{/embed}}
+								{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-class="" nav-item-label="Warenkorb" nav-icon-name="shopping-basket"}}{{/embed}}
+							{{/content}}
+						{{/embed}}
+
+						<div class="navbar-dropdown-menue">
+						{{#embed "patterns.molecule.nav.nav-pattern" nav-class="navbar-nav mx-lg-2 mx-xl-6"}}
 						{{#content "nav-body"}}
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">ICs</a>
-									<a class="dropdown-item" href="#">Modules</a>
-									<a class="dropdown-item" href="#">Drives</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Solutions</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Manifacturing</a>
-									<a class="dropdown-item" href="#">Medical</a>
-									<a class="dropdown-item" href="#">Laboratory</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Technology</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Architecture</a>
-									<a class="dropdown-item" href="#">Std. Technologies</a>
-									<a class="dropdown-item" href="#">Adv. Technologies</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Support</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Help Center</a>
-									<a class="dropdown-item" href="#">Software</a>
-									<a class="dropdown-item" href="#">Eval Kits</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Company</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Careers</a>
-									<a class="dropdown-item" href="#">Locations</a>
-									<a class="dropdown-item" href="#">Quality</a>
-									<a class="dropdown-item" href="#">News</a>
-									<a class="dropdown-item" href="#">Events</a>
-								</div>
-							</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Schreiben & Korrigieren</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Bleistifte</a>
+								<a class="dropdown-item" href="#">Farbstifte</a>
+								<a class="dropdown-item" href="#">Spitzer & Spitzdosen</a>
+								<a class="dropdown-item" href="#">Radierer</a>
+								<a class="dropdown-item" href="#">Druckbleistifte & Feinminen</a>
+								<a class="dropdown-item" href="#">Lineale</a>
+								<a class="dropdown-item" href="#">Geometriebedarf</a>
+								<a class="dropdown-item" href="#">Kugelschreiber</a>
+								<a class="dropdown-item" href="#">Tintenroller</a>
+								<a class="dropdown-item" href="#">Fineliner</a>
+								<a class="dropdown-item" href="#">Fasermaler</a>
+								<a class="dropdown-item" href="#">Textmarker</a>
+								<a class="dropdown-item" href="#">Permanentmarker</a>
+								<a class="dropdown-item" href="#">Flipchartmarker</a>
+								<a class="dropdown-item" href="#">Whiteboardmarker</a>
+								<a class="dropdown-item" href="#">Spezialmarker</a>
+								<a class="dropdown-item" href="#">Folienstifte</a>
+								<a class="dropdown-item" href="#">Korrekturmittel</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ordnen & Registrieren</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Ordner & Zubehör</a>
+								<a class="dropdown-item" href="#">Trennblätter</a>
+								<a class="dropdown-item" href="#">Register / Hängeregistraturen</a>
+								<a class="dropdown-item" href="#">Prospekthüllen/Sichthüllen/Dokumentenhüllen</a>
+								<a class="dropdown-item" href="#">Sammelmappen/Eckspanner/ Klemmmappen</a>
+								<a class="dropdown-item" href="#">Hefter</a>
+								<a class="dropdown-item" href="#">Karteikästen & Zubehör</a>
+								<a class="dropdown-item" href="#">Archiv-Systeme</a>
+								<a class="dropdown-item" href="#">Locher & Heftgeräte</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Etiketten</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Universal-Etiketten</a>
+								<a class="dropdown-item" href="#">Wiederablösbare Etiketten</a>
+								<a class="dropdown-item" href="#">Premium Etiketten</a>
+								<a class="dropdown-item" href="#">Spezial-Etiketten</a>
+								<a class="dropdown-item" href="#">Wetterfeste Etiketten</a>
+								<a class="dropdown-item" href="#">Transparente Etiketten</a>
+								<a class="dropdown-item" href="#">Typenschildetiketten</a>
+								<a class="dropdown-item" href="#">Markierungspunkte</a>
+								<a class="dropdown-item" href="#">Vielzwecketiketten</a>
+								<a class="dropdown-item" href="#">Computeretiketten </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Kalender & Terminplaner</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Schreibtischkalender</a>
+								<a class="dropdown-item" href="#">Wandkalender</a>
+								<a class="dropdown-item" href="#">Plakatkalender</a>
+								<a class="dropdown-item" href="#">Buchkalender</a>
+								<a class="dropdown-item" href="#">Terminplaner</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Papiere & Blöcke</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Kopier- & Multifunktionspapiere</a>
+								<a class="dropdown-item" href="#">Farblaserpapiere</a>
+								<a class="dropdown-item" href="#">Fotopapiere</a>
+								<a class="dropdown-item" href="#">Additions- & Kassenrollen</a>
+								<a class="dropdown-item" href="#">Computerpapiere</a>
+								<a class="dropdown-item" href="#">Blöcke / Collegeblöcke</a>
+								<a class="dropdown-item" href="#">Notizbücher & Kladden</a>
+								<a class="dropdown-item" href="#">Haftnotizen</a>
+								<a class="dropdown-item" href="#">Formulare</a>
+							</div>
+						</li>
 						{{/content}}
-					{{/embed}} --}}
-					{{#embed "patterns.organism.search.search-pattern" search-class="search--navbar"}}
-						{{#content "search-header"}}
-							{{#embed "patterns.molecule.filter.filter-pattern" filter-class=""}}
-								{{#content "filter-body"}}
-									<div class="filter-row">
-										{{#embed "patterns.molecule.form-group.form-group-pattern" form-group-class="mb-0" form-text-type="text" form-text-placeholder="Suchen Sie nach Produktname, Artikelnummer, Kategorie"}}
-										{{/embed}}
-										{{#embed "patterns.atom.button.button-pattern" button-class="btn-primary btn--icon-left icon--white mt-1 mt-md-0" button-label="Suchen" button-type="submit" button-start-tag="button" button-end-tag="button" button-icon="search" }}
-										{{/embed}}
-									</div>
-								{{/content}}
-							{{/embed}}
-						{{/content}}
-					{{/embed}}
-
-
-					{{!-- {{#embed "patterns.atom.button.button-pattern" button-class="btn-secondary btn-sm btn--icon-right" button-icon="triangle" button-label="Buy here" button-link="#" button-start-tag="a"}}
-					{{/embed}} --}}
-				</form>
-
-				{{#embed "patterns.molecule.nav.nav-pattern" nav-class="justify-content-end"}}
-				{{#content "nav-body"}}
-					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-class="nav-item--vertical" nav-item-label="Merkzettel" nav-icon-name="heart-o"}}{{/embed}}
-					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-class="nav-item--vertical" nav-item-label="Warenkorb" nav-icon-name="shopping-basket"}}{{/embed}}
-					{{#embed "patterns.molecule.nav._nav-item-pattern" nav-item-class="nav-item--vertical" nav-item-label="" nav-icon-name="bars"}}{{/embed}}
-				{{/content}}
-				{{/embed}}
+						{{/embed}}
+				</div>
 
 				{{/content}}
 			{{/embed}}

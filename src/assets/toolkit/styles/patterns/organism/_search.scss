@@ -1,9 +1,11 @@
 .search{
   display: flex;
   justify-content: start;
+  margin-left: 0;
+  padding-left: 0;
 
   &.search--navbar{
-    width: 70%;
+    width: 100%;
 
     .search-header{
       width: 100%;

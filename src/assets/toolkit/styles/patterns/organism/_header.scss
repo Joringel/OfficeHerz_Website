@@ -1,7 +1,7 @@
 .header {
 	margin-bottom: -80px;
-	position: -webkit-sticky;
-	position: sticky;
+	// position: -webkit-sticky;
+	// position: sticky;
 
 	.header_header {
 		height: 36px;
@@ -55,7 +55,7 @@
 				.navbar-toggler {
 					margin: 22px 0;
 					padding: $spacer;
-					background-color: transparent;
+					background-color: $gray-lighter;
 					background-image: none;
 					border: 1px solid $white;
 					border-radius: 4px;
@@ -68,7 +68,7 @@
 						svg {
 							width: 16px;
 							height: 16px;
-							fill: $white;
+							fill: $gray-darker;
 						}
 					}
 
@@ -94,7 +94,7 @@
 
 						.nav-item {
 							.nav-link {
-								color: $white;
+								color: $gray-dark;
 								padding: 0;
 							}
 						}
@@ -139,7 +139,7 @@
 							height: 60px;
 							margin-top: 10px;
 							margin-bottom: 10px;
-							fill: $gray-darker;
+							fill: $gray-dark;
 
 							g#svg_g_1 {
 								fill: $white;
@@ -182,7 +182,7 @@
 							background: $gray-lighter;
 
 							svg {
-								fill: $gray;
+								fill: $gray-darker;
 							}
 						}
 					}
